@@ -1,0 +1,200 @@
+.iti__flag {background-image: url("./images/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("./images/img/flags@2x.png");}
+}
+
+.banner-otherpages {
+    background: url("./images/letrytryutrechtwithoverlay.jpg") no-repeat center/cover border-box;
+    }
+
+.main-contactus {
+    height: 10rem;
+}
+
+
+.accordion__paragraph {
+  font-size:0.8rem;
+}
+
+.accordion__studentstable-title {
+  font-size:0.8rem;
+  font-weight: bold;
+  margin-bottom:0.5rem;
+}
+
+.accordion__studentstable {
+  width:100%;
+  border: 0;
+  border-collapse: collapse; 
+  border-spacing: 0;
+  }
+
+.accordion__studentstable td {
+  font-size:0.8rem;
+  padding:0;
+}
+
+.accordion__studentstable-example {
+  width:25%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color:var(--main-bg-color);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--main-bg-color);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+.signup-form__students {
+    padding: 0 2rem;
+    display: grid;
+}
+
+.signup-form__students label,
+.signup-form__students input,
+.signup-form__students select {
+    display: block;
+    width: 100%;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+.date_picker {
+    padding-right:10px;
+}
+
+
+.signup-form__students--input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	/* position: absolute; */
+	z-index: -1;
+}
+.signup-form__picturecontainer {
+  align-self: center;
+}
+
+
+.signup-form__students--profilepicture {
+  color: grey;
+  background-color: white;
+  display: flex !important; 
+  border: solid 2px black;
+  border-radius: 4px;
+  height: 3.375rem;
+  text-align: center;
+  margin:0;
+  cursor:pointer;
+}
+
+.singup-form__students--placeholder-profilepicture {
+  align-self: center;
+  width:100%;
+  text-align: left;
+  padding-left: 2px;
+}
+
+/* input[type="file"] {
+  display: none;
+} */
+
+
+
+@media (min-width: 40rem) {
+
+    .signup-form__students {
+        margin: auto;
+        max-width: 40rem;
+        grid-column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formcontainer__gender {
+        position: relative;
+        grid-column: 1 /3;
+    }
+    .form__moreinfo {
+        grid-column: 1 /3;
+        grid-row: 8;
+    }
+
+    input[type=submit] {
+        /* line-height: 3rem;
+        width: 70%; */
+        grid-column: 1 / 2;
+        grid-row: 8 ;
+        /* font-size: 1rem; */
+    }    
+
+
+}

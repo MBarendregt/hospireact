@@ -1,0 +1,109 @@
+{
+    "bannertext": "Hospita worden? U bepaalt wie bij u komt wonen en voor hoe lang<1>.</1>",
+    "exptext": "Het is voor een student in een nieuwe stad steeds lastiger om een betaalbare woonruimte te vinden. Wij hebben een sociale oplossing gevonden voor dit probleem. Wij koppelen internationale studenten aan lokale hospita's of gastgezinnen. Het maakt niet uit of u alleen woont, met uw kat, uw gezin of uw hele vriendengroep. Als u een ruimte over hebt, graag wat bij verdient en open staat voor contact, dan bent u bij Hospi Housing aan het juiste adres.<1 /><2 />We zijn op zoek naar hospita's en gastgezinnen die open staan voor het avontuur. Doet u mee?",
+    "concept": {
+        "title": "Dit is hoe het werkt:",
+        "text1": "<1>U heeft een ruimte over</1><2 /> en staat er voor open een student in huis te nemen.",
+        "text2": "<1>Vul hieronder uw gegevens in</1><2 />wij nemen contact met u op om een beeld te krijgen van waar u naar op zoek bent.",
+        "text3": "<1>Wij komen bij u langs</1><2 />om u te leren kennen en om professionele foto's te maken van de kamer.",
+        "text4": "<1>Wij zoeken naar een student</1><2 />via onze contacten met universiteiten en hogescholen door heel Nederland.",
+        "text5": "<1>Wij regelen een contactmoment</1><2 />op bezoek of via skype. Een klik is namelijk erg belangrijk.",
+        "text6": "<1>Match! Student kan intrekken</1><2 />Wij helpen bij het opstellen van een contract en betaalafspraken."
+    },
+    "contactus": "Nieuwsgierig geworden en wilt u graag meer informatie? Neem dan contact met ons op!",
+    "contactusbutton": "Contact ons",
+    "becomehost_title": "Kan ik hospita worden?",
+    "becomehost_text": "Bijna iedereen kan hospita worden. Wel stellen we als Hospi Housing enkele voorwaarden waar u als hospita aan moet voldoen. Hiermee garanderen we een hoge kwaliteit voor de student en de Universiteit en willen we voorkomen dat er misverstanden ontstaan tussen de hospita, de student en Hospi Housing.",
+    "faq": {
+        "title": "Veel gestelde vragen",
+        "h3becomehost": "Hospita worden",
+        "questionblok1": [
+            {
+                "question": "Waar moet ik aan voldoen om hospita te worden?",
+                "answer": "<1>U spreekt Nederlands en/of Engels.</1><2>U bent minimaal 23.</2><3>Het maakt niet uit hoe groot uw huishouden (partner, kinderen) is.</3>"
+            },
+            {
+                "question": "Hoeveel tijd kost hospita zijn?",
+                "answer": "Niet veel, u verhuurt een kamer en u heeft er tijdelijk een extra huisgenoot bij. Hoeveel contact u met de student heeft, bepaalt u zelf. U maakt hier van tevoren met de student afspraken over."
+            },
+            {
+                "question": "Moeten we vrienden worden?",
+                "answer": "Dat zou prachtig zijn, maar het hoeft niet. Wel hecht Hospi Housing veel waarde aan een goede relatie tussen hospita en student. Mocht het onverhoopt niet klikken dan kunt u tussentijds het contract beëindigen."
+            },
+            {
+                "question": "Wat wordt er van mij verwacht op het moment dat er een student bij mij woont?",
+                "answer": "De student is nieuw in de stad. Wij hopen dat u bij aankomst van de student de student helpt om de weg te vinden in de wijk en in de stad. Hierbij denken wij aan het geven van tips over een supermarkt, winkels, ov, activiteiten, etc. Gedurende het verblijf samen eten of eropuit gaan is leuk, maar niet verplicht. Maak hier van tevoren goede afspraken over met de student."
+            },
+            {
+                "question": "Hoe zit het met de privacy?",
+                "answer": "De student respecteert de privacy van de hospita en komt niet ongevraagd privékamers van de hospita binnen. Omgekeerd respecteert de hospita de privacy van de student en komt niet ongevraagd de kamer van de student binnen. Het is belangrijk hier van te voren afspraken over te maken, hier kan Hospi Housing bij helpen als u dat prettig vindt."
+            }
+        ],
+        "h3house": "Mijn woning",
+        "questionblok2": [
+            {
+                "question": "Waar moet ik aan voldoen om hospita te worden?",
+                "answer": "De student moet toegang hebben tot een toilet, badkamer en keuken. Dit mag een gedeelde voorziening zijn. Voor een uitgebreide <1>checklist</1> kunt u de website van de rijksoverheid raadplegen.<2 /><3 />In het huis dienen adequate middelen aanwezig te zijn in het geval van een noodsituatie. Bijvoorbeeld een CO2-meter, een rookmelder (ook in de kamer van de student) en/of andere brandbestrijdende middelen."
+            },
+            {
+                "question": "Waar moet de kamer van de student aan voldoen?",
+                "answer": "De kamer is minimaal 7m2 en heeft een raam. In de kamer staat minimaal een bed, kast en bureau en de kamer beschikt over een slot. Verder moet er in de slaapkamer Wi-Fi aanwezig zijn."
+            },
+            {
+                "question": "Moet ik in de woning wonen waar ik een kamer verhuur?",
+                "answer": "Ja, om te worden aangemerkt als hospita dient u zelf in de woning te wonen waar u een kamer verhuurt."
+            },
+            {
+                "question": "Heb ik een vergunning nodig?",
+                "answer": "Als u aan een enkel persoon een kamer verhuurt, heeft u geen vergunning nodig. Iedereen mag zonder vergunning een kamer verhuren, ongeacht of u een huur- of koopwoning heeft. Wilt u aan 2 personen een of meerdere kamers verhuren? Dan moet u in Utrecht minimaal 10% eigenaar zijn van de woning. In andere situaties, bijvoorbeeld hoofdhuurder en meer dan 2 personen, dient u een omgevingsvergunning of omzettingsvergunning te hebben. Kijk voor meer info op de <1>website van gemeente Utrecht</1>."
+            },
+            {
+                "question": "Ik woon in een sociale-huurwoning. Mag ik hospita worden?",
+                "answer": "Ja, mits u toestemming heeft van de woningcorporatie. Zij kunnen u adviseren wat wel en niet mag."
+            },
+            {
+                "question": "Maakt het uit of ik eigenaar of huurder ben van de woning?",
+                "answer": "Als u de eigenaar bent bepaalt u zelf of u een kamer in uw woning verhuurt. Ook als huurder mag u een kamer in uw woonhuis verhuren. Behalve als in het huurcontract staat dat het niet mag, heeft u hiervoor <1>geen toestemming nodig</1> van de verhuurder."
+            },
+            {
+                "question": "Wat is verder nog belangrijk met betrekking tot mijn woning?",
+                "answer": "Voor de student moet het mogelijk zijn om zich in te schrijven bij de gemeente op uw adres."
+            }
+        ],
+        "h3contracts": "Huurcontract en Huurinkomsten",
+        "questionblok3": [
+            {
+                "question": "Ik weet niks van huurcontracten, wat nu?",
+                "answer": "Geen nood, wij hebben dat voor u uitgezocht. Er zijn verschillende typen contracten voor verschillende situaties. Wij adviseren u over het contract dat het beste past bij uw situatie en sturen u altijd een voorbeeld contract mee die u direct kunt gebruiken. Het staat u vrij om er wijzigingen in te maken. Voor eventuele vragen over het contract kunt u altijd <1>bij ons terecht</1>."
+            },
+            {
+                "question": "Hoe bepaal ik hoeveel huur ik mag vragen?",
+                "answer": "U bepaalt zelf de hoogte van de huur. Wel zijn hier bepaalde voorwaarden aan verbonden. De maximale huurprijs van uw kamer wordt bepaald met een puntensysteem. Hoe meer punten, hoe hoger de maximale huurprijs. U kunt zelf het puntenaantal en de maximale huurprijs van uw kamer uitrekenen met de <1>huurprijscheck onzelfstandige woonruimte</1> van de Huurcommissie. Wilt u meer weten over de berekening van de maximale huurprijs van uw kamer, kijk dan op de <2>website van de rijksoverheid</2>."
+            },
+            {
+                "question": "Hoe ontvang ik de huur?",
+                "answer": "Hoe de huur geïnd wordt zijn afspraken tussen de hospita en de student. De hoogte van de huur, wanneer de huur wordt overgemaakt en op welke manier wordt vastgelegd in het contract."
+            },
+            {
+                "question": "Is gas, water en licht onderdeel van de huurprijs?",
+                "answer": "Bovenop de maximale huurprijs die u kunt uitrekenen met de <1>huurprijscheck van de Huurcommissie</1> kunt u nog eventuele servicekosten en kosten voor gas, water, elektriciteit en internet meenemen in de huurprijs. Kosten voor eten en drinken zijn niet inbegrepen in de huur. Over het gebruik van huishoudelijke apparaten dient u van tevoren afspraken te maken met de student. Hospi Housing adviseert om €55,- bovenop de kale huurprijs te rekenen, dat is dan inclusief de mogelijke stijging in gemeentelijke belastingen."
+            },
+            {
+                "question": "Hoe zit het met gemeentelijke belasting?",
+                "answer": "Als u alleen woont wordt u door de gemeente gezien als eenpersoonshuishouden. Zodra er een student komt te wonen wordt u aangemerkt als meerpersoonshuishouden. Dit kan leiden tot een stijging in gemeentelijke belastingen.. Mocht u al met meer dan een persoon in het huis wonen, dan verandert er niks. Hospi Housing adviseert om €55,- bovenop de kale huurprijs te rekenen, en dat is dan inclusief gas, water en licht. Wilt u precies weten met hoeveel u gemeentelijke belastingen jaarlijks stijgen, neem dan contact op met uw gemeente."
+            },
+            {
+                "question": "Wat moet ik van te voren aanleveren aan Hospi Housing?",
+                "answer": "Voordat Hospi Housing u koppelt aan een student, voorziet u ons van een overzicht van de totale huurkosten inclusief eventuele servicekosten en kosten voor gas, water, elektriciteit en internet."
+            },
+            {
+                "question": "Mag ik de huurprijs tussendoor wijzigen?",
+                "answer": "U stelt vooraf de inclusieve huurprijs vast in het contract. U mag niet achteraf extra kosten berekenen aan de student. Hospi Housing ontvangt voorafgaand aan het verblijf een kopie van het contract."
+            },
+            {
+                "question": "Kan ik de huur zomaar beëindigen?",
+                "answer": "Dit hangt af van het type huurcontract. Bij een hospita huurcontract mag u zonder opgaaf van reden de huur beëindigen. Zo houdt u controle over wie er bij u in huis woont. Het huurrecht geldt in de eerste negen maanden van de huurperiode niet. Na negen maanden heeft de student wel recht op huurrecht. Let op: ook in de eerste negen maanden geldt een opzegtermijn van 3 maanden. Een huurcontract voor bepaalde termijn kan niet voortijdig door de verhuurder worden beëindigd. Voor de huurder geldt een opzegtermijn van minimaal een en maximaal drie maanden."
+            }
+        ]
+    }
+}

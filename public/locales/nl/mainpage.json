@@ -1,0 +1,43 @@
+{
+    "banner": {
+        "bannertitle": "Hospi verbindt internationale studenten met lokale hospita's."
+    },
+    "concept": {
+        "concept": "Het concept",
+        "conceptexp": "Je komt naar Nederland en je zoekt een kamer. Hospi Housing brengt je gratis in contact met een hospita of gastgezin.<1></1> Zoek. Match. Ontmoet.",
+        "find": "Zoek",
+        "findexp": "Geef aan hoe lang je wilt blijven, wat je budget is en hoeveel privacy je wenst. Hospi Housing helpt je zoeken, de keuze is aan jou.",
+        "match": "Match",
+        "matchexp": "Gevonden wat je zocht? Dan is het belangrijk om elkaar te leren kennen. Hospi Housing brengt jullie in contact. Wij regelen de rest.",
+        "meet": "Ontmoet",
+        "meetexp": "Als alles is geregeld is het tijd om elkaar te ontmoeten. Vragen tijdens je verblijf? Je kan Hospi Housing altijd gratis contacten. Wij zullen je helpen."
+    },
+    "middlebanner": {
+        "bannertext": "Heb je een vraag, idee of wil je meer informatie?",
+        "buttontext": "Contact ons"
+    },
+    "abouthospi": {
+        "title": "Over Hospi Housing",
+        "text": "Hospi - afkorting van hospita - is ontstaan vanuit noodzaak met een sociale gedachte. De woningmarkt voor internationale studenten en starters is krap en kamerprijzen rijzen de pan uit.<1></1><2></2>Hospi bouwt geen huizen, Hospi heeft geen vastgoed, wat Hospi doet is het koppelen van vraag en aanbod. Hospi brengt mensen met verschillende achtergronden met elkaar in contact. Studenten op zoek naar een kamer en gastgezinnen met ruimte over.<3></3><4></4>Room for Experience.<5></5>Dat is Hospi Housing."
+    },
+    "aboutus": {
+        "mauritstitle": "Maurits /\\ co-founder",
+        "mauritsabout": "Maurits is afgestudeerd in Cognitieve psychologie en werkt tegenwoordig als Cloud Engineer. Maurits ziet technieken als een leuke puzzel en weet als geen ander IT en mensen te verbinden.",
+        "joosttitle": "Joost /\\ co-founder",
+        "joostabout": "Joost is afgestudeerd in Strategic Management en een geboren ondernemer. Joost weet als geen ander kracht en energie in een verhaal te krijgen.",
+        "daantitle": "Daan /\\ co-founder",
+        "daanabout": "Achtergrond in bestuurskunde en nu Public Affairs adviseur. Daan weet wat je nodig hebt om een idee tot werkelijkheid te maken: een kritische blik, de juiste mensen en oneindig veel enthousiasme."
+    },
+    "partners": {
+        "title": "Onze partners"
+    },
+    "knowus": {
+        "title": "Je kent ons misschien van",
+        "duictext": "<1>Kamernood: De ouderwetse hospita is terug in Utrecht.</1> <2></2> Hoe een hospita van Hospi Housing een Spaanse student helpt.",
+        "adtext": "<1>Hoe de ouderwetse hospita de hopeloze Utrechtse student aan onderdak helpt.</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt.",
+        "rtvtext": "<1>Nieuwe hoop voor buitenlandse studenten om kamer te vinden in Utrecht via hospes.</1><2></2>Hoe een hospita van Hospi Housing een Portugese student helpt.",
+        "dubtext": "<1>Utrechtse studenten blazen 'hospita' nieuw leven in:</1><2></2>We matchen vraag en aanbod",
+        "nuffictext": "<1>Hospita neemt het op tegen huisjesmelker.</1><2></2>Hoe een hospita van Hospi Housing een Poolse student helpt.",
+        "indebuurttext": "<1>Internationale student En Ning Leow woont noodgedwongen bij een hospita.</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt."
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "bannertext": "Vind je nieuwe thuis via Hospi Housing<1>.</1>",
+    "exptext": "Het is knap lastig om een betaalbare kamer te vinden in een Nederlandse studentenstad. Wij zagen dit ook en hebben daarom iets bedacht.<1 /><2 />Wij zoeken hospita's of gastgezinnen die een kamer over hebben en brengen hen in contact met studenten die een kamer zoeken. Je hebt dan je eigen kamer bij iemand anders in huis. Gezellig hé?",
+    "signuptext": "Nieuwsgierig geworden? Meld je dan direct aan!",
+    "signupbutton": "Meld je aan",
+    "concept": {
+        "title": "Dit is hoe het werkt:",
+        "text1": "<1>Je hebt een kamer nodig</1><2 />voor korte of lange termijn, in een stad in Nederland.",
+        "text2": "<1>Vul hieronder uw gegevens in</1><2 />wij nemen contact met je op om een beeld te krijgen waar je naar op zoek bent.",
+        "text3": "<1>Wij doen jou een suggestie</1><2 />voor een of meerdere hospita's of gastgezinnen. Jij maakt de keuze.",
+        "text4": "<1>Wij regelen een contactmoment </1><2 />op bezoek of via skype. Een klik is namelijk erg belangrijk.",
+        "text5": "<1>Wij stellen een contract op</1><2 />en helpen je met het maken van betaalafspraken.",
+        "text6": "<1>Je kan verhuizen!</1><2 />Tijdens je verblijf kun je Hospi housing altijd gratis contacten, wij zullen je helpen."
+    },
+    "faq": {
+        "title": "Veel gestelde vragen",
+        "h3questions": "Aanmelding",
+        "questionblok1": [
+            {
+                "question": "Hoe kan ik me aanmelden?",
+                "answer": "Je kunt je aanmelden door je gegevens achter te laten op deze pagina. Je ontvangt dan binnen een paar minuten een bevestiging dat je aanmelding in goede orde is ontvangen. Vanaf dat moment gaan wij voor je op zoek naar een geschikte kamer."
+            },
+            {
+                "question": "Waarom moet ik zoveel gegevens aanleveren?",
+                "answer": "Je komt te wonen bij iemand in huis. Een goede klik is daarom erg belangrijk. Om de kans op succes van een match zo groot mogelijk te maken is het van belang om op voorhand van zowel de student als de hospita een duidelijk profiel te hebben. Dit versnelt het proces en voorkomt verwarring."
+            },
+            {
+                "question": "Is aanmelden gratis?",
+                "answer": "Ja, aanmelden is gratis. Net als reageren op kamers die wij je toesturen. Je mag zo vaak kosteloos reageren als je wilt."
+            },
+            {
+                "question": "Krijgt iedereen die zich aanmeldt een kamer?",
+                "answer": "Wij werken er hard aan het kameraanbod in Nederlandse studentensteden te vergroten. Helaas kunnen we geen kamer garanderen. Om de kans op succes zo groot mogelijk te maken is het verstandig om na aanmelding je mailbox goed in de gaten te houden. Zodra we nieuw aanbod hebben dat past bij jouw profiel ontvang je hierover van ons een mail. Het is dan zaak hier zo snel mogelijk op te reageren. Uit die reacties selecteren wij een aantal profielen en maakt de hospita vervolgens de keuze wie bij hem of haar komt wonen."
+            },
+            {
+                "question": "Ik heb me aangemeld, maar hoor niks.",
+                "answer": "We zijn je niet vergeten, maar hebben alleen nog geen aanbod gevonden dat past bij jouw profiel. Er spelen op de achtergrond veel factoren bij het tot stand komen van een geschikte match. Zo kan het zijn dat een hospita vraagt om een man in de eindfase van een studie, de kamer maar drie maanden wil verhuren of specifiek op zoek is naar een Franssprekende student. Wij doen ons best om voor iedereen iets geschikts te vinden. Er komt constant nieuw aanbod binnen, dus er kan zomaar een match met jou tussen zitten!"
+            },
+            {
+                "question": "Ik heb gereageerd op een kamer, maar ik hoor niks.",
+                "answer": "Wij sturen nieuw aanbod naar de studenten wiens profiel overeenkomt met de voorkeuren van de hospita. Uit deze reacties selecteren wij een aantal profielen die we voorleggen aan de hospita. De hospita maakt vervolgens een keuze. We laten het je weten als je wordt voorgelegd aan een hospita. Hoor je niks dan ben je helaas niet geselecteerd. Blijf reageren op nieuw aanbod dat binnenkomt!"
+            }
+        ],
+        "h3matching": "Matching",
+        "questionblok2": [
+            {
+                "question": "Hoe komt een match tot stand?",
+                "answer": "Zodra een hospita zich bij ons aanmeldt, gaan wij langs en vragen we alle voorkeuren uit. Het is namelijk niet niks om een internationale student in je eigen huis te nemen. Wij koppelen deze voorkeuren vervolgens aan onze database met studentengegevens. Als jouw gegevens overeenkomen met de voorkeuren van de hospita word je voorgesteld aan de hospita. Soms word je samen met maximaal drie andere studenten voorgesteld, soms heb je geluk en ben je de enige. De hospita maakt op basis van ons voorstel een keuze. Zodra er een match is ontvang je hierover direct van ons bericht!"
+            },
+            {
+                "question": "Ik ben gematcht! En nu?",
+                "answer": "Gefeliciteerd! Je hebt van ons het bericht ontvangen dat je bent gematcht aan een hospita. Wij wisselen de contactgegevens tussen de hospita en student uit zodat jullie met elkaar in contact kunnen komen. Dit kan via een bezoek, via skype of telefonisch. Als alles klikt kunnen jullie het contract opstellen. De hospita kan kiezen om een voorbeeldcontract van Hospi Housing te gebruiken die ook in het Engels vertaald is. Daarna trekken wij ons terug, en kun jij jezelf voorbereiden op een nieuwe ervaring."
+            },
+            {
+                "question": "Moet ik voorafgaand kennismaken met de hospita?",
+                "answer": "De meeste hospita’s geven hieraan wel de voorkeur. Natuurlijk begrijpt de hospita dat op bezoek komen vanuit het buitenland niet mogelijk is. Een kennismaking via Skype of telefonisch is in dat geval voldoende."
+            },
+            {
+                "question": "Ik wil mijn contract verlengen, kan dat?",
+                "answer": "Dat kan in overleg met de hospita. Als het van beide kanten klikt dan is de kans groot dat een contract wordt verlengd. Dit hangt uiteraard wel af van de beschikbaarheid van de kamer bij de hospita. Overleg dit daarom altijd eerst met de hospita en stel vervolgens samen een nieuw contract op."
+            },
+            {
+                "question": "Ik woon bij de hospita, maar het bevalt niet.",
+                "answer": "Dit is vervelend om te horen. Hospi Housing besteed veel aandacht om een goede match te bewerkstelligen. Helaas komt het soms voor dat het niet klikt met de hospita of dat een van de twee andere verwachtingen had. Als huurder kun je het contract met een opzegtermijn van een maand beëindigen. De hospita kan het contract in de eerste negen maanden van de huurperiode beëindigen met een opzegtermijn van drie maanden."
+            },
+            {
+                "question": "Ik heb een andere woonruimte gevonden.",
+                "answer": "Communiceer hier altijd open en transparant over richting de hospita. Je geeft de hospita zo de kans om op tijd een nieuwe huurder te vinden. Houdt daarnaast rekening met de minimale opzegtermijn van een maand, zoals vastgelegd in het contract."
+            },
+            {
+                "question": "Zijn alle hospita’s gecontroleerd?",
+                "answer": "Ja. Hospi Housing hecht veel waarde aan goede en betrouwbare hospita’s. We streven niet alleen naar een goede match, maar willen ook altijd een veilige en vertrouwelijke leefomgeving voor de student. Hospi Housing neemt altijd persoonlijk contact op met nieuwe hospita’s en gaat bij elke nieuwe hospita persoonlijk langs om kennis te maken. Als een hospita niet voldoet aan de voorwaarden van Hospi Housing wordt het aanbod niet via Hospi Housing aangeboden."
+            }
+        ],
+        "h3costs": "Kosten",
+        "questionblok3": [
+            {
+                "question": "Wat zijn de kosten van een match?*",
+                "answer": "Als het contract tussen de hospita en student is getekend en de match definitief is, rekent Hospi Housing eenmalig een fee van €30,- per maand dat je een kamer zoekt, met een max van €150,-, vooraf te betalen. Hiermee kunnen we on gedurende je gehele verblijf in Nederland bij ons terecht met vragen. <1 />Verder helpen we je met een contract.<2 /> Rekenvoorbeeld:"
+            }
+        ],
+        "h3abouthospi": "Over Hospi Housing",
+        "questionblok4": [
+            {
+                "question": "Is Hospi Housing een makelaarsbedrijf?",
+                "answer": "Nee, Hospi Housing is een platform dat vraag en aanbod koppelt. Wij zoeken naar geschikte woonruimte bij leuke hospita’s thuis. Via ons matchingsysteem koppelen we de juiste student aan de juiste hospita. We faciliteren en ondersteunen bij de matching, maar bemiddelen niet."
+            },
+            {
+                "question": "Hoe kan ik in contact komen met Hospi Housing?",
+                "answer": "Feedback of een vraag? Je kan ons altijd <1>contacten</1> via de mail of telefoon."
+            }
+        ],
+        "h3other": "Overige vragen",
+        "questionblok5": [
+            {
+                "question": "Kan ik me bij de gemeente inschrijven?",
+                "answer": "Ja, een voorwaarde om je bij ons te schrijven als hospita is dat de student zich moet kunnen inschrijven bij de gemeente op dat adres."
+            }
+        ]
+    },
+    "faqtablecost": {
+        "tabletitle": "Rekenvoorbeeld",
+        "example1_title": "<1>Voorbeeld 1:</1>",
+        "example1_text": "Je huurt 1 maand een kamer bij een hospita: €30,-.",
+        "example2_title": "<1>Voorbeeld 2:</1>",
+        "example2_text": "Je huurt 3 maanden een kamer bij een hospita: €90,-.",
+        "example3_title": "<1>Voorbeeld 3:</1>",
+        "example3_text": "Je huurt 12 maanden een kamer bij een hospita: €150,-."
+    },
+    "form": {
+        "formbanner": "Aanmelden is geheel gratis, vul hieronder je gegevens in<1>.</1>",
+        "gender": "Geslacht*",
+        "male": "Man",
+        "female": "Vrouw",
+        "neutral": "Zeg ik liever niet",
+        "firstname": "Voornaam*",
+        "lastname": "Achternaam*",
+        "email": "E-Mail*",
+        "dateofbirth": "Geboortedatum*",
+        "dateofarrival": "Zoek kamer per*",
+        "dateofdeparture": "Zoek kamer tot*",
+        "study": "Studie*",
+        "languages": "Ik spreek de volgende talen*",
+        "maxbudget": "Maximum budget*",
+        "countryofbirth": "Geboorteland*",
+        "profilepicture": "Profiel foto*",
+        "phonenumber": "Telefoonnummer*",
+        "errormessage_textfield": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
+        "errormessage_emailfield": "Dit veld is verplicht: e-mailadres@domein.com",
+        "errormessage_phonefield": "Dit veld is verplicht mag geen letters bevatten",
+        "shortdescription": "Korte omschrijving van jezelf",
+        "descriptionplaceholder": "Korte omschrijving over wie jij bent. We gebruiken deze tekst om je voor te stellen aan de hospita. Je zou bijvoorbeeld iets kunnen vertellen over je hobby's, landen die je hebt bezocht of je eerder bij een hospita hebt gewoond en wat je van plan bent te gaan doen in Nederland.",
+        "submit": "Verzenden"
+    }
+}

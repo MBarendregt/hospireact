@@ -1,0 +1,135 @@
+{
+    "bannertext": "Find your new home with Hospi Housing<1>.</1>",
+    "exptext": "Welcome to the Netherlands, a beautiful place to study and live. However, it is rather difficult to find an affordable place, especially in the student cities. Not the warm welcome you are hoping for ;) We from Hospi Housing came up with a solution.<1 /><2 />We connect international students with local hosts. Your own room with a unique experience!",
+    "signuptext": "Curious? Apply now!",
+    "signupbutton": "Apply now",
+    "concept": {
+        "title": "This is how it works:",
+        "text1": "<1>You need a room</1><2 />for a short or long period of time in a Dutch city.",
+        "text2": "<1>Leave your contact details</1><2 />we will contact you and discuss your preferences.",
+        "text3": "<1>We make you a suggestion</1><2 />for one or several hosts. You decide.",
+        "text4": "<1>We arrange the first contact</1><2 />through a visit or via skype, because having a connection is important.",
+        "text5": "<1>We draw up a contract</1><2 />and help you on Dutch regulations and payment agreements.",
+        "text6": "<1>Time to move!</1><2 />During your stay, you can always contact Hospi for free. Have fun!"
+    },
+    "faq": {
+        "title": "Frequently asked questions",
+        "h3questions": "Registration",
+        "questionblok1": [
+            {
+                "question": "How can I apply?",
+                "answer": "You can register by leaving your details on this page. You will receive within a few minutes a confirmation that your registration has been received in good order. From that moment we will look for a suitable room for you."
+            },
+            {
+                "question": "Why do I have to provide all that data about myself?",
+                "answer": "You are going to live in some elses home. A good match is therefore very important. In order to maximize the change of success of a match, it is important to have a clear profile of both the student and the host. This speeds up the process and prevents possible confusion later on."
+            },
+            {
+                "question": "Is registration free?",
+                "answer": "Yes, registration is free. Just like responding to rooms that we send you. You can respond as often as you want free of charge."
+            },
+            {
+                "question": "Does anyone who sign up get a room?",
+                "answer": "We are working hard to increase the supply of rooms in Dutch student cities. Unfortunately we cannot guarantee a room. In order to maximize the chance of success, it is wise to keep an eye on your mailbox after registration. You receive as soon as we have a new offer that matches your profile an email from us about this. It is then important to respond to this as quickly as possible. We select a number of profiles from these responses and the landlady then makes the choice of who will live with him or her."
+            },
+            {
+                "question": "I signed up, but don't hear anything.",
+                "answer": "We have not forgotten you, but have not yet found an offer that matches your profile. Many factors play a role in the background in order to create a suitable match. It may be that a host asks for a man in the final phase of a study, wants to rent the room for only three months or is specifically looking for a French-speaking student. We do our best to find something suitable for everyone. New offers are constantly coming in, so there may just be a match with you!"
+            },
+            {
+                "question": "I responded to a room, but I don't hear anything.",
+                "answer": "We send new offers to students whose profile matches the preferences of the host. From these responses we select a number of profiles that we present to the host. The host makes then a choice. We will let you know if you are presented to a host. If you don't hear anything, you are unfortunately not selected. Continue to respond to new offers that come in!"
+            }
+        ],
+        "h3matching": "Matching",
+        "questionblok2": [
+            {
+                "question": "How does a match come about?",
+                "answer": "As soon as a host registers with us, we visit and ask all preferences. It is in fact not nothing to take an international student into your own home. We then link these preferences to our student information database. If your details match the preferences of the host you are introduced to the host. Sometimes you are introduced together with up to three other students, sometimes are you lucky and you are the only one. The host makes a choice based on our proposal. As soon as there is a match you will receive a message from us immediately!"
+            },
+            {
+                "question": "I'm matched! And now?",
+                "answer": "Congratulations! You have received a message from us that you have been matched to a host. We exchange the contact details between the host and student so that you can get in touch with each other. This can be done via a visit, via skype or by telephone. If a connection is there you can draft up a contract. The host can choose to use a sample contract from Hospi Housing that has also been translated into English. Afterwards we withdraw and you can get prepared for a new adventure."
+            },
+            {
+                "question": "Do I have to meet the host beforehand?",
+                "answer": "Most hosts prefer this. Of course the hosts understands that coming from abroad is not possible. An introduction via Skype or by telephone is then sufficient."
+            },
+            {
+                "question": "I want to renew my contract, is that possible?",
+                "answer": "This is possible in consultation with the host. If there is a connection from both sides, chances are that a contract will be extended. This of course depends on the availability of the room at the host. Therefore always first discuss this with the host and then draw up a new contract together."
+            },
+            {
+                "question": "I live with a host, but I don't like it",
+                "answer": "that's a shame to hear. Hospi Housing pays a lot of attention to achieve a good match. Unfortunately it sometimes happens that there is simply no connection or that one of the two had different expectations. As a tenant you can terminate the contract with a cancellation period of one month. The host can terminate the contract in the first nine months of the rental period with a three-month notice period."
+            },
+            {
+                "question": "I found another living space.",
+                "answer": "Always communicate openly and transparently about this to the host. You give the host the chance to find a new tenant on time. In addition, take into account the minimum cancellation period of one month, as laid down in the contract."
+            },
+            {
+                "question": "Have all hosts been checked?",
+                "answer": "Yes. Hospi Housing attaches great importance to good and reliable landladies. We not only strive for a good match, but also always want a safe and confidential living environment for the student. Hospi Housing always personally contacts new hosts and visits each new host personally to get acquainted. If a host does not meet the conditions of Hospi Housing, the room will not be offered through Hospi Housing."
+            }
+        ],
+        "h3costs": "Costs",
+        "questionblok3": [
+            {
+                "question": "What are the costs of a match? *",
+                "answer": "If the contract between the host and student is signed and the match is final, Hospi Housing charges a one-off fee of € 30 per month that you are looking for a room, with a max of € 150, to be paid in advance. This allows us to improve our matching, look for new landladies and you can come to us with questions during your entire stay in the Netherlands. <1 />We also help you with a contract.<2 /> <3><4><5>Example calculation</5></4></3>"
+            }
+        ],
+        "h3abouthospi": "About Hospi Housing",
+        "questionblok4": [
+            {
+                "question": "Is Hospi Housing a brokerage company?",
+                "answer": "No, Hospi Housing is a platform that links supply and demand. We are looking for suitable accommodation in nice hosts. Via our matching system we link the right student to the right host. We facilitate and support with matching, but do not mediate."
+            },
+            {
+                "question": "How can I contact Hospi Housing?",
+                "answer": "Feedback or a question? You can always <1>contact</1> us via e-mail or telephone."
+            }
+        ],
+        "h3other": "Other questions",
+        "questionblok5": [
+            {
+                "question": "Can I register with the municipality?",
+                "answer": "Yes, unless stated otherwise, you are able to register with the municipality at the address of the host. Arrange your registration as soon as possible (within five days upon your arrival in the Netherlands). You can make an appointment online via <1>city of Utrecht registration form</1>. Please read all the information carefully."
+            }
+        ]
+    },
+    "faqtablecost": {
+        "tabletitle": "Example calculation",
+        "example1_title": "<1>Example 1:</1>",
+        "example1_text": "You rent a room with a host for 1 month: €30,-.",
+        "example2_title": "<1>Example 2:</1>",
+        "example2_text": "You rent a room with a host for 3 months: €90,-.",
+        "example3_title": "<1>Example 3:</1>",
+        "example3_text": "You rent a room with a host for 12 months: €150,-."
+    },
+    "form": {
+        "formbanner": "Get started for free, we just need a little bit more information<1>.</1>",
+        "gender": "Gender*",
+        "male": "Male",
+        "female": "Female",
+        "neutral": "I'd rather not say",
+        "firstname": "First name*",
+        "lastname": "Last name*",
+        "email": "E-Mail*",
+        "dateofbirth": "Date of birth*",
+        "dateofarrival": "Date of arrival*",
+        "dateofdeparture": "Date of departure*",
+        "study": "Study*",
+        "languages": "I speak the following languages*",
+        "maxbudget": "Maximum budget*",
+        "countryofbirth": "Country of birth*",
+        "profilepicture": "Profile picture*",
+        "phonenumber": "Phone number*",
+        "errormessage_textfield": "This field is mandatory and cannot contain any numbers or strange characters",
+        "errormessage_emailfield": "This field is mandatory: e-mailadres@domein.com",
+        "errormessage_phonefield": "This field is mandatory and cannot contain any letters",
+        "shortdescription": "Short description about yourself",
+        "descriptionplaceholder": "Please provide us with a short description about yourself, we will use this to introduce you to the host. For example, hosts generally like to know something about your hobbies, countries you have visited, if you have stayed with a host before and what you are planning to do in the Netherlands.",
+        "submit": "Submit"
+    }
+}

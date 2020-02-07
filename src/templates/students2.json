@@ -1,0 +1,32 @@
+{
+    "faq": {
+        "title": "Veel gestelde vragen",
+        "h3vragen": "Registration",
+        "vragenblok1": [
+            {
+                "question": "How can I apply?",
+                "answer": "you can register by leaving your details on this page. You will receive within a few minutes a confirmation that your registration has been received in good order. From that moment we will look for a suitable room for you."
+            },
+            {
+                "question": "Why do I have to provide all that data about myself?",
+                "answer": "You are going to live in some elses home. A good match is therefore very important. In order to maximize the change of success of a match, it is important to have a clear profile of both the student and the host. This speeds up the process and prevents possible confusion later on."
+            },
+            {
+                "question": "Is registration free?",
+                "answer": "Yes, registration is free. Just like responding to rooms that we send you. You can respond as often as you want free of charge."
+            },
+            {
+                "question": "Krijgt iedereen die zich aanmeldt een kamer?",
+                "answer": "Wij werken er hard aan het kameraanbod in Nederlandse studentensteden te vergroten. Helaas kunnen we geen kamer garanderen. Om de kans op succes zo groot mogelijk te maken is het verstandig om na aanmelding je mailbox goed in de gaten te houden. Zodra we nieuw aanbod hebben dat past bij jouw profiel ontvang je hierover van ons een mail. Het is dan zaak hier zo snel mogelijk op te reageren. Uit die reacties selecteren wij een aantal profielen en maakt de hospita vervolgens de keuze wie bij hem of haar komt wonen."
+            },
+            {
+                "question": "Ik heb me aangemeld, maar hoor niks.",
+                "answer": "We zijn je niet vergeten, maar hebben alleen nog geen aanbod gevonden dat past bij jouw profiel. Er spelen op de achtergrond veel factoren bij het tot stand komen van een geschikte match. Zo kan het zijn dat een hospita questiont om een man in de eindfase van een studie, de kamer maar drie maanden wil verhuren of specifiek op zoek is naar een Franssprekende student. Wij doen ons best om voor iedereen iets geschikts te vinden. Er komt constant nieuw aanbod binnen, dus er kan zomaar een match met jou tussen zitten!"
+            },
+            {
+                "question": "Ik heb gereageerd op een kamer, maar ik hoor niks.",
+                "answer": "Wij sturen nieuw aanbod naar de studenten wiens profiel overeenkomt met de voorkeuren van de hospita. Uit deze reacties selecteren wij een aantal profielen die we voorleggen aan de hospita. De hospita maakt vervolgens een keuze. We laten het je weten als je wordt voorgelegd aan een hospita. Hoor je niks dan ben je helaas niet geselecteerd. Blijf reageren op nieuw aanbod dat binnenkomt!"
+            }
+        ]
+    }
+}

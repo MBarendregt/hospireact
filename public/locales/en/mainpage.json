@@ -1,0 +1,43 @@
+{
+    "banner": {
+        "bannertitle": "Hospi Housing connects international students with local hosts."
+    },
+    "concept": {
+        "concept": "The concept",
+        "conceptexp": "If you are planning to stay in the Netherlands and are looking for a room, Hospi Housing can connect you with a local landlord or host family, free of charge.",
+        "find": "Find",
+        "findexp": "Let us know how long you will stay, what your budget is and how much privacy you wish for. Hospi Housing helps you search, the choice is yours.",
+        "match": "Match",
+        "matchexp": "Find what you were looking for? Than it's time to get to know each other. Hospi Housing will bring you in touch and takes care of the rest.",
+        "meet": "Meet",
+        "meetexp": "All set, time to meet each other. Questions during your stay? You can always contact Hospi Housing for free. We will be there to help you."
+    },
+    "middlebanner": {
+        "bannertext": "Questions, ideas or do you simply want more information?",
+        "buttontext": "Contact us"
+    },
+    "abouthospi": {
+        "title": "About Hospi Housing",
+        "text": "Hospi - short for hospita; host in english - started from necessity and as a social initiative. The Dutch housing market experiences major shortages for international students and starters and prices are skyrocketing.<1></1><2></2>Hospi Housing builds no houses, Hospi owns no houses, what Hospi does is providing a platform for unused rooms and people looking for a room. Hospi connects people with different backgrounds. With Hospi you don't rent a room. With Hospi you stay at someone's place.<3></3><4></4>Room for Experience.<5></5>That's Hospi Housing."
+    },
+    "aboutus": {
+        "mauritstitle": "Maurits /\\ co-founder",
+        "mauritsabout": "Maurits graduated in Cognitive psychology and currently works as a cloud engineer. Maurits enjoys a challange, sees new technologies as puzzles to be solved and perfectly knows how to connect IT and people.",
+        "joosttitle": "Joost /\\ co-founder",
+        "joostabout": "Joost graduated in Strategic Management. Joost knows like no other how to get power and energy in a story.",
+        "daantitle": "Daan /\\ co-founder",
+        "daanabout": "A background in Public Governance and currently working as a public affairs advisor. Daan turns ideas into reality by combining social skills, a critical eye and unrestrained enthusiasm."
+    },
+    "partners": {
+        "title": "Our partners"
+    },
+    "knowus": {
+        "title": "You might know us from",
+        "duictext": "<1>Room shortage: The old-fashioned landlady is back in Utrecht.</1><2></2>How a landlady of Hospi Housing helps a Spanish student.",
+        "adtext": "<1>How the old-fashioned landlady helps shelter the hopeless students Utrecht.</1><2></2>How a landlady of Hospi Housing helps a Malaysian student.",
+        "rtvtext": "<1>New hope for foreign students to find a room in Utrecht via a Landlady.</1><2></2>How a landlady of Hospi Housing helps a Portuguese student.",
+        "dubtext": "<1>Students from Utrecht breathe new life into 'Landlady concept':</1><2></2>\"We match supply and demand\"",
+        "nuffictext": "<1>Landlady takes on house-fancier.</1><2></2>How a landlady of Hospi housing helps a Polish student.",
+        "indebuurttext": "<1>International student En Ning Leow is forced to live with a landlady.</1><2></2>How a landlady of Hospi Housing helps a Malaysian student."
+    }
+}

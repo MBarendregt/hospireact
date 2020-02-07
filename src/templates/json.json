@@ -1,0 +1,101 @@
+{
+    "resource": "/",
+    "path": "/",
+    "httpMethod": "POST",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "nl,en;q=0.9,nl-NL;q=0.8,en-US;q=0.7,fr;q=0.6",
+        "content-type": "application/json",
+        "Host": "mq58an2et4.execute-api.eu-west-1.amazonaws.com",
+        "origin": "http://localhost:3000",
+        "referer": "http://localhost:3000/Hospita?firstname=maurits&lastname=Barendregt&email=m.barendregt5%40gmail.com&tel=06422139&foundus=&description=",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+        "X-Amzn-Trace-Id": "Root=1-5e10b3c8-d962a8c0d23fde8093010640",
+        "X-Forwarded-For": "213.127.85.42",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "accept": [
+            "*/*"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "accept-language": [
+            "nl,en;q=0.9,nl-NL;q=0.8,en-US;q=0.7,fr;q=0.6"
+        ],
+        "content-type": [
+            "application/json"
+        ],
+        "Host": [
+            "mq58an2et4.execute-api.eu-west-1.amazonaws.com"
+        ],
+        "origin": [
+            "http://localhost:3000"
+        ],
+        "referer": [
+            "http://localhost:3000/Hospita?firstname=maurits&lastname=Barendregt&email=m.barendregt5%40gmail.com&tel=06422139&foundus=&description="
+        ],
+        "sec-fetch-mode": [
+            "cors"
+        ],
+        "sec-fetch-site": [
+            "cross-site"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5e10b3c8-d962a8c0d23fde8093010640"
+        ],
+        "X-Forwarded-For": [
+            "213.127.85.42"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": None,
+    "multiValueQueryStringParameters": None,
+    "pathParameters": None,
+    "stageVariables": None,
+    "requestContext": {
+        "resourceId": "jj4yrt3fag",
+        "resourcePath": "/",
+        "httpMethod": "POST",
+        "extendedRequestId": "FyEHSFZbjoEFcrQ=",
+        "requestTime": "04/Jan/2020:15:48:24 +0000",
+        "path": "/teststage",
+        "accountId": "727560996235",
+        "protocol": "HTTP/1.1",
+        "stage": "teststage",
+        "domainPrefix": "mq58an2et4",
+        "requestTimeEpoch": 1578152904181,
+        "requestId": "d305b7fa-0828-4c85-aab2-5fdf061c7d8c",
+        "identity": {
+            "cognitoIdentityPoolId": None,
+            "accountId": None,
+            "cognitoIdentityId": None,
+            "caller": None,
+            "sourceIp": "213.127.85.42",
+            "principalOrgId": None,
+            "accessKey": None,
+            "cognitoAuthenticationType": None,
+            "cognitoAuthenticationProvider": None,
+            "userArn": None,
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+            "user": None
+        },
+        "domainName": "mq58an2et4.execute-api.eu-west-1.amazonaws.com",
+        "apiId": "mq58an2et4"
+    },
+    "body": "{"firstname":"maurits","lastname":"Barendregt","email":"m.barendregt5@gmail.com","tel":"0642213945","foundus":""}",
+    "isBase64Encoded": False
+}
