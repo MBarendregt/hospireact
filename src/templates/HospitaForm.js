@@ -1,5 +1,6 @@
 import React from 'react';
 import validator from 'validator';
+import { withTranslation } from 'react-i18next';
 
 function validate(email, tel, firstname, lastname) {
     return {
@@ -98,6 +99,8 @@ class HospitaForm extends React.Component {
 
 
         const errors = validate(this.state.email, this.state.tel, this.state.firstname, this.state.lastname);
+        const { t } = this.props;
+
         var hasError = Object.keys(errors).some(function (k) {
             if (errors[k]) {
                 return true;
@@ -106,7 +109,7 @@ class HospitaForm extends React.Component {
             }
         });
         if (hasError) {
-            this.setState({ submitmessage: 'Het formulier bevat nog fouten' })
+            this.setState({ submitmessage: t("hospitaform.errormsg_submit") })
             this.setState({ errorclass: false })
             return;
         } else {
@@ -128,8 +131,8 @@ class HospitaForm extends React.Component {
             let firstname = this.state.firstname
 
             this.setState({
-                submitmessage: 'Bedankt ' + firstname.charAt(0).toUpperCase() +
-                    firstname.slice(1) + ' voor uw aanmelding!'
+                submitmessage: t("hospitaform.thankyou_1") + firstname.charAt(0).toUpperCase() +
+                    firstname.slice(1) + t("hospitaform.thankyou_2")
             });
             setTimeout(() => {
                 this.setState({ submitmessage: '' });
@@ -140,6 +143,7 @@ class HospitaForm extends React.Component {
 
     render() {
         const errors = validate(this.state.email, this.state.tel, this.state.firstname, this.state.lastname);
+        const { t } = this.props;
         const shouldMarkError = (field) => {
             const hasError = errors[field];
             const shouldShow = this.state.touched[field];
@@ -149,7 +153,7 @@ class HospitaForm extends React.Component {
             <form className="signup-form" onSubmit={this.handleSubmit}>
                 <div className="formcontainer">
                     <label>
-                        Voornaam*:
+                        {t("hospitaform.firstname")}*
                         <input
                             type="text"
                             name="firstname"
@@ -158,13 +162,12 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('firstname') ? "error" : ""}
                             value={this.state.firstname}
                             required />
-                    </label><span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten</span>
+                    </label><span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
 
                 </div>
                 <div className="formcontainer">
-                    <label>
-                        Achternaam*:
-            <input
+                    <label>{t("hospitaform.lastname")}*
+                <input
                             type="text"
                             name="lastname"
                             onChange={this.handleChange}
@@ -173,10 +176,10 @@ class HospitaForm extends React.Component {
                             value={this.state.lastname}
                             required />
                     </label>
-                    <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten</span>
+                    <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                 </div>
                 <div className="formcontainer">
-                    <label  >E-Mail*
+                    <label  >{t("hospitaform.email")}*
                 <input
                             type="email"
                             name="email"
@@ -187,10 +190,10 @@ class HospitaForm extends React.Component {
                             value={this.state.email}
                             required />
                     </label>
-                    <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>Dit veld is verplicht: e-mailadres@domein.com</span>
+                    <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
                 </div>
                 <div className="formcontainer">
-                    <label >Telefoonnummer*
+                    <label >{t("hospitaform.phonenumber")}*
                     <input
                             type="tel"
                             name="tel"
@@ -201,32 +204,31 @@ class HospitaForm extends React.Component {
                             value={this.state.tel}
                             required />
                     </label>
-                    <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>Dit veld is verplicht mag geen letters bevatten</span>
+                    <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
                 </div>
-                <label >Hoe heeft u ons gevonden?
-              <input
+                <label>{t("hospitaform.foundus")}
+                    <input
                         type="text"
                         name="foundus"
                         onChange={this.handleChange}
                         value={this.state.foundus} />
                 </label>
                 <div className="form__moreinfo">
-                    <label> Meer informatie? Of andere vragen? Stel ze hier!
-                    <textarea
+                    <label> {t("hospitaform.moreinfo")}
+                        <textarea
                             className="form__moreinfo-textarea"
                             name="description"
-                            placeholder="Meer informatie? Of andere vragen? Stel ze hier!"
+                            placeholder=""
                             onChange={this.handleChange}
                             value={this.state.description} />
                     </label>
                 </div>
                 <div className="form__submit">
-                    <input type="submit" value="Submit" className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
+                    <input type="submit" value={t("hospitaform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
             </form >
         );
     }
 }
 
-
-export default HospitaForm
+export default withTranslation(["hospita", "common"])(HospitaForm);

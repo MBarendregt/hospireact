@@ -104,6 +104,76 @@
                 "question": "Kan ik de huur zomaar beëindigen?",
                 "answer": "Dit hangt af van het type huurcontract. Bij een hospita huurcontract mag u zonder opgaaf van reden de huur beëindigen. Zo houdt u controle over wie er bij u in huis woont. Het huurrecht geldt in de eerste negen maanden van de huurperiode niet. Na negen maanden heeft de student wel recht op huurrecht. Let op: ook in de eerste negen maanden geldt een opzegtermijn van 3 maanden. Een huurcontract voor bepaalde termijn kan niet voortijdig door de verhuurder worden beëindigd. Voor de huurder geldt een opzegtermijn van minimaal een en maximaal drie maanden."
             }
+        ],
+        "h3taxes": "Belastingvoordeel",
+        "questionblok4": [
+            {
+                "question": "Wat betekent het belastingvoordeel van € 5.506,-?",
+                "answer": "Dit is een regeling van de belastingdienst waarmee het aantrekkelijker wordt gemaakt voor eigenaren of hoofdhuurders om een of meerdere kamers in uw woning te verhuren. Zie de <1>website van de rijksoverheid</1> over wat dit voor u kan betekenen."
+            },
+            {
+                "question": "Mag de huur meer dan € 5.506,- zijn?",
+                "answer": "Om in aanmerking te komen voor het belastingvoordeel over uw huurinkomsten, mogen de totale huurinkomsten niet hoger zijn dan €5.506,- per jaar (2020). Het gaat om de huur inclusief een eventuele vergoeding voor het gebruik van meubilair, energie en dergelijke."
+            },
+            {
+                "question": "Waaraan moet u voldoen om aanspraak te maken op het belastingvoordeel?",
+                "answer": "<1>Het gedeelte dat u verhuurde, maakte deel uit van uw woning en was geen zelfstandige woning.</1><2>U en de huurder waren tijdens de gehele huurperiode ingeschreven bij de gemeente op het adres van uw woning. De student heeft een verklaring nodig van de hospita waarin staat dat de student zich mag inschrijven op het adres van de hospita. Deze verklaring moet worden ondertekend door de hoofdbewoner en een kopie van het paspoort moet worden toegevoegd. Dit nemen we mee, of geven we aan de student mee als hij/zij aankomt.</2>"
+            }
+        ],
+        "h3insurance": "Toeslagen en verzekeringen",
+        "questionblok5": [
+            {
+                "question": "Ben ik verzekerd bij verhuur van een kamer in mijn woning?",
+                "answer": "In de meeste gevallen wel, maar dit hangt van uw verzekering en persoonlijke situatie af. Volgens de meeste polisvoorwaarden ben je verplicht het aan je verzekeraar te laten weten als je een kamer in je woonhuis verhuurt. Dit geldt zowel voor uw inboedel- en opstalverzekering als uw aansprakelijkheidsverzekering. Hospi Housing adviseert daarom om altijd contact op te nemen met uw verzekeraar vóórdat u een contract tekent met de student. Uw eigen verzekeraar kan u het beste adviseren of verhuur van een kamer in uw woning consequenties heeft voor uw woon- en aansprakelijkheidsverzekering(en)."
+            },
+            {
+                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn kindertoeslag, zorgtoeslag of kindgebonden budget?",
+                "answer": "Als iemand (bijv. een student) een deel van de woning huurt waarin u woont en jullie hebben dat vastgelegd in een huurovereenkomst, dan telt dit als 'onderhuur'. Uw onderhuurder telt dan niet mee bij de berekening van uw toeslagen. <1>Zie voor meer info de website van de belastingdienst.</1>"
+            },
+            {
+                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn huurtoeslag?",
+                "answer": "Bij verhuur aan een student, wat meestal telt als <1>onderhuurder</1>, heeft dit geen invloed. Bij een <2>toeslagpartner</2> of <3>medebewoners</3> telt hun inkomen wel mee. Twijfelt u of uw huurder een medebewoner of onderhuurder is? Neem dan contact op met de <4>belastingdienst</4>, zij kunnen u helpen."
+            },
+            {
+                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn AOW?",
+                "answer": "Nee, meestal niet. Het verhuren van een deel van uw eigen woning aan een student wordt gezien als 'commerciële relatie' en heeft geen invloed op de hoogte van uw AOW. Alleen als u met uw medebewoner getrouwd bent, bij geregistreerd partnerschap of bij een gezamenlijke huishouding telt dit mee voor uw AOW. Zie voor meer informatie en voorbeelden <1>deze pagina van de SVB</1>."
+            },
+            {
+                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn WW- of Bijstandsuitkering?",
+                "answer": "Dit is afhankelijk van uw persoonlijke situatie. Voor de WW-uitkering zie de <1>website van het UWV</1>. Voor de bijstandsuitkering kunt u contact opnemen met de gemeente waar u staat ingeschreven."
+            },
+            {
+                "question": "Moet ik bij de belastingdienst melden dat ik een onderhuurder heb?",
+                "answer": "Ja. Zodra de onderhuurder op uw adres staat ingeschreven, kunt u dit binnen 4 weken doorgeven <1>via de Belastingtelefoon</1>."
+            },
+            {
+                "question": "Ik heb geen onderhuurder meer, moet ik dit ergens doorgeven?",
+                "answer": "Als uw onderhuurder is verhuist dan geeft de gemeente dat aan de belastingdienst door. U hoeft dan niets te doen. Let op: zorg wel dat de student zichzelf uitschrijft bij de gemeente. Vanwege privacyregels mag u als hospita niet zelf gegevens opvragen bij de gemeente of iemand uitschrijven."
+            },
+            {
+                "question": "Wanneer telt iemand mee als mijn toeslagpartner?",
+                "answer": "Uw echtgenoot of geregistreerde partner is uw toeslagpartner. Ook al staat u niet op hetzelfde adres ingeschreven. Ook iemand anders die op hetzelfde adres is ingeschreven kan uw toeslagpartner zijn. Zie voor een overzicht van de situaties waarin dit het geval is deze <1>pagina van de belastingdienst</1>."
+            },
+            {
+                "question": "Een onderhuurder (bijv. een student) is ten onrechte meegeteld als toeslagpartner. Wat moet ik doen?",
+                "answer": "In dit geval kunt u contact opnemen met <1>de Belastingtelefoon</1>. Zij zoeken het samen met u uit."
+            }
         ]
+    },
+    "formbannertext": "Alvast bedankt voor uw eventuele interesse. Via onderstaande formulier kunt u vrijblijvend meer informatie opvragen",
+    "hospitaform": {
+        "firstname": "Voornaam",
+        "lastname": "Achternaam",
+        "email": "E-mail",
+        "phonenumber": "Telefoonnummer",
+        "foundus": "Hoe heeft u ons gevonden?",
+        "moreinfo": "Meer informatie? Of andere vragen? Stel ze hier!",
+        "submit": "Verzenden",
+        "errormsg_phone": "Dit veld is verplicht mag geen letters bevatten",
+        "errormsg_text": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
+        "errormsg_email": "Dit veld is verplicht: e-mailadres@domein.com",
+        "errormsg_submit": "Het formulier bevat nog fouten",
+        "thankyou_1": "Bedankt ",
+        "thankyou_2": " voor uw aanmelding!"
     }
 }

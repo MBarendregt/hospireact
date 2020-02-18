@@ -4,7 +4,6 @@ import '../static/hospita.css'
 import { withTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import Accordion from "./Accordion";
-import AccordionList from "./AccordionList"
 
 
 function Hospita({ t }) {
@@ -195,172 +194,81 @@ function Hospita({ t }) {
                     />
 
                     {setHospitaQuestions(3, 4, 8)}
+                    <h3>{t("faq.h3taxes")}</h3>
+                    <Accordion
+                        unique={40}
+                        title={t("faq.questionblok4.0.question")}
+                        content={<Trans>{t("faq.questionblok4.0.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigen_woning/u_hebt_een_woning/verhuur_deel_eigen_woning_kamerverhuurvrijstelling" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={41}
+                        title={t("faq.questionblok4.1.question")}
+                        content={<Trans>{t("faq.questionblok4.1.answer")}</Trans>}
+                    />
+                    <Accordion
+                        unique={42}
+                        title={t("faq.questionblok4.2.question")}
+                        content={<Trans>{t("faq.questionblok4.2.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigen_woning/u_hebt_een_woning/verhuur_deel_eigen_woning_kamerverhuurvrijstelling" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <h3>{t("faq.h3insurance")}</h3>
 
-
-                    <h3>Huurcontract en Huurinkomsten</h3>
-                    <p className="accordion">Ik weet niks van huurcontracten, wat nu?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Geen nood, wij hebben dat voor u uitgezocht. Er zijn verschillende typen contracten voor
-                              verschillende
-                              situaties. Wij adviseren u over het contract dat het beste past bij uw situatie en sturen u
-                              altijd een
-                              voorbeeld contract mee die u direct kunt gebruiken. Het staat u vrij om er wijzigingen in te
-                              maken. Voor
-              eventuele vragen over het contract kunt u altijd bij <a href="https://www.hospihousing.com/contact" target="_blank" rel="noopener noreferrer" >ons terecht</a></span>
-                        </div>
-                    </div>
-                    <p className="accordion">Hoe bepaal ik hoeveel huur ik mag vragen?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>U bepaalt zelf de hoogte van de huur. Wel zijn hier bepaalde voorwaarden aan verbonden. De
-                              maximale huurprijs
-                              van
-                              uw kamer wordt bepaald met een puntensysteem. Hoe
-                              meer punten, hoe hoger de maximale huurprijs. U kunt zelf het puntenaantal en de
-              maximale huurprijs van uw kamer uitrekenen met de <a href="https://www.huurcommissie.nl/onderwerpen/huurprijs-en-punten/nieuwe-huurprijscheck/huurprijscheck-onzelfstandige-woonruimte" target="_blank" rel="noopener noreferrer">huurprijscheck onzelfstandige
-                woonruimte</a> van de Huurcommissie. Wilt u meer weten over de berekening van de
-              maximale huurprijs van uw kamer, kijk dan op de website van de <a href="https://www.rijksoverheid.nl/onderwerpen/huurprijs-en-puntentelling/vraag-en-antwoord/maximale-huurprijs-kamer" target="_blank" rel="noopener noreferrer">rijksoverheid</a>.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Hoe ontvang ik de huur?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Hoe de huur geïnd wordt zijn afspraken tussen de hospita en de student. De hoogte van de
-                              huur, wanneer de
-              huur wordt overgemaakt en op welke manier wordt vastgelegd in het contract.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Is gas, water en licht onderdeel van de huurprijs?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Bovenop de maximale huurprijs die u kunt uitrekenen met de <a href="https://www.huurcommissie.nl/onderwerpen/huurprijs-en-punten/nieuwe-huurprijscheck/huurprijscheck-onzelfstandige-woonruimte/" target="_blank" rel="noopener noreferrer">huurprijscheck</a> van de Huurcommissie kunt u nog
-                              eventuele servicekosten en kosten voor gas, water, elektriciteit en internet meenemen in de
-                              huurprijs.
-                              Kosten voor eten en drinken zijn niet inbegrepen in de huur. Over het gebruik van
-                              huishoudelijke apparaten
-                              dient u van tevoren afspraken te maken met de student. Hospi Housing adviseert om €55,-
-                              bovenop de kale
-                              huurprijs te rekenen, dat is dan inclusief de mogelijke stijging in gemeentelijke
-              belastingen.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Hoe zit het met gemeentelijke belasting?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Als u alleen woont wordt u door de gemeente gezien als eenpersoonshuishouden. Zodra er een
-                              student komt te
-                              wonen wordt u aangemerkt als meerpersoonshuishouden. Dit kan leiden tot een stijging in
-                              gemeentelijke
-                              belastingen.. Mocht u al met meer dan een persoon in het huis wonen, dan verandert er niks.
-                              Hospi Housing
-                              adviseert om €55,- bovenop de kale huurprijs te rekenen, en dat is dan inclusief gas, water
-                              en licht. Wilt u
-                              precies weten met hoeveel u gemeentelijke belastingen jaarlijks stijgen, neem dan contact op
-                              met uw
-              gemeente.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Wat moet ik van te voren aanleveren aan Hospi Housing?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Voordat Hospi Housing u koppelt aan een student, voorziet u ons van een overzicht
-                              van de totale huurkosten inclusief eventuele servicekosten en kosten voor gas, water,
-              elektriciteit en internet.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Mag ik de huurprijs tussendoor wijzigen?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>U stelt vooraf de inclusieve huurprijs vast in het contract. U mag niet achteraf extra
-                              kosten berekenen aan
-                              de
-                              student. Hospi Housing ontvangt voorafgaand aan het verblijf een kopie van het
-              contract.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Kan ik de huur zomaar beëindigen?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Dit hangt af van het type huurcontract. Bij een hospita huurcontract mag u zonder opgaaf
-                              van reden de huur
-                              beëindigen. Zo houdt u controle over wie er bij u in huis woont. Het huurrecht geldt in de
-                              eerste negen
-                              maanden van de huurperiode niet. Na negen maanden heeft de student wel recht op huurrecht.
-                              Let op: ook in de
-                              eerste negen maanden geldt een opzegtermijn van 3 maanden. Een huurcontract voor bepaalde
-                              termijn kan niet
-                              voortijdig door de verhuurder worden beëindigd. Voor de huurder geldt een opzegtermijn van
-                              minimaal een en
-              maximaal drie maanden.</span>
-                        </div>
-                    </div>
-                    <h3>Belastingvoordeel</h3>
-                    <p className="accordion">Wat betekent het belastingvoordeel van € 5.367,-?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Dit is een regeling van de belastingdienst waarmee het aantrekkelijker wordt gemaakt voor
-                              eigenaren of
-              hoofdhuurders om een of meerdere kamers in uw woning te verhuren. Zie de website van de <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigen_woning/u_hebt_een_woning/verhuur_deel_eigen_woning_kamerverhuurvrijstelling" target="_blank" rel="noopener noreferrer">rijksoverheid</a> over wat dit voor u kan betekenen.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Mag de huur meer dan € 5.367,- zijn?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>Om in aanmerking te komen voor het belastingvoordeel over uw huurinkomsten, mogen de
-                              totale huurinkomsten
-                              niet hoger zijn dan
-                              €5.367,-
-                              per jaar (2019). Het gaat om de huur inclusief een
-              eventuele vergoeding voor het gebruik van meubilair, energie en dergelijke.</span>
-                        </div>
-                    </div>
-                    <p className="accordion">Waaraan moet u voldoen om aanspraak te maken op het belastingvoordeel?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <ul>
-                                <li>Het gedeelte dat u verhuurde, maakte deel uit van uw woning en was geen
-                zelfstandige woning.</li>
-                                <li>U en de huurder waren tijdens de gehele huurperiode ingeschreven bij de gemeente op
-                                  het adres van uw woning. De student heeft een verklaring nodig van de hospita
-                                  waarin staat dat de student zich mag inschrijven op het adres van de hospita. Deze
-                                  verklaring moet worden ondertekend door de hoofdbewoner en een kopie van het
-                                  paspoort moet worden toegevoegd. Dit nemen we mee, of geven we aan
-                de student mee als hij/zij aankomt.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3>Hoe zit het met mijn verzekering?</h3>
-                    <p className="accordion">Ben ik verzekerd bij verhuur van een kamer in mijn woning?</p>
-                    <div className="panel">
-                        <div className="innerpannel">
-                            <span>In de meeste gevallen wel, maar dit hangt van uw verzekering en persoonlijke situatie af.
-                              Volgens de meeste
-                              polisvoorwaarden ben je verplicht het aan je verzekeraar te laten weten als je een kamer in
-                              je woonhuis
-                              verhuurt. Dit geldt zowel voor uw inboedel- en opstalverzekering als uw
-                              aansprakelijkheidsverzekering. Hospi
-                              Housing adviseert daarom om altijd contact op te nemen met uw verzekeraar vóórdat u een
-                              contract tekent met
-                              de student. Uw eigen verzekeraar kan u het beste adviseren of verhuur van een kamer in uw
-                              woning
-              consequenties heeft voor uw woon- en aansprakelijkheidsverzekering(en).</span>
-                        </div>
-                    </div>
+                    <Accordion
+                        unique={50}
+                        title={t("faq.questionblok5.0.question")}
+                        content={<Trans>{t("faq.questionblok5.0.answer")}</Trans>}
+                    />
+                    <Accordion
+                        unique={51}
+                        title={t("faq.questionblok5.1.question")}
+                        content={<Trans>{t("faq.questionblok5.1.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/wijzigingen_doorgeven/welke_wijzigingen_moet_ik_doorgeven/wonen/ik_krijg_een_onderhuurder/" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={52}
+                        title={t("faq.questionblok5.2.question")}
+                        content={<Trans>{t("faq.questionblok5.2.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/wijzigingen_doorgeven/welke_wijzigingen_moet_ik_doorgeven/wonen/ik_krijg_een_onderhuurder/" target="__blank" rel="noopener noreferrer"></a><a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/hoe_werken_toeslagen/kan_ik_toeslag_krijgen/partner/partner" target="__blank" rel="noopener noreferrer"></a><a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/huurtoeslag/medebewoner" target="__blank" rel="noopener noreferrer"></a><a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/contact/content/belastingtelefoon" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={53}
+                        title={t("faq.questionblok5.3.question")}
+                        content={<Trans>{t("faq.questionblok5.3.answer")}<a href="https://www.svb.nl/nl/aow/alleen-wonen-of-met-1-of-meer-personen/u-woont-met-1-persoon" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={54}
+                        title={t("faq.questionblok5.4.question")}
+                        content={<Trans>{t("faq.questionblok5.4.answer")}<a href="https://www.uwv.nl/particulieren/werkloos/tijdens-ww-uitkering/" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={55}
+                        title={t("faq.questionblok5.5.question")}
+                        content={<Trans>{t("faq.questionblok5.5.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/contact/content/belastingtelefoon" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={56}
+                        title={t("faq.questionblok5.6.question")}
+                        content={<Trans>{t("faq.questionblok5.6.answer")}</Trans>}
+                    />
+                    <Accordion
+                        unique={57}
+                        title={t("faq.questionblok5.7.question")}
+                        content={<Trans>{t("faq.questionblok5.7.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/hoe_werken_toeslagen/kan_ik_toeslag_krijgen/partner/mijn-toeslagpartner" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
+                    <Accordion
+                        unique={58}
+                        title={t("faq.questionblok5.8.question")}
+                        content={<Trans>{t("faq.questionblok5.8.answer")}<a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/contact/content/belastingtelefoon" target="__blank" rel="noopener noreferrer"></a></Trans>}
+                    />
                 </div>
             </section>
             <section>
                 <div className="pagewidth-banner">
-                    <span>Alvast bedankt voor uw eventuele interesse. Via onderstaande formulier kunt u vrijblijvend meer
-          informatie opvragen<span className="colored-text-banner">.</span></span></div>
-            </section>
-            <section>
+                    <span>{t("formbannertext")}<span className="colored-text-banner">.</span>
+                    </span>
+                </div>
                 <HospitaForm />
             </section>
 
         </main>
     );
 }
-// export default Hospita;
+
 export default withTranslation(['hospita', 'common'])(Hospita);
-// export default Hospita;
