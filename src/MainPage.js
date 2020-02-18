@@ -8,7 +8,7 @@ import { withTranslation, Trans } from 'react-i18next';
 function MainPage({ t }) {
     return (
         <main>
-            <section id="main-banner">
+            <section id="main-banner" className="frontpage_banner">
                 <h1 className="">{t('banner.bannertitle')}<span className="colored-text">.</span></h1>
                 <div className="main-banner__buttons">
 

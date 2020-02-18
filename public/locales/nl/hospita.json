@@ -169,7 +169,7 @@
         "foundus": "Hoe heeft u ons gevonden?",
         "moreinfo": "Meer informatie? Of andere vragen? Stel ze hier!",
         "submit": "Verzenden",
-        "errormsg_phone": "Dit veld is verplicht mag geen letters bevatten",
+        "errormsg_phone": "Dit veld is verplicht en mag geen letters bevatten",
         "errormsg_text": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
         "errormsg_email": "Dit veld is verplicht: e-mailadres@domein.com",
         "errormsg_submit": "Het formulier bevat nog fouten",

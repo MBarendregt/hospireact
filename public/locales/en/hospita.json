@@ -19,161 +19,161 @@
         "h3becomehost": "Becomming a host",
         "questionblok1": [
             {
-                "question": "Waar moet ik aan voldoen om hospita te worden?",
+                "question": "Which requirements do I have to meet as a host?",
                 "answer": "<1>You speak Dutch or/and English.</1><2> You’ve reached the minimum age of 23.</2><3> It does not matter whether your household consists of 1, 2 or 3 people (spouse or children).</3>"
             },
             {
-                "question": "Hoeveel tijd kost hospita zijn?",
+                "question": "How much time does it take to be a host?",
                 "answer": "Not much, you’ll rent a room and you’ll have a temporary roommate. The level of contact with the student is up to you and the student."
             },
             {
-                "question": "Moeten we vrienden worden?",
+                "question": "Do we need to become friends?",
                 "answer": "That would be wonderful but it’s not necessary. Hospi Housing values a good relationship between the host and student. However, if the match does not live up to the expectations, it is possible to terminate the contract before expiration date."
             },
             {
-                "question": "Wat wordt er van mij verwacht op het moment dat er een student bij mij woont?",
+                "question": "What is expected from the host, the moment the student moves in?",
                 "answer": "The student will be new in town. We expect you to help the student with basic information the moment he or she arrives. Think about recommendations such as good restaurants or the best shopping places. A student could also use your knowhow how to get around with public transport. During the stay it could occur that you’ll eat together or do some sort of activity, we as Hospi Housing encourage this! However, it is important to talk this through with the student."
             },
             {
-                "question": "Hoe zit het met de privacy?",
+                "question": "What is the privacy policy?",
                 "answer": "The student respects the privacy of the host and will never enter the private rooms without notice. Similar to the student, the host will never enter the private room of the student without notice."
             }
         ],
         "h3house": "My home",
         "questionblok2": [
             {
-                "question": "Waar moet ik aan voldoen om hospita te worden?",
+                "question": "Which amnesties does my home need?",
                 "answer": "The student has to have access to a toilet, bathroom and a kitchen. These amnesties can be shared. For a more elaborate <1>checklist</1> you can check the government website.<2 /><3 />The house has to be equipped with sufficient safety alarms. For example a CO2-meter, a fire alarm (also in the room of the student) and/or other fire fighting resources."
             },
             {
-                "question": "Waar moet de kamer van de student aan voldoen?",
+                "question": "What are the requirements of the student his or her room?",
                 "answer": "The room has a minimal size of 7m2 and has a window. The room includes a bed, closet and a desk. Futhermore, the room has a key lock and the student may use Wi-Fi with a proper connection."
             },
             {
-                "question": "Moet ik in de woning wonen waar ik een kamer verhuur?",
+                "question": "Do I have stay in the actual house from which I rent a room?",
                 "answer": "Yes, in order to become a hospita, you have to live in the house you rent a room from."
             },
             {
-                "question": "Heb ik een vergunning nodig?",
+                "question": "Do I need a permit?",
                 "answer": "If you rent a room, you do not need a permit. In the Netherlands it’s allowed to rent out a room without a permit as long as you live there, even if you rent the house as well. In Utrecht it’s allowed to rent a room to 2 people if you own more than 10% of the house, without needing a permit. Otherwise you’ll need a ‘omgevingsvergunning’ and a ‘omzettingsvergunning’. For more information visit <1>the website of the municipality of utrecht</1>."
             },
             {
-                "question": "Ik woon in een sociale-huurwoning. Mag ik hospita worden?",
+                "question": "I live in a social rent house. Am I allowed to become a hospita?",
                 "answer": "Yes. However, we advice you to consult your landlord."
             },
             {
-                "question": "Maakt het uit of ik eigenaar of huurder ben van de woning?",
+                "question": "Does it matter if I am the owner or tenant of the property?",
                 "answer": "If you are the owner, you decide whether you rent a room in your home. As a tenant you can also rent a room in your house. Unless the lease states that it is not allowed,<1>you do not need permission</1> from the lessor. ."
             },
             {
-                "question": "Wat is verder nog belangrijk met betrekking tot mijn woning?",
+                "question": "What are other important requirement concerning my house?",
                 "answer": "The student must be able to register at your adress."
             }
         ],
         "h3contracts": "Rental agreements and rental income",
         "questionblok3": [
             {
-                "question": "Ik weet niks van huurcontracten, wat nu?",
+                "question": "I have no knowledge about rental agreements, what now?",
                 "answer": "No problem, we have sorted that out for you. There are different types of contracts for different situations. We advise you on the contract that best suits your situation and always send you a sample contract that you can use immediately. You are free to make changes to it. You can always <1>contact us</1> for any questions about the contract."
             },
             {
-                "question": "Hoe bepaal ik hoeveel huur ik mag vragen?",
+                "question": "How do I determine the rent?",
                 "answer": "It’s up to you to determine the amount for rent. However, there are certain requirements for the amount. The maximum rent is based on a rating system. The more points, the higher the rent. The amount of points can be calculated with the <1>rental price checker</1>. Would you like to have more information about the rating system? Visit the <2>government website rijksoverheid</2>."
             },
             {
-                "question": "Hoe ontvang ik de huur?",
+                "question": "How do I receive the rent?",
                 "answer": "How the rent is collected are agreements between the Host and the student. When the rent is transferred, how much and in what way is laid down in the contract."
             },
             {
-                "question": "Is gas, water en licht onderdeel van de huurprijs?",
+                "question": "Is gas, water and electricity included in the rent?",
                 "answer": "In addition to the maximum rent that you can calculate with the rent commission check from the <1>Rent Commission</1>, you can also include any service costs and costs for gas, water, electricity and internet in the rent. Costs for food and drinks are not included. You must make agreements with the student in advance about the use of household appliances. Hospi Housing recommends charging €55,- on top of the basic rent, which includes the possible increase in municipal taxes."
             },
             {
-                "question": "Hoe zit het met gemeentelijke belasting?",
+                "question": "What about municipal taxes?",
                 "answer": "If you live alone, you are considered a single household. However, as soon as a student comes to live with you, you will be regarded as a multi-person household. This can lead to an increase in municipal taxes. If you already live with more than one person in the house, nothing will change. Hospi Housing advises to charge €55,- on top of the basic rent, and that includes gas, water and electricity. If you want to know exactly how much your municipal taxes will increase each year, please contact your municipality."
             },
             {
-                "question": "Wat moet ik van te voren aanleveren aan Hospi Housing?",
+                "question": "What kind of paperwork do I need to deliver in advance?",
                 "answer": "Before Hospi Housing matches the host with a student, we require an overview of the total rental costs including service fees for the gas, water, electicity and internet."
             },
             {
-                "question": "Mag ik de huurprijs tussendoor wijzigen?",
+                "question": "Is it possible to change the rental price during the stay of the student?",
                 "answer": "The student and host will sign an agreement with a set price including additional services such as gas, water and electricity. It is not possible to change the price or charge additional costs during the stay. Hospi Housing requires a copy of the contract between the student and host before the student moves in."
             },
             {
-                "question": "Kan ik de huur zomaar beëindigen?",
+                "question": "Can I just terminate the lease?",
                 "answer": "This depends on the type of rental contract. With a rental contract for hosts you can terminate the rent without giving a reason. This way you keep control over who lives in your house. The rental protection does not apply in the first nine months of the rental period. After nine months, the student is entitled to rental protection. Please note: a cancellation period of 3 months also applies in the first nine months. A rental agreement for a specific period cannot be terminated prematurely by the lessor. The tenant has a notice period of at least one and at most three months."
             }
         ],
         "h3taxes": "Tax free rent income",
         "questionblok4": [
             {
-                "question": "Wat betekent het belastingvoordeel van € 5.506,-?",
+                "question": "How is it possible that € 5.506,- rent income are tax free?",
                 "answer": "This is a nationwide settlement by the tax authorities, in order to improve the attractiveness of renting rooms. For more information, <1>visit rijksoverheid</1>."
             },
             {
-                "question": "Mag de huur meer dan € 5.506,- zijn?",
+                "question": "What if the rent is more than the € 5.506,-?",
                 "answer": "In order to profit from the tax benefits, the total rental income can’t be more than €5.506,- each year (2020). The rental income includes fees for the use of furniture, energy and other additional charges."
             },
             {
-                "question": "Waaraan moet u voldoen om aanspraak te maken op het belastingvoordeel?",
+                "question": "What are the requirement in order to receive the rental income without paying any tax?",
                 "answer": "<1>The space that you rented to the student, was part of the house you live in and not a separate house.</1><2>During the rental period, both the student and the host are registered at the municipality on the address of the host. The student requires a statement where the host allows the student to register at the address of the host. This document is signed by the host and a copy of the passport of the student and host is added.</2>"
             }
         ],
         "h3insurance": "Surcharges and insurance",
         "questionblok5": [
             {
-                "question": "Ben ik verzekerd bij verhuur van een kamer in mijn woning?",
+                "question": "Am I insured when renting a room in my home?",
                 "answer": "In most cases you are, but this depends on your insurance and personal situation. Under most policy conditions you are obliged to let your insurer know when you rent a room in your home. This applies to both your household and property insurance and your liability insurance. Hospi Housing therefore recommends that you always contact your insurer before you sign a contract with the student. Your own insurer can best advise you on whether renting a room in your home has consequences for your home and liability insurance."
             },
             {
-                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn kindertoeslag, zorgtoeslag of kindgebonden budget?",
+                "question": "Does renting out a part of my home affect my child allowance, health care allowance or child-related budget?",
                 "answer": "If someone (e.g. a student) rents a part of the home in which you live and you have recorded it in a lease agreement, this counts as 'sublease'. Your subtenant will then not be included in the calculation of your allowances. For more information see the <1>website of the tax authorities</1>."
             },
             {
-                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn huurtoeslag?",
+                "question": "Does renting a part of my home affect my rent allowance?",
                 "answer": "When renting to a student, which usually counts as a <1>substitute</1>, this has no influence. The income does count if it is a <2>benefit partner</2> or a <3>co-resident</3>. Are you unsure whether your tenant is a roommate or subtenant? Then contact the <4>tax authorities</4>, they can help you."
             },
             {
-                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn AOW?",
+                "question": "Does renting out a part of my home affect my state pension?",
                 "answer": "No, usually not. Renting out a part of your own home to a student is seen as a 'commercial relationship' and does not affect the amount of your state pension. Only if you are married to your roommate, a registered partnership or a joint household does this count towards your state pension. See for more information and examples <1>this page of the SVB</1>."
             },
             {
-                "question": "Heeft het verhuren van een deel van mijn woning invloed op mijn WW- of Bijstandsuitkering?",
+                "question": "Does renting out a part of my home affect my unemployment or social security benefits?",
                 "answer": "This depends on your personal situation. See <1>the UWV website</1> for the unemployment benefit. For the social assistance benefit you can contact the municipality where you are registered."
             },
             {
-                "question": "Moet ik bij de belastingdienst melden dat ik een onderhuurder heb?",
+                "question": "Do I have to report to the tax authorities that I have a subtenant?",
                 "answer": "Yes. Once the subtenant has been registered at your address, you can report this within 4 weeks via the <1>tax telephone</1>."
             },
             {
-                "question": "Wanneer telt iemand mee als mijn toeslagpartner?",
+                "question": "I no longer have a subtenant, do I have to report this somewhere?",
                 "answer": "If your subtenant has moved, the municipality will inform the tax authorities. Then you don't have to do anything. Note: make sure the student deregisters from the municipality. Due to privacy rules, you as a host may not request information from the municipality or deregister someone."
             },
             {
-                "question": "Wanneer telt iemand mee als mijn toeslagpartner?",
+                "question": "When does someone count as my allowance partner?",
                 "answer": "Your registered partner is your allowance partner. Even if you are not registered at the same address. Someone else who is registered at the same address can also be your allowance partner. For an overview of the situations in which this is the case, see this page of the <1>tax authorities</1>."
             },
             {
-                "question": "Een onderhuurder (bijv. een student) is ten onrechte meegeteld als toeslagpartner. Wat moet ik doen?",
+                "question": "A subtenant (e.g. a student) has been wrongly counted as an allowance partner. What should I do?",
                 "answer": "In this case you can contact the <1>tax authorities</1>. They will work it out with you."
             }
         ]
     },
-    "formbannertext": "Alvast bedankt voor uw eventuele interesse. Via onderstaande formulier kunt u vrijblijvend meer informatie opvragen",
+    "formbannertext": "Thanks in advance for your possible interest. You can request more information using the form below.",
     "hospitaform": {
-        "firstname": "Voornaam",
-        "lastname": "Achternaam",
-        "email": "E-mail",
-        "phonenumber": "Telefoonnummer",
-        "foundus": "Hoe heeft u ons gevonden?",
-        "moreinfo": "Meer informatie? Of andere vragen? Stel ze hier!",
-        "submit": "Verzenden",
-        "errormsg_phone": "Dit veld is verplicht mag geen letters bevatten",
-        "errormsg_text": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
-        "errormsg_email": "Dit veld is verplicht: e-mailadres@domein.com",
-        "errormsg_submit": "Het formulier bevat nog fouten",
-        "thankyou_1": "Bedankt ",
-        "thankyou_2": " voor uw aanmelding!"
+        "firstname": "First name",
+        "lastname": "Last name",
+        "email": "E-mail address",
+        "phonenumber": "Telephone number",
+        "foundus": "How did you find us?",
+        "moreinfo": "Do you want more information? Or other questions? Put them here!",
+        "submit": "Submit",
+        "errormsg_phone": "This field is mandatory and cannot contain any letters",
+        "errormsg_text": "This field is mandatory and cannot contain any numbers or strange characters",
+        "errormsg_email": "This field is mandatory: e-mailadres@domein.com",
+        "errormsg_submit": "The form still contains errors",
+        "thankyou_1": "Thank you ",
+        "thankyou_2": " for your registration!"
     }
 }

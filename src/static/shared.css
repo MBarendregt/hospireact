@@ -78,6 +78,10 @@ section {
     height: 50vh;
     padding: 0.6rem;
  }
+ .frontpage_banner {
+     position: relative;
+ }
+
   
 #main-banner h1 {
     color: white;
