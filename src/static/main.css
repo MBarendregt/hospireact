@@ -1,11 +1,14 @@
+
+.main-banner__title {
+    text-align: center;
+}
 .main-banner__buttons {
         display: flex;
         width: 100%;
         flex-direction: column;
         /* justify-content: space-between; */
         position: absolute;
-        bottom: 15%;
-        
+        bottom: 15%;    
 }
 
 .main-banner__buttons--link {
@@ -337,7 +340,7 @@
     font-size: 0.8rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 600px) {
 
     .main-banner__buttons {
         flex-direction: row;
@@ -529,7 +532,7 @@
 
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 900px) {
 
     .article__img {
         padding: 0.5rem 0;

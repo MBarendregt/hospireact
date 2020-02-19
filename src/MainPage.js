@@ -9,7 +9,9 @@ function MainPage({ t }) {
     return (
         <main>
             <section id="main-banner" className="frontpage_banner">
-                <h1 className="">{t('banner.bannertitle')}<span className="colored-text">.</span></h1>
+                <div className="main-banner__title">
+                    <h1 className=""><Trans>{t('banner.bannertitle')}<span className="colored-text"></span></Trans></h1>
+                </div>
                 <div className="main-banner__buttons">
 
                     <Link className="main-banner__buttons--link" to="/students"><button><span>
