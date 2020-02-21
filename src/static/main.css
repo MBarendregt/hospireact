@@ -529,7 +529,6 @@
         width: 80%;
         margin: auto;
     }
-
 }
 
 @media (min-width: 900px) {
@@ -537,5 +536,11 @@
     .article__img {
         padding: 0.5rem 0;
         width: 40%;
+    }
+    .main-linkedin__photos-container h2 {
+        font-size: 1.2rem;
+    }
+    .main-linkedin__photos-container span {
+        font-size: 1rem;
     }
 }

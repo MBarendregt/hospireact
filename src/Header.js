@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LanguageChanger from './templates/LanguageChanger'
 import i18n from './i18n';
+import { withTranslation } from 'react-i18next';
 
-export default function Header() {
+
+function Header({ t }) {
+
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -28,10 +31,10 @@ export default function Header() {
             </label>
             <div id="sidebarMenu">
                 <ul className="sidebarMenuInner">
-                    <li><Link to="/students">Ik zoek een kamer</Link></li>
-                    <li><Link to="/hospita">Ik word hospita</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/students">{t("lookingforroom")}</Link></li>
+                    <li><Link to="/hospita">{t("becomehost")}</Link></li>
+                    <li><Link to="/blog">{t("blog")}</Link></li>
+                    <li><Link to="/contact">{t("contact")}</Link></li>
                 </ul>
             </div>
             <LanguageChanger />
@@ -39,3 +42,5 @@ export default function Header() {
 
     )
 }
+
+export default withTranslation(['header'])(Header);

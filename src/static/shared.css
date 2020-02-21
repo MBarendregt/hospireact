@@ -738,6 +738,11 @@ input[type=submit]:hover{
     font-size: 0.8rem;
     padding: 18px;
 }  
+
+.accordion__paragraph {
+    font-size:0.8rem;
+  }
+  
 /* FOOTER STYLING */
 
 
@@ -808,8 +813,9 @@ input[type=submit]:hover{
     .sidebarIconToggle { 
         display: none;
     }
+
     #main-banner {
-        height: 40vh;
+        height: 60vh;
      }
 
      #main-banner h1 {
@@ -973,13 +979,50 @@ input[type=submit]:hover{
     }
 
 
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=date],
+    input[type=file] {
+    font-size: 1rem;
+}
+
 }
 
 @media (min-width: 900px) {
 
     span {
-        font-size:1.5rem;
+        font-size: 1.2rem;
     }
+
+    section {
+        margin: 4.5rem 0;
+    }
+    #main-banner h1 {
+        font-size: 1.5rem;
+        margin: 2.5rem auto;
+    }
+    
+    .main-header {
+        height: 4.5rem !important;
+    }
+
+    .main-nav__item {
+        font-size:1.2rem;
+    }
+
+    .banner-otherpages h1 {
+        font-size: 1.5rem;
+    }
+
+    .accordion__title {
+        font-size: 1rem;
+      }    
+
+    .accordion__paragraph {
+      font-size: 1rem;
+    }
+
 }
         
 @media (min-width: 1200px) {}

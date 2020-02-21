@@ -1,0 +1,16 @@
+{
+    "bannertext": "Room for experience<1>.</1>",
+    "exptext": "Hospi Housing was founded in 2019. That's right, we just started. Therefore, we could use your help. Do you have a good idea, question or remark? Let us know, we love to hear about it.",
+    "contactform": {
+        "firstname": "First name",
+        "lastname": "Last name",
+        "email": "E-mail address",
+        "description": "Ask your question here",
+        "submit": "Submit",
+        "errormsg_text": "This field is mandatory and cannot contain any numbers or strange characters",
+        "errormsg_email": "This field is mandatory: e-mailadres@domein.com",
+        "errormsg_submit": "The form still contains errors",
+        "thankyou_1": "Thank you ",
+        "thankyou_2": " for your question!"
+    }
+}

@@ -16,7 +16,6 @@ function App() {
       <Header />
       <Main />
       <Footer />
-      <script src="./scripts/shared.js"></script>
     </>
   );
 }

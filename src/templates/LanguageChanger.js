@@ -14,9 +14,9 @@ function LanguageChanger({ t }) {
             <ul className="main-nav__items">
 
 
-                <li className="main-nav__item "><Link to="/students">{t('zoekkamer')}</Link>
+                <li className="main-nav__item "><Link to="/students">{t('lookingforroom')}</Link>
                 </li>
-                <li className="main-nav__item "><Link to="/hospita">{t('wordhospita')}</Link>
+                <li className="main-nav__item "><Link to="/hospita">{t('becomehost')}</Link>
                 </li>
                 <li className="main-nav__item"><Link to="/blog">{t('blog')}</Link></li>
                 <li className="main-nav__item"><Link to="/contact">{t('contact')}</Link></li>

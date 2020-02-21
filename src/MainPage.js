@@ -15,8 +15,8 @@ function MainPage({ t }) {
                 <div className="main-banner__buttons">
 
                     <Link className="main-banner__buttons--link" to="/students"><button><span>
-                        {t('header:zoekkamer')}</span></button></Link>
-                    <Link className="main-banner__buttons--link" to="/hospita"><button><span>{t('header:wordhospita')}</span></button></Link>
+                        {t('header:lookingforroom')}</span></button></Link>
+                    <Link className="main-banner__buttons--link" to="/hospita"><button><span>{t('header:becomehost')}</span></button></Link>
                 </div>
             </section>
             <section id="main-concept">

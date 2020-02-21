@@ -13,10 +13,6 @@
 }
 
 
-.accordion__paragraph {
-  font-size:0.8rem;
-}
-
 .accordion__studentstable-title {
   font-size:0.8rem;
   font-weight: bold;
@@ -195,6 +191,13 @@
         grid-row: 8 ;
         /* font-size: 1rem; */
     }    
+
+    .singup-form__students--placeholder-profilepicture {
+      font-size: 1rem;
+    }
+    input[type=file] {
+      width: 10%;
+    }
 
 
 }

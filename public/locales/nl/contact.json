@@ -1,0 +1,16 @@
+{
+    "bannertext": "Haal die ervaring in huis<1>.</1>",
+    "exptext": "Wil je in contact komen met Hospi Housing? Heb je ideeën hoe we nog meer studenten aan een thuis kunnen helpen? Of heb je andere suggesties? Laat het ons weten, wij horen het graag.",
+    "contactform": {
+        "firstname": "Voornaam",
+        "lastname": "Achternaam",
+        "email": "E-mail",
+        "description": "Stel uw vraag hier",
+        "submit": "Verzenden",
+        "errormsg_text": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
+        "errormsg_email": "Dit veld is verplicht: e-mailadres@domein.com",
+        "errormsg_submit": "Het formulier bevat nog fouten",
+        "thankyou_1": "Bedankt ",
+        "thankyou_2": " voor uw vraag!"
+    }
+}

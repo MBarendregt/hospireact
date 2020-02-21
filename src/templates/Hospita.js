@@ -1,6 +1,6 @@
 import React from 'react';
 import HospitaForm from './HospitaForm'
-import '../static/shared.css'
+// import '../static/shared.css'
 import '../static/hospita.css'
 import { withTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
