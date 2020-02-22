@@ -10,11 +10,13 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY package.json /app/package.json
 RUN npm install --silent
+RUN npm install eslint-plugin-react@latest --save-dev  
+# Remove ESLINT when to production
 RUN npm install react-scripts@3.0.1 -g --silent
 RUN npm install react-router-dom
 RUN npm install --save react-router-hash-link
 RUN npm install validator
-RUN npm i i18next i18next-xhr-backend react-i18next -S
+RUN npm install i18next i18next-xhr-backend react-i18next -S
 RUN npm install i18next-browser-languagedetector --save
 RUN npm install i18next-xhr-backend --save
 RUN npm install --save react-mailto

@@ -7,6 +7,7 @@ import Students from './templates/Students'
 import Contact from './templates/Contact'
 import Privacy from './templates/Privacy'
 import Cookies from './templates/Cookies'
+import Blog from './templates/Blog'
 
 function Main() {
     return (
@@ -18,6 +19,7 @@ function Main() {
                 <Route path='/contact' component={Contact} />
                 <Route path='/privacy' component={Privacy} />
                 <Route path='/cookies' component={Cookies} />
+                <Route path='/blog' component={Blog} />
             </Switch>
         </main>
     );

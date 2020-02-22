@@ -1,0 +1,24 @@
+{
+    "blogs": [
+        {
+            "title": "Opgelucht, blut en wanhopig",
+            "blog_id": 0
+        },
+        {
+            "title": "hallo",
+            "blog_id": 1
+        },
+        {
+            "title": "bye",
+            "blog_id": 2
+        },
+        {
+            "title": "bye",
+            "blog_id": 3
+        },
+        {
+            "title": "bye",
+            "blog_id": 4
+        }
+    ]
+}

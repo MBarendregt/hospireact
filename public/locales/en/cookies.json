@@ -1,0 +1,63 @@
+{
+    "title": "Hospi Housing - Cookie policy",
+    "general_introduction": {
+        "text": "The purpose of this policy is to provide you, as a visitor to Hospi Housing, with clear and accessible information about the cookies that Hospi Housing uses and the role that cookies play in providing the best possible user experience and choices you have when it comes to your cookie settings. This is only a statement about privacy and the use of website techniques and is not a contract or agreement."
+    },
+    "cookie_introduction": {
+        "title": "What are cookies and other similar technologies?",
+        "text": "Cookies are small files that are downloaded to your device when you visit a website. A cookie does not contain or collect any information itself, but when read by a web browser (such as google chrome, internet explorer or mozilla firefox) it can help in a better user experience by, for example, detecting errors. We do not store a cookie for longer than necessary.",
+        "subtext_1": "Other similar technologies include:",
+        "subtext_2": "We use the term cookie in this policy for all these technologies. We do give you clear details about all cookies, so that can make informed choices about your cookie settings. Cookies have many different tasks. For example, they allow you to efficiently navigate between pages, remember your preferences and improve the user experience in general.",
+        "listitem_1": "Web beacons (also called pixel tags). These can be used for, among other things, measuring website performance and keeping track of how many visitors have been to the website.",
+        "listitem_2": "Web storage used in desktop software or on mobile devices",
+        "listitem_3": "Identifying mobile devices"
+    },
+    "cookie_usage": {
+        "title": "How do we use cookies?",
+        "text": "You may notice the presence of different types of cookies generated on your visit to this website. We use the following types of cookies:",
+        "listitem_1": "Functional cookies",
+        "listitem_2": "Preference cookies",
+        "listitem_3": "Analytical cookies",
+        "listitem_4": "Social media cookies"
+    },
+    "function_cookies": {
+        "title": "Functional cookies",
+        "text": "These cookies are necessary to make it possible to surf the website of Hospi Housing and use the website's functions. We might use these cookies for:",
+        "listitem_1": "Storing preferences such as language, location, the number of search results to be displayed.",
+        "listitem_2": "Reading your browser settings so that we can display our website optimally on your screen.",
+        "listitem_3": "Loading the website evenly so that it remains accessible."
+    },
+    "preference_cookies": {
+        "title": "Preference cookies",
+        "text": "Preference cookies enable the website to recognize information that is relevant to the behavior and the design of the website, such as a preferred language and region."
+    },
+    "analytic_cookies": {
+        "title": "Analytical cookies",
+        "text": "These cookies gather information about the surfing behavior of visitors to our websites, such as which pages are visited often and whether visitors receive error messages. By doing this we are able to make the structure, navigation and content of the website as user-friendly as possible for you. We do not link the statistics and other reports to individuals. We might use these cookies for:",
+        "subtext_1": "We might use software like Google Analytics to analyze page use, page interactions and the routes taken through our sites. These are known as 'website metrics' or 'analytics'. Google Analytics is a web analysis service that is offered by Google Inc. (Google). Google Analytics uses cookies to analyze the usage of the website by users. Google uses aggregated statistical data to give Hospi Housing an insight in the way users use the website.",
+        "listitem_1": "Keeping track of the number of visitors to our web pages.",
+        "listitem_2": "Keeping track of the length of time that each visitor spends on our web pages.",
+        "listitem_3": "Determining the order in which a visitor visits the various pages on our website.",
+        "listitem_4": "Assessing which parts of our site need to be improved.",
+        "listitem_5": "Optimizing the website."
+    },
+    "social_cookies": {
+        "title": "Social media cookies ",
+        "text": "The articles, pictures and videos that you look at on our website can be shared and liked via social media by means of buttons. Cookies from the social media parties are used to enable these buttons to function, so that they recognize you when you wish to share an article or video. These cookies make it possible for:",
+        "subtext_1": "These social media parties may also collect your personal data for their own purposes. Hospi Housing has no influence over how these social media parties make use of your personal data. For more information regarding the cookies set by the social media parties and the possible data that they gather, please refer to the privacy statement(s) made by the social media parties themselves.",
+        "listitem_1": "Logged-in users of selected social media to share and like certain content from our website directly."
+    },
+    "cookie_control": {
+        "title": "How to control cookies",
+        "text": "Hospi Housing places and uses the functional, preference and analytical cookies when you explore our website to ensure the proper functioning of the website.",
+        "subtext_1": "You can control and/or delete cookies as you wish – for details, see aboutcookies.org. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being used. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work."
+    },
+    "policy_changes": {
+        "title": "Policy changes",
+        "text": "We may change this Cookie Policy from time to time. This policy was last modified on 14 July 2019."
+    },
+    "questions_feedback": {
+        "title": "Questions and feedback",
+        "text": "Please send us your questions and comments about privacy to us via <1>info@hospihousing.com</1>."
+    }
+}

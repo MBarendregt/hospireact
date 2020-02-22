@@ -1,0 +1,54 @@
+{
+    "title": "Hospi Housing - Privacy policy",
+    "general_assumptions": {
+        "title": "General assumptions",
+        "text": "Hospi Housing is an online platform where international students connect with local hosts to find a temporary room in the Netherlands. This applies to the website: <1>www.hospihousing.com</1> and this might change if more domains are being added. To be able to provide our services, Hospihousing collects and processes certain personal data related to our services and our website.",
+        "subtext_1": "We encourage you to read through this document carefully before making use of the services Hospi Housing offers. Furthermore, we suggest to regularly check this privacy document to see if any changes have been made. If you have any questions about our privacy policy, you are welcome to contact us via <1>info@hospihousing.com</1>."
+    },
+    "data_collection": {
+        "title": "Why do we collect your personal data?",
+        "text": "When you choose to contact us, visit our website or share your personal data with us, we will collect some personal data about you. We may process these personal data for the following purposes:",
+        "listitem_1": "Communicate with you in a personal way or to inform you about a host or international student.",
+        "listitem_2": "Provide customer service, including service concerning the matching between students and hosts and deal with any enquiries or complaints.",
+        "listitem_3": "Administer and fulfil your request to initiate looking  for an international student or local host, including the financial and logistic handling.",
+        "listitem_4": "Perform market research and improve our business and services.",
+        "listitem_5": "Perform statistical analyses and reporting.",
+        "listitem_6": "Providing services on the internet."
+    },
+    "which_data_collection": {
+        "title": "Which personal data do we collect?",
+        "text": "Which personal data we collect, depends on which services you use. In general, there are two categories of personal data we collect or use:",
+        "subtitle_1": "1. Personal data you provide",
+        "subtext_1": "The following data is collected from international students and/or local hosts to be able to make a match between the local host and the international student possible:",
+        "sublist_1": "Firstname(s), surname, e-mail address, date of birth, gender, country of residence, profile picture, phone-number, skype-address, pictures from the room, information about the host, home address, information about the student, proof of college admission.",
+        "subtitle_2": "2. Metadata collected automatically",
+        "subtext_2_1": "This data is collected or generated automatically when you visit www.hospihousing.com. This data contains data that may be used by the user interface or device activities, as well as IP addresses, unique device identifiers, MAC addresses, cookies and data from computer activities itself.",
+        "subtext_2_2": "If you choose to provide your personal data on one of the above ways or visit our website and accept the cookies you authorize Hospi Housing to collect, store, disclose and otherwise process your personal data with the purpose described above. You have the right to withdraw your consent which you may have given to the processing of your personal data at any time."
+    },
+    "data_transfer": {
+        "title": "How do we share or transfer your personal data?",
+        "text": "To ensure the best service, it might happen that Hospi Housing shares your personal data with third-party service providers to perform certain processing activities on behalf of Hospi Housing. Other than set out in this statement, Hospihousing will not sell, rent, lease or provide your personal data to third parties allowing them to use your personal data for their own purpose.",
+        "subtext_1": "We will otherwise only release your personal data if so required or authorized by law, where necessary for preventing or combating fraud, where necessary for dispute resolution, or for any other pressing legitimate need which under circumstances must outweigh your privacy interests, such as the security of our business and the safety of our staff."
+    },
+    "data_protection": {
+        "title": "How do we protect your personal data?",
+        "text": "Hospi Housing will take appropriate technical and organizational security measures against loss or unlawful processing of this data. This may include storing your data encrypted, encrypted sessions and restricting access to your personal data."
+    },
+    "data_retain": {
+        "title": "How long do we retain your personal data?",
+        "text": "After you want Hospi Housing to remove your personal data, you can contact us by sending an email to <1>info@hospihousing.com</1> and we will process your request within a reasonable timeframe."
+    },
+    "cookies": {
+        "title": "Cookies and other similar technologies",
+        "text": "If you visit www.hopsihousing.com, we may use cookies and other similar technologies for storing information to provide you with a better, faster and safer browser experience.",
+        "subtext_1": "Please refer to our <1>Cookie policy</1> for the explanation of cookies, other similar technologies and how we use these techniques."
+    },
+    "policy_changes": {
+        "title": "Policy changes",
+        "text": "We may change this privacy statement from time to time. We encourage you to take notice of this policy regularly. This policy was last modified on 22 July 2019."
+    },
+    "questions_feedback": {
+        "title": "Questions and feedback",
+        "text": "Please send us your questions and comments about privacy to us via <1>info@hospihousing.com</1>."
+    }
+}
