@@ -3,11 +3,14 @@ import { withTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import '../static/shared.css'
 import '../static/blog.css'
-import imageLoader from './images';
+import blogLoader from './blogs';
+import i18n from '../i18n';
 
 
-
-function renderSomething({ t }, images, index) {
+function renderImages({ t }, images, index) {
+    /**
+     * Create image container
+     */
     if (images[index].id === t("blogs" + "." + index + ".blog_id")) {
         return (
             <>
@@ -19,7 +22,23 @@ function renderSomething({ t }, images, index) {
     }
 }
 
-// }
+function returnOnlyForSpecificLanguage(blog, lng) {
+    /**
+     * Get current language that is selected by i18n and return true if that blog exists for that language
+     */
+    if (lng === "nl") {
+        if (blog.nl === 0) {
+            return true
+        }
+    } else if (lng === 'en') {
+        if (blog.eng === 0) {
+            return true
+        }
+    } else {
+        return false
+    }
+}
+
 
 
 class Blog extends React.Component {
@@ -30,7 +49,6 @@ class Blog extends React.Component {
             items: [],
             visible: 3,
             error: false,
-            images: [],
             url: ""
         };
 
@@ -45,31 +63,47 @@ class Blog extends React.Component {
 
 
     componentDidMount() {
-        var data = require('./file.json')
-        const images = imageLoader(data)
-        this.setState({ images })
+        const images = blogLoader()
         this.setState({
             items: images
         });
-        // console.log(images)
     }
 
 
     render() {
         const { t } = this.props;
+        const getLanguage = () => {
+            return i18n.language ||
+                (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
+                'en';
+        };
         return (
 
             <section className="feed">
+
                 <div className="tiles" aria-live="polite">
-                    {this.state.items.slice(0, this.state.visible).map((item, index) => {
-                        return (
-                            <div className="tile fade-in" key={item.id}>
-                                <div >
-                                    {renderSomething({ t }, this.state.images, index)}
+                    {this.state.items
+                        .filter(item => returnOnlyForSpecificLanguage(item, getLanguage()) === true)
+                        .sort(function (a, b) { return a - b })
+                        .slice(0, this.state.visible)
+                        .map((item) => {
+                            return (
+
+                                <div className="tile fade-in" key={item.id}>
+                                    <Link className="tile_link" to={t("blogs" + "." + item.id + ".blogurl")}>
+                                        {renderImages({ t }, this.state.items, item.id)}
+                                        <div className="tile_text">
+                                            <h2>
+                                                {t("blogs" + "." + item.id + ".title")}
+                                            </h2>
+                                            <span>{t("blogs" + "." + item.id + ".blog_subtitle")}</span>
+                                        </div>
+                                    </Link>
                                 </div>
-                            </div>
-                        );
-                    })}
+
+                            );
+                        })
+                    }
                 </div>
                 {
                     this.state.visible < this.state.items.length &&
@@ -82,4 +116,3 @@ class Blog extends React.Component {
 
 
 export default withTranslation(["blog", "common"])(Blog);
-// ReactDOM.render(<Blog />, document.getElementById('feed'));

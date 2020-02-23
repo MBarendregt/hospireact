@@ -1,24 +1,45 @@
 {
     "blogs": [
         {
-            "title": "Opgelucht, blut en wanhopig",
-            "blog_id": 0
+            "title": "Hospi Housing: let's introduce",
+            "blog_id": 0,
+            "blog_subtitle": "The team behind Hospi Housing. Who are we, what do we do and why are we doing this?"
         },
         {
-            "title": "hallo",
-            "blog_id": 1
+            "title": "Housing shortage in Utrecht",
+            "blog_id": 1,
+            "blog_subtitle": "Finding a room in Utrecht is quite the challenge. Hospi Housing provides a social solution to this enormous problem."
         },
         {
-            "title": "bye",
-            "blog_id": 2
+            "title": "Can I become a host?",
+            "blog_id": 2,
+            "blog_subtitle": "Becoming a host is easy and rewarding. But is it an option for everyone?"
         },
         {
-            "title": "bye",
-            "blog_id": 3
+            "title": "Known from TV!",
+            "blog_id": 3,
+            "blog_subtitle": "We can finally say: you know us from TV! Hospi Housing provides unique solutions to the housing problem. Read our stories here!"
         },
         {
-            "title": "bye",
-            "blog_id": 4
+            "title": "Young and old come together in Utrecht",
+            "blog_id": 4,
+            "blog_subtitle": "Beautiful things happen when you bring 'young' and 'old' together. Apply now for one of the activities in the fall of 2019 in Utrecht!"
+        },
+        {
+            "title": "Get ready to live in Utrecht in 10 steps",
+            "blog_id": 5,
+            "blog_subtitle": "How to prepare and what to expect from living in Utrecht? Guest blog by an international student."
+        },
+        {
+            "title": "\"Scammed, broke and desperate\"",
+            "blog_id": 6,
+            "blog_subtitle": "\"Scammed, broke and desperate\". For many international students the harsh reality when house hunting. Hospi Housing provides a solution."
+        },
+        {
+            "title": "Prepare for the Dutch way of living",
+            "blog_id": 7,
+            "blog_subtitle": "Living in the Netherlands can be awesome. If, you know how to deal with the Dutch and their way of living.",
+            "blogurl": "/blog1"
         }
     ]
 }
