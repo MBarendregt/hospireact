@@ -1,4 +1,8 @@
 {
+    "title": "Hospi Housing blog",
+    "text": "In our blogs we tell you about the different topics related to Hospi Housing. Here you will find funny facts, interesting background stories and valuable advice.<1 />",
+    "sub_text": "Want to stay informed about our adventure? Then follow us on <1>Instagram</1>, <2>Facebook</2> or <3>Linkedin</3>.",
+    "sub_title": "Blogs",
     "blogs": [
         {
             "title": "Hospi Housing: let's introduce",
@@ -39,7 +43,7 @@
             "title": "Prepare for the Dutch way of living",
             "blog_id": 7,
             "blog_subtitle": "Living in the Netherlands can be awesome. If, you know how to deal with the Dutch and their way of living.",
-            "blogurl": "/blog1"
+            "blogurl": "/dutchliving"
         }
     ]
 }
