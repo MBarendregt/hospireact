@@ -1,6 +1,6 @@
 import React from 'react'
 import { withTranslation, Trans } from 'react-i18next';
-import { Link, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../static/shared.css'
 import '../static/blog.css'
 import blogLoader from './blogs';
@@ -44,14 +44,11 @@ import i18n from '../i18n';
 class Blog extends React.Component {
     constructor(props) {
         super(props);
-        this.myRef = React.createRef();
         this.state = {
             items: [],
             // items: 20,
-            visible: 3,
+            visible: 6,
             error: false,
-            url: "",
-            hasMoreItems: true
         };
 
         this.loadMore = this.loadMore.bind(this);
@@ -63,32 +60,49 @@ class Blog extends React.Component {
         });
     }
 
+    isBottom(el) {
+        return el.getBoundingClientRect().bottom <= window.innerHeight
+    }
+
+    trackScrolling = () => {
+        const wrappedElement = document.getElementById('wholepagesection');
+        if (this.isBottom(wrappedElement)) {
+            this.loadMore()
+        }
+    };
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.trackScrolling);
+    }
+
     componentDidMount() {
-        const images = blogLoader()
+        const images = blogLoader.all()
         this.setState({
             items: images
         });
+        window.addEventListener('scroll', this.trackScrolling);
 
-        this.refs.myscroll.addEventListener("scroll", () => {
-            if (
-                this.refs.myscroll.scrollTop + this.refs.myscroll.clientHeight >=
-                this.refs.myscroll.scrollHeight
-            ) {
-                this.loadMore();
-            }
-        });
     }
 
     renderImages({ t }, images, index) {
         /**
          * Create image container
          */
-        if (images[index].id === t("blogs" + "." + index + ".blog_id")) {
+        if (images[index].id === t("blogs." + index + ".blog_id")) {
+
+            const divStyle = {
+                // color: 'blue',
+                backgroundImage: 'url(' + images[index].src + ')',
+                backgroundSize: 'cover',
+                height: '18rem',
+                backgroundPosition: "50%",
+                boxShadow: "3px 3px 5px 3px rgba(0,0,0,0.3)",
+                borderRadius: " 5px",
+            };
+
             return (
                 <>
-                    <div>
-                        <img className="blog_container" src={images[index].src} />
-                    </div>
+                    <div style={divStyle}></div>
                 </>
             )
         }
@@ -112,6 +126,8 @@ class Blog extends React.Component {
     }
 
 
+
+
     render() {
         const { t } = this.props;
         const getLanguage = () => {
@@ -120,8 +136,7 @@ class Blog extends React.Component {
                 'en';
         };
         return (
-
-            <section>
+            <section id="wholepagesection">
                 <div className="text-concept">
                     <div className="main--underline">
                         <h2>{t("title")}
@@ -150,31 +165,22 @@ class Blog extends React.Component {
                             return (
 
                                 <div className="tile fade-in" key={item.id}>
-                                    {/* <Link className="tile_link" to={t("blogs" + "." + item.id + ".blogurl")}> */}
-                                    <Link to={`/blog/${item.url}`}>
-                                        {/* <Link to={`${match.url}/${id}`}> */}
-                                        {/* <Link to="blabla"> */}
+                                    <Link className="tile_link" to={`/blog/${item.url}`}>
                                         {this.renderImages({ t }, this.state.items, item.id)}
                                         <div className="tile_text">
                                             <h2>
-                                                {t("blogs" + "." + item.id + ".title")}
+                                                {t("blogs." + item.id + ".title")}
                                             </h2>
-                                            <span>{t("blogs" + "." + item.id + ".blog_subtitle")}</span>
+                                            <span>{t("blogs." + item.id + ".blog_subtitle")}</span>
                                         </div>
                                     </Link>
                                 </div>
-
                             );
                         })
                     }
 
                 </div>
 
-                {/* {
-                    this.state.visible < this.state.items.length &&
-                    <button onClick={this.loadMore} type="button" className="load-more">Load more</button>
-                } */}
-                {/* <Route path={`/blog/:topicId`} component={Blog} /> */}
             </section>
 
         );

@@ -10,6 +10,12 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "AvenirCustom";
+    src: url("./ave_next_ssv/ave_next_ssv/AvenirNextLTPro-It.otf") format("opentype");
+    font-style: italic;
+}
+
 :root {
     --main-bg-color: #ff9933;
   }
@@ -20,6 +26,13 @@
 
 html {
   height: 100%;
+  font-family: "AvenirCustom";
+
+}
+
+body {
+    margin: 0;
+    /* height: 100vh; */
 }
 
 li:empty {
@@ -41,6 +54,10 @@ li:empty {
     transition: opacity 4s linear;
 }  
 
+.italic_style {
+    font-style: italic;
+  }
+
 .open {
     display: block !important;
     opacity: 1 !important;
@@ -53,11 +70,7 @@ li:empty {
     border-radius: 5px;
 }
 
-body {
-  font-family: "AvenirCustom";
-  margin: 0;
-  padding-top: 3.5rem;
-}
+
 
 h2 {
     font-size: 1.3rem;
@@ -67,7 +80,8 @@ span {
     font-size: 0.8rem;
 }
 section {
-    margin: 3.5rem 0;
+    height: 100%;
+    margin: 1rem 0;
 }
 .openSidebarMenu {
     z-index: 9999;
@@ -119,12 +133,13 @@ section {
     }
     
 @supports (display: grid) {
-  body {
+  #root {
       display: grid;
       grid-template-areas: "header"
                            "main"
                            "footer";
       grid-template-rows: 3.5rem auto fit-content(8rem);
+      /*  */
       padding-top:0;
       height: 100%;
       overflow-x: hidden;
@@ -749,7 +764,7 @@ input[type=submit]:hover{
 .main-footer {
     background: black;
     padding-top: 1.5rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     grid-area: footer;
 }
 
@@ -802,9 +817,9 @@ input[type=submit]:hover{
 
 
 @media (min-width: 600px) {
-    section {
+    /* section {
         margin: 3.5rem 0;
-    }   
+    }    */
 
     span {
         font-size: 1rem;
@@ -995,17 +1010,17 @@ input[type=submit]:hover{
         font-size: 1.2rem;
     }
 
-    section {
+    /* section {
         margin: 4.5rem 0;
-    }
+    } */
     #main-banner h1 {
         font-size: 1.5rem;
         margin: 2.5rem auto;
     }
     
-    .main-header {
+    /* .main-header {
         height: 4.5rem !important;
-    }
+    } */
 
     .main-nav__item {
         font-size:1.2rem;

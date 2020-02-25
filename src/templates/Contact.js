@@ -2,7 +2,6 @@ import React from 'react';
 import '../static/shared.css'
 import '../static/contact.css'
 import { withTranslation, Trans } from 'react-i18next';
-import { Link } from 'react-router-dom'
 import ContactForm from './ContactForm'
 
 function Contact({ t }) {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Blog from './Blog'
-import Blogtemplate from './blogs/Blogtemplate'
 import Prepareforthedutchwayofliving from './blogs/Prepareforthedutchwayofliving'
 import Scammedbrokeanddesperate from './blogs/Scammedbrokeanddesperate'
 import Tipstoliveinthenetherlands from './blogs/Tipstoliveinthenetherlands'

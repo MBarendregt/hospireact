@@ -1,16 +1,20 @@
 
+.text-concept {
+  margin: auto;
+  width: 90%;
+}
 
+/* Generic blog page  */
 .blog_title {
   width: 90%;
   margin: auto;
 }
+
 .tiles {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  height:500px;
-  overflow: auto;
-
+  /* overflow: auto; */
 }
 
 .tile {
@@ -23,11 +27,35 @@
 
 .tile_link:visited,
 .tile_link:link,
-.tile_link:hover,
 .tile_link:active {
-  color: black;
   text-decoration: none;
+  color: black;
 }
+
+.tile_text:visited,
+.tile_text:link,
+.tile_text:active {
+  transition: color 0.4s ease 0s;
+  color: black;
+}
+
+.blogs_container:visited,
+.blogs_container:link,
+.blogs_container:active {
+  transition: filter 0.4s ease 0s;
+  filter: opacity(1);
+}
+
+.tile_text:hover {
+  color: var(--main-bg-color);
+  transition: color 0.4s ease 0s ;
+}
+
+.blogs_container:hover  {
+  filter: opacity(.7);
+  transition: filter 0.4s ease 0s; ;
+}
+
 
 .tile_text {
   text-align: center;
@@ -35,9 +63,60 @@
   margin: auto;
 }
 
-.blog_container {
+.blogs_container {
   width:  100%;
   height: auto;
   box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
   border-radius: 5px;
+  background-size: cover;
+}
+
+/* Specific blog pages */
+
+.backtoallblogs {
+  padding: 0.5rem 1rem;
+}
+
+.blog_container {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.blog_image {
+  width:  90%;
+  height: auto;
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.blog_textitem {
+  width: 90%;
+  margin: 0.2rem auto;
+}
+.second_image {
+  height: 35rem;
+  width: auto;
+  background-image: url("../static/images/blogs/glurenbijdeburen.jpg");
+  background-position: 50%;
+}
+
+/* Generic blog page 600px  */
+
+@media (min-width: 600px) {
+   .tiles {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height:auto;
+    /* overflow: hidden;
+    height: auto; */
+
+  }
+ .blog_container {
+   width: 50%;
+ }
+.blog_image {
+  height: 25rem;
+  width: 25rem;
+}
 }

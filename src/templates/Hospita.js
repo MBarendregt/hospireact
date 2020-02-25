@@ -1,3 +1,4 @@
+
 import React from 'react';
 import HospitaForm from './HospitaForm'
 // import '../static/shared.css'
