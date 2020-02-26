@@ -213,7 +213,7 @@ class HospitaForm extends React.Component {
                         onChange={this.handleChange}
                         value={this.state.foundus} />
                 </label>
-                <div className="form__moreinfo">
+                <div className="hospita_form__moreinfo">
                     <label> {t("hospitaform.moreinfo")}
                         <textarea
                             className="form__moreinfo-textarea"
@@ -223,7 +223,7 @@ class HospitaForm extends React.Component {
                             value={this.state.description} />
                     </label>
                 </div>
-                <div className="form__submit">
+                <div className="hospita_form__submit">
                     <input type="submit" value={t("hospitaform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
             </form >

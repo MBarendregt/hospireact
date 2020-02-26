@@ -168,7 +168,7 @@ section {
     box-shadow: none;
     background-color: #fff;
     position: fixed;
-    height: 3.5rem !important;
+    height: 3.5rem ;
     overflow: hidden;
     z-index: 101;
 }
@@ -201,6 +201,75 @@ section {
     font-weight: bold;
     letter-spacing: 1.25px;
 }
+
+
+.bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    /* color: white; */
+    color: var(--main-bg-color);
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 1rem;
+    top: 0.9rem;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+    height: 15% !important;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
 
 #sidebarMenu {
     height: 100%;
@@ -320,11 +389,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     position: absolute;
     height: 100%;
-    width: 100%;
-    top: 19px;
-    right: 100px;
-    height: 22px;
-    width: 22px;    
+    /* width: 100%; */
+    /* top: 19px; */
+    right: 50px;
+    height: 100%;
+    /* width: 22px;     */
 }
 
 .main-nav { 
@@ -367,29 +436,35 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .main-nav__item--flag {
     margin: auto auto auto 5px;
 }
-.nlbutton,
-.nlbutton2 {
-    width: 2.1em;
-    height: 1.4em;
-    background-image: url(../static/images/dutchflag.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0px black;
-    overflow:hidden;
-    vertical-align: top;        
+
+
+
+.nlbutton {
+    background-size: 100% 100%;
+    background-image: url(../static/images/flags/netherlands.svg);
+    background-color: transparent;
+    border: 0;
+    /* padding: 8px 15px; */
+    color: white;
     cursor: pointer;
+    overflow:hidden;
+    vertical-align: top; 
+    height: 2rem;
+    width: 2rem;
 }
-.engbutton,
-.engbutton2 {
-    width: 2.1em;
-    height: 1.4em;
-    background-image: url(../static/images/united-kingdom_cropped.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0px black;
-    overflow:hidden;
-    vertical-align: top;
+
+.engbutton {
+    background-size: 100% 100%;
+    background-image: url(../static/images/flags/uk.svg);
+    background-color: transparent;
+    border: 0;
+    /* padding: 8px 15px; */
+    color: white;
     cursor: pointer;
+    overflow:hidden;
+    vertical-align: top; 
+    height: 2rem;
+    width: 2rem;
 }
 
 
@@ -430,7 +505,7 @@ main {
 
 .text-container {
     width:90%;
-    margin: auto;
+    margin: 1rem auto;
     text-align: center;
 }
 
@@ -487,7 +562,7 @@ main {
 
 .accordion__container {
     width: 90%;
-    margin:auto
+    margin: auto;
 }
 
 .titlecontainer {
@@ -839,7 +914,10 @@ input[type=submit]:hover{
     /* section {
         margin: 3.5rem 0;
     }    */
-
+    .bm-item,
+    .bm-burger-button {
+        display: none;
+    }
     span {
         font-size: 1rem;
     }
@@ -869,6 +947,19 @@ input[type=submit]:hover{
         top: 35%;
     }
     
+    .main-nav__item {
+        align-self: center;
+    }
+
+    .nlbutton {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .engbutton {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
     /* GENERAL STYLING PIECES E.G. GRAYISH BANNER WITH TEXT  */
 
 
@@ -878,11 +969,15 @@ input[type=submit]:hover{
 
 
     .text-container {
+        margin: 1.5rem auto;
         max-width: 50rem;
     }
     
     /* ORANGE CIRCLES WITH TEXT */    
 
+    .circle__container-big {
+        margin: 2rem auto;
+    }
     .circle__container {
         grid-template-columns: repeat(6, 1fr) ;
         grid-template-rows: repeat(1, 1fr) ;
@@ -912,6 +1007,7 @@ input[type=submit]:hover{
     .accordion__container {
         max-width: 50rem;
         text-align: center;
+        margin: 2rem auto;
     }    
 
     .accordion__container h3 {
@@ -920,8 +1016,8 @@ input[type=submit]:hover{
 
     .accordion {
        font-size: 1rem;
-       text-align: center;
      }    
+
      .panel {
         font-size: 0.9rem;
     }     
@@ -1025,29 +1121,38 @@ input[type=submit]:hover{
 
 @media (min-width: 900px) {
 
+    main {
+        margin-top: 5.75rem;
+    }
     span {
         font-size: 1.2rem;
     }
 
-    /* section {
-        margin: 4.5rem 0;
-    } */
+    .main-banner__title {
+        width: 50%;
+        margin: auto;
+    }
+
     #main-banner h1 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         margin: 2.5rem auto;
     }
     
-    /* .main-header {
-        height: 4.5rem !important;
-    } */
+    .main-header {
+        height: 5.75rem ;
+    }
 
     .main-nav__item {
         font-size:1.2rem;
     }
+    .text-container {
+        margin: 2.5rem auto;
+    }
 
     .banner-otherpages h1 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
+
 
     .accordion__title {
         font-size: 1rem;
@@ -1062,7 +1167,6 @@ input[type=submit]:hover{
 @media (min-width: 1200px) {}
 
 @media (min-width: 1800px) {}
-
 
 /* 
 #cookie-bar {

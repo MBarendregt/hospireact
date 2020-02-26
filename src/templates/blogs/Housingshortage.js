@@ -38,18 +38,18 @@ function Housingshortage({ t }) {
                 </div>
                 <div className="blog_textitem">
                     <span>
-                        <Trans>{t("listitem_2")}</Trans>
+                        <Trans>{t("listitem_2")}<a href="https://www.ad.nl/utrecht/woningnood-studenten-steeds-groter-ook-in-utrecht~a3797b4e/?referrer=https://www.google.com/" target="__blank" rel="noopener noreferrer"></a><a href="https://www.nporadio1.nl/onderzoek/10886-hoe-internationale-studenten-de-dupe-worden-van-het-kamertekort" target="__blank" rel="noopener noreferrer"></a></Trans>
                     </span>
                 </div>
                 <div className="blog_textitem">
                     <span>
-                        <Trans>{t("listitem_3")}</Trans>
+                        <Trans>{t("listitem_3")}<a href="https://www.dub.uu.nl/nl/achtergrond/van-vakantiepark-naar-gastenverblijf-internationals-op-queeste-naar-een-kamer" target="__blank" rel="noopener noreferrer"></a><a href="https://www.ad.nl/utrecht/woningnood-buitenlandse-studenten-666-euro-voor-kamertje-stayokay-met-vijf-anderen~acb41025/" target="__blank" rel="noopener noreferrer"></a></Trans>
                     </span>
                 </div>
                 <div className="blog_textitem">
                     <span>
 
-                        <Trans>{t("listitem_4")}</Trans>
+                        <Trans>{t("listitem_4")}<a href="https://lsvb.nl/2019/06/19/internationale-studenten-doelwit-van-uitbuiting-op-woningmarkt/" target="__blank" rel="noopener noreferrer"></a><a href="https://nos.nl/op3/artikel/2247906-ik-ben-voor-1000-euro-opgelicht-en-heb-nog-steeds-geen-kamer.html" target="__blank" rel="noopener noreferrer"></a></Trans>
                     </span>
                 </div>
                 <div className="blog_textitem">

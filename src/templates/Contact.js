@@ -27,6 +27,5 @@ function Contact({ t }) {
         </>
     )
 }
-// export default Contact
 
 export default withTranslation(['contact', 'common'])(Contact);

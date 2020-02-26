@@ -38,7 +38,7 @@ function Scammedbrokeanddesperate({ t }) {
                 </div>
                 <div className="blog_textitem">
                     <span>
-                        <Trans>{t("listitem_2")}</Trans>
+                        <Trans>{t("listitem_2")}<a href="https://www.nu.nl/wonen/5995903/hoe-kamernood-ervoor-zorgt-dat-studenten-op-vakantieparken-wonen.html" target="__blank" rel="noopener noreferrer"></a></Trans>
                     </span>
                 </div>
                 <div className="blog_textitem">

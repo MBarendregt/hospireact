@@ -63,7 +63,7 @@ function MainPage({ t }) {
                         </h2>
                     </div>
                     <span> <Trans i18nKey="abouthospi.text">
-                        {t("abouthospi.text")}<br></br><br></br><br></br><br></br><br></br>
+                        {t("abouthospi.text")}<br></br><br></br><br></br><br></br>
                     </Trans>
                     </span>
                 </div>

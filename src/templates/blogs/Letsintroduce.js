@@ -11,7 +11,7 @@ import RenderImages from './RenderImages'
 function Letsintroduce({ t }) {
     const blog = blogLoader.get("letsintroduce")
 
-    const renderedimage_1 = RenderImages(blog.secondsource)
+    const renderedimage_1 = RenderImages(blog.secondsource, { "backgroundPosition": "80% 40%" })
     return (
         <>
             <section>

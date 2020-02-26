@@ -23,7 +23,8 @@ RUN npm install \
     aws-sdk --save \
     dotenv --save \
     react-s3
-
+RUN npm install react-burger-menu
+RUN npm install typescript
 # # start app
 EXPOSE 3000
 EXPOSE 3001

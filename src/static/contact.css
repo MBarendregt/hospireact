@@ -5,11 +5,11 @@
 
 @media (min-width: 600px) {
     
-    .form__moreinfo {
+    .contact_form__moreinfo {
         grid-column: 1 / 3;
         grid-row: 3;
     }
-    .form__submit {
+    .contact_form__submit {
         grid-row: 4 ;
     }
 }

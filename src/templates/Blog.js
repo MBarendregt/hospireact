@@ -91,7 +91,6 @@ class Blog extends React.Component {
         if (images[index].id === t("blogs." + index + ".blog_id")) {
 
             const divStyle = {
-                // color: 'blue',
                 backgroundImage: 'url(' + images[index].src + ')',
                 backgroundSize: 'cover',
                 height: '18rem',
@@ -102,7 +101,7 @@ class Blog extends React.Component {
 
             return (
                 <>
-                    <div style={divStyle}></div>
+                    <div className="blogs_container" style={divStyle}></div>
                 </>
             )
         }

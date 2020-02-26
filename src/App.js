@@ -9,13 +9,24 @@ import Header from './Header'
 import Main from './Main'
 import Footer from './Footer'
 import { withTranslation } from 'react-i18next';
+import SideBar from "./sidebar";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+
+      <div id="App">
+        {/*       
+        <header className="main-header">
+          <SideBar right pageWrapId={"page-wrap"} outerContainerId={"App"} />
+        </header> */}
+        <Header />
+        <div id="page-wrap">
+
+          <Main />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

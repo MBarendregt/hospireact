@@ -174,7 +174,7 @@ class ContactForm extends React.Component {
                     </label>
                     <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("contactform.errormsg_email")}</span>
                 </div>
-                <div className="form__moreinfo">
+                <div className="contact_form__moreinfo">
                     <label> {t("contactform.description")}
                         <textarea
                             className="form__moreinfo-textarea"
@@ -184,7 +184,7 @@ class ContactForm extends React.Component {
                             value={this.state.description} />
                     </label>
                 </div>
-                <div className="form__submit">
+                <div className="contact_form__submit">
                     <input type="submit" value={t("contactform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
             </form >

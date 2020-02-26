@@ -453,7 +453,7 @@
 
       .main-aboutus {
         max-width:50rem;
-        margin: auto;
+        margin: 1rem auto;
         text-align: center;
       }
 
@@ -533,6 +533,9 @@
 
 @media (min-width: 900px) {
 
+    #main-concept {
+        margin-bottom: 2rem;
+    }
     .article__img {
         padding: 0.5rem 0;
         width: 40%;

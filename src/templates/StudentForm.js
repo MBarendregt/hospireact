@@ -2,7 +2,8 @@ import React from 'react';
 import validator from 'validator';
 import ReactS3 from 'react-s3';
 import { withTranslation } from 'react-i18next';
-
+import '../static/shared.css'
+import '../static/students.css'
 
 const config = {
     bucketName: 'hospihousing-studentfiles',

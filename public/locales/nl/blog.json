@@ -1,25 +1,49 @@
 {
+    "title": "Hospi Housing blog",
+    "text": "In onze blogs vertellen we over verschillende onderwerpen die te maken hebben met Hospi Housing. Je vindt hier leuke weetjes, interessante achtergrondverhalen en waardevolle tips.<1 />",
+    "sub_text": "Op de hoogte blijven van ons avontuur? Volg ons dan op <1>Instagram</1>, <2>Facebook</2> of <3>Linkedin</3>.",
+    "sub_title": "Blogs",
+    "back_to_all_blogs": "<1>Terug naar alle blogs</1>",
     "blogs": [
         {
-            "title": "Opgelucht, blut en wanhopig",
+            "title": "Hospi Housing: even voorstellen",
             "blog_id": 0,
-            "blog_text": " De harde werkelijkheid voor veel studenten op de Utrechtse woningmarkt, zien ook wij bij Hospi Housing."
+            "blog_subtitle": "Het team achter Hospi housing. Wie zijn wij, wat doen wij maar vooral waarom doen we dit?"
         },
         {
-            "title": "hallo",
-            "blog_id": 1
+            "title": "Welkom in Utrecht",
+            "blog_id": 1,
+            "blog_subtitle": "Het vinden van een kamer in Utrecht is een ware hel voor internationale studenten. Hospi Housing biedt een oplossing."
         },
         {
-            "title": "bye",
-            "blog_id": 2
+            "title": "Kan ik hospita worden?",
+            "blog_id": 2,
+            "blog_subtitle": "Hospita worden is makkelijk en levert je veel op. Maar kan iedereen zomaar hospita worden?"
         },
         {
-            "title": "bye",
-            "blog_id": 3
+            "title": "Bekend van TV!",
+            "blog_id": 3,
+            "blog_subtitle": "We mogen het zeggen: u kent ons van TV! Bekijk en lees hier de verhalen die het AD en RTV Utrecht over ons maakten."
         },
         {
-            "title": "bye",
-            "blog_id": 4
+            "title": "Jong en oud komt samen in Utrecht",
+            "blog_id": 4,
+            "blog_subtitle": "De mooiste dingen gebeuren wanneer je jong en oud samenbrengt. Meld je nu aan voor een reeks activiteiten dit najaar in Utrecht!"
+        },
+        {
+            "title": "Niet in NL",
+            "blog_id": 5,
+            "blog_subtitle": "Niet nodig"
+        },
+        {
+            "title": "\"Opgelicht, blut en wanhopig\"",
+            "blog_id": 6,
+            "blog_subtitle": "\"Opgelicht, blut en wanhopig\". De harde werkelijkheid voor veel studenten op de Utrechtse woningmarkt, zien ook wij bij Hospi Housing."
+        },
+        {
+            "title": "Niet in NL",
+            "blog_id": 7,
+            "blog_subtitle": "Niet nodig"
         }
     ]
 }

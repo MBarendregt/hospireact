@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react'
+import '../static/shared.css'
 import '../static/students.css'
 import Accordion from "./Accordion";
 import AccordionTable from "./AccordionTable";
@@ -75,71 +76,73 @@ function Students({ t }) {
                     <span>{t("signuptext")}</span><Link2 to="/students#myForm"><button><span>{t("signupbutton")}</span></button></Link2></div>
             </section>
             <section>
-                <div className="text-concept">
-                    <div className="main--underline">
-                        <h2>{t("concept.title")}
-                        </h2>
-                    </div>
-                </div>
-                <div className="circle__container">
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">1</div>
-                        </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text1")}<b></b><br /></Trans>
-                            </span>
+                <div className="circle__container-big">
+                    <div className="text-concept">
+                        <div className="main--underline">
+                            <h2>{t("concept.title")}
+                            </h2>
                         </div>
                     </div>
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">2</div>
+                    <div className="circle__container">
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">1</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text1")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text2")}<b></b><br /></Trans>
-                            </span>
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">2</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text2")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">3</div>
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">3</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text3")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text3")}<b></b><br /></Trans>
-                            </span>
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">4</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text4")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">4</div>
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">5</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text5")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text4")}<b></b><br /></Trans>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">5</div>
-                        </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text5")}<b></b><br /></Trans>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="circle__container--circle">
-                        <div className="circle__container--container">
-                            <div className="circle">6</div>
-                        </div>
-                        <div className="circle__text">
-                            <span>
-                                <Trans>{t("concept.text6")}<b></b><br /></Trans>
-                            </span>
+                        <div className="circle__container--circle">
+                            <div className="circle__container--container">
+                                <div className="circle">6</div>
+                            </div>
+                            <div className="circle__text">
+                                <span>
+                                    <Trans>{t("concept.text6")}<b></b><br /></Trans>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
