@@ -28,7 +28,6 @@ class sidebar extends React.Component {
         this.setState(state => ({ menuOpen: !state.menuOpen }))
     }
     render() {
-        const { t } = this.props.t;
         return (
             <div>
                 <Menu
