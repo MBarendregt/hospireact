@@ -27,7 +27,7 @@ function Hospita({ t }) {
 
 
     return (
-        <main>
+        <>
             <section>
                 <div className="banner-otherpages">
                     <h1>
@@ -268,8 +268,8 @@ function Hospita({ t }) {
                 </div>
                 <HospitaForm />
             </section>
+        </>
 
-        </main>
     );
 }
 

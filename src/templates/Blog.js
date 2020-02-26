@@ -97,7 +97,7 @@ class Blog extends React.Component {
                 height: '18rem',
                 backgroundPosition: "50%",
                 boxShadow: "3px 3px 5px 3px rgba(0,0,0,0.3)",
-                borderRadius: " 5px",
+                borderRadius: "5px",
             };
 
             return (
@@ -136,7 +136,7 @@ class Blog extends React.Component {
                 'en';
         };
         return (
-            <section id="wholepagesection">
+            <section >
                 <div className="text-concept">
                     <div className="main--underline">
                         <h2>{t("title")}
@@ -156,7 +156,7 @@ class Blog extends React.Component {
                     </h2>
                 </div>
 
-                <div ref="myscroll" className="tiles" aria-live="polite">
+                <div id="wholepagesection" ref="myscroll" className="tiles" aria-live="polite">
                     {this.state.items
                         .filter(item => this.returnOnlyForSpecificLanguage(item, getLanguage()) === true)
                         .sort(function (a, b) { return a - b })

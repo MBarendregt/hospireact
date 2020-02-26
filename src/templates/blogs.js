@@ -147,7 +147,7 @@ const blogLoader = {
             secondsource: require("../static/images/blogs/InternationalstudentinUtrecht.jpg"),
             title: 'foo',
             description: 'bar',
-            url: "10tipstoliveinthenetherlands",
+            url: "tipstoliveinthenetherlands",
             eng: 0,
             nl: 1
         },

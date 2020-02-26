@@ -90,10 +90,16 @@
   border-radius: 5px;
 }
 
-.blog_textitem {
+.blog_textlist {
   width: 90%;
   margin: 0.2rem auto;
 }
+
+.blog_textitem {
+  width: 90%;
+  margin: 1rem auto;
+}
+
 .second_image {
   height: 35rem;
   width: auto;

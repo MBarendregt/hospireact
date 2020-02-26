@@ -7,7 +7,7 @@ import ContactForm from './ContactForm'
 function Contact({ t }) {
 
     return (
-        <main>
+        <>
             <section>
                 <div className="banner-otherpages">
                     <h1>
@@ -24,7 +24,7 @@ function Contact({ t }) {
             <div>
                 <ContactForm />
             </div>
-        </main>
+        </>
     )
 }
 // export default Contact

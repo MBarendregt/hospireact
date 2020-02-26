@@ -58,7 +58,7 @@ function Students({ t }) {
     // console.log(ding)
     // return ding
     return (
-        <main>
+        <>
 
             <section>
                 <div className="banner-otherpages">
@@ -204,7 +204,7 @@ function Students({ t }) {
                 <StudentForm />
             </section>
 
-        </main >
+        </>
     )
 }
 

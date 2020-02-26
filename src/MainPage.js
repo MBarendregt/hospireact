@@ -7,7 +7,8 @@ import { withTranslation, Trans } from 'react-i18next';
 
 function MainPage({ t }) {
     return (
-        <main>
+        // <main>
+        <>
             <section id="main-banner" className="frontpage_banner">
                 <div className="main-banner__title">
                     <h1 className=""><Trans>{t('banner.bannertitle')}<span className="colored-text"></span></Trans></h1>
@@ -223,7 +224,8 @@ function MainPage({ t }) {
                     </div>
                 </div>
             </section>
-        </main>
+        </>
+        // </main>
 
     )
 }
