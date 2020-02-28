@@ -29,18 +29,25 @@ function validatePhoneNumber(tel) {
 }
 
 function validateNames(name) {
-    if (validator.isAlpha(name)) {
-        return false
+    if (name) {
+        if (validator.isAlpha(name)) {
+            return false
+        } else {
+            return true
+        }
     } else {
         return true
     }
 }
+
 async function postData(url = '', data = {}) {
     const response = await fetch(url,
         {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Origin': 'http://hospihousing.nl'
+                // change later to hospihousing.nl
             },
             body: JSON.stringify(data)
         });
@@ -121,7 +128,9 @@ class HospitaForm extends React.Component {
                 "foundus": this.state.foundus,
                 "description": this.state.description
             }
-            postData('https://mq58an2et4.execute-api.eu-west-1.amazonaws.com/teststage', data)
+            // "https://cors-anywhere.herokuapp.com/"
+            postData("https://cors-anywhere.herokuapp.com/https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/hospitaform", data)
+            // postData('https://mq58an2et4.execute-api.eu-west-1.amazonaws.com/teststage', data)
             // method for doing something with the returned data
             // .then((data) => {
             //     console.log("wtf:" + data)
@@ -129,7 +138,6 @@ class HospitaForm extends React.Component {
             this.setState(this.baseState)
             this.setState({ errorclass: true })
             let firstname = this.state.firstname
-
             this.setState({
                 submitmessage: t("hospitaform.thankyou_1") + firstname.charAt(0).toUpperCase() +
                     firstname.slice(1) + t("hospitaform.thankyou_2")
@@ -161,7 +169,7 @@ class HospitaForm extends React.Component {
                             onBlur={this.handleBlur('firstname')}
                             className={shouldMarkError('firstname') ? "error" : ""}
                             value={this.state.firstname}
-                            required />
+                        />
                     </label><span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
 
                 </div>
@@ -174,7 +182,7 @@ class HospitaForm extends React.Component {
                             onBlur={this.handleBlur('lastname')}
                             className={shouldMarkError('lastname') ? "error" : ""}
                             value={this.state.lastname}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                 </div>
@@ -188,7 +196,7 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('email') ? "error" : ""}
                             placeholder="emailadres@domein.com"
                             value={this.state.email}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
                 </div>
@@ -202,7 +210,7 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('tel') ? "error" : ""}
                             placeholder="+31612312123"
                             value={this.state.tel}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
                 </div>

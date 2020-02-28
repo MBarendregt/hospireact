@@ -125,11 +125,17 @@
         "countryofbirth": "Country of birth*",
         "profilepicture": "Profile picture*",
         "phonenumber": "Phone number*",
+        "errormessage_completeform": "The form still contains errors",
         "errormessage_textfield": "This field is mandatory and cannot contain any numbers or strange characters",
         "errormessage_emailfield": "This field is mandatory: e-mailadres@domein.com",
         "errormessage_phonefield": "This field is mandatory and cannot contain any letters",
+        "errormessage_birthday": "This field is mandatory and your birthday can't be in the future!",
+        "errormessage_datefield": "This field is mandatory",
+        "errormessage_generic": "This field is mandatory",
         "shortdescription": "Short description about yourself",
         "descriptionplaceholder": "Please provide us with a short description about yourself, we will use this to introduce you to the host. For example, hosts generally like to know something about your hobbies, countries you have visited, if you have stayed with a host before and what you are planning to do in the Netherlands.",
-        "submit": "Submit"
+        "submit": "Submit",
+        "thankyou_1": "Thank you ",
+        "thankyou_2": "for your registration!"
     }
 }

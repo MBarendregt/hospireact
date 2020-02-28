@@ -5,25 +5,53 @@ import { withTranslation } from 'react-i18next';
 import '../static/shared.css'
 import '../static/students.css'
 
-const config = {
-    bucketName: 'hospihousing-studentfiles',
-    dirName: 'images',
-    region: 'eu-west-1',
-    accessKeyId: "AKIA2SZQDYWF3WNF5KMY",
-    secretAccessKey: "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"
-    // accessKeyId: aws.accessKeyId,
-    // secretAccessKey: aws.secretAccessKey
 
-}
 
-function validate(email, tel, firstname, lastname) {
+function validate(state) {
+
     return {
-        email: validateEmail(email),
-        tel: validatePhoneNumber(tel),
-        firstname: validateNames(firstname),
-        lastname: validateNames(lastname)
+        email: validateEmail(state.email),
+        tel: validatePhoneNumber(state.tel),
+        firstname: validateNames(state.firstname),
+        lastname: validateNames(state.lastname),
+        dateofbirth: validateBirthDate(state.dateofbirth),
+        dateofarrival: validateDate(state.dateofarrival),
+        dateofdeparture: validateDate(state.dateofdeparture),
+        study: validateNotEmpty(state.study),
+        languages: validateNotEmpty(state.languages),
+        maxbudget: validateNotEmpty(state.maxbudget),
+        countryofbirth: validateNotEmpty(state.countryofbirth)
+
     };
 }
+
+
+function validateDate(date) {
+    if (date) {
+        if (date === "") {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return true;
+    }
+}
+
+function validateBirthDate(date) {
+
+    let today = new Date();
+    let filledin = new Date(date)
+    if (date === "") {
+        return true;
+    } else if (filledin > today) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
@@ -43,18 +71,34 @@ function validatePhoneNumber(tel) {
 }
 
 function validateNames(name) {
-    if (validator.isAlpha(name)) {
+    if (name) {
+        if (validator.isAlpha(name)) {
+            return false
+        } else {
+            return true
+        }
+    } else {
+        return true
+    }
+}
+
+function validateNotEmpty(value) {
+    if (value != "") {
         return false
     } else {
         return true
     }
 }
+
+
+
 async function postData(url = '', data = {}) {
     const response = await fetch(url,
         {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Origin': 'http://hospihousing.nl'
             },
             body: JSON.stringify(data)
         });
@@ -62,37 +106,6 @@ async function postData(url = '', data = {}) {
     console.log(response)
     return await response.text();
 }
-
-// class RadioOption extends React.Component {
-//     static contextType = {
-//         RadioGroup: {
-//             onChange: this.handleChange,
-//             value: this.props.value,
-//             name: this.props.name
-//         }
-//     };
-//     render() {
-//         <input
-//             name={this.context.RadioGroup.name}
-//             checked={this.context.RadioGroup.value === this.props.value}
-//             onChange={this.context.RadioGroup.onChange}
-//         />
-//     };
-// }
-
-// class RadioGroup extends React.Component {
-//     getOptionProps = () => ({
-//         name: this.props.name,
-//         value: this.props.value,
-//         onChange: this.handleChange
-//     });
-
-//     render() {
-//         return this.props.children({
-//             getOptionProps: this.getOptionProps
-//         })
-//     }
-// }
 
 class StudentForm extends React.Component {
     constructor(props) {
@@ -102,7 +115,6 @@ class StudentForm extends React.Component {
             lastname: '',
             email: '',
             tel: '',
-            foundus: '',
             description: '',
             submitmessage: '',
             errorclass: false,
@@ -116,11 +128,21 @@ class StudentForm extends React.Component {
             maxbudget: '',
             countryofbirth: '',
             selectedFile: null,
+            filename: "",
             touched: {
                 firstname: '',
                 lastname: '',
                 email: '',
-                tel: ''
+                tel: '',
+                gender: '',
+                dateofbirth: '',
+                dateofarrival: '',
+                dateofdeparture: '',
+                study: '',
+                languages: '',
+                maxbudget: '',
+                countryofbirth: '',
+                selectedFile: null
             },
             data: ''
         };
@@ -139,8 +161,6 @@ class StudentForm extends React.Component {
 
 
     handleChange(event) {
-        console.log(event.target.name);
-        console.log(event.target.value);
         let nam = event.target.name;
         let val = event.target.value;
         this.setState({ [nam]: val });
@@ -148,53 +168,25 @@ class StudentForm extends React.Component {
     }
 
     handleOptionChange(event) {
-
-        console.log(event.target.value);
         this.setState({ selectedOption: event.target.value });
-        // this.setState({
-        //     selectedOption: event.target.value
-        // });
     }
 
     onChangeHandler = event => {
-        console.log(event.target.files[0])
         this.setState({
             selectedFile: event.target.files[0],
             loaded: 0,
+            filename: event.target.files[0].name
         })
+
     }
-
-    // uploadFile(e) {
-    //     console.log(e.target.files[0]);
-    //     ReactS3.uploadFile(e.target.files[0], config)
-    //         .then((data) => {
-    //             console.log(data.location);
-    //         })
-    //         .catch((err) => {
-    //             alert(err);
-    //         })
-    // }
-
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log("fn: " + this.state.firstname + "ln: " + this.state.firstname +
-            "email: " + this.state.email + "tel: " + this.state.tel + "fu: " + this.state.foundus
-            + "des: " + this.state.description)
 
-        console.log(this.state.selectedOption)
-        console.log(this.state.selectedFile)
-        const data = new FormData()
-        data.append('file', this.state.selectedFile)
-        ReactS3.uploadFile(data, config)
-            .then((data) => {
-                console.log(data.location);
-            })
-            .catch((err) => {
-                alert(err);
-            })
+        const { t } = this.props;
+        const errors = validate(this.state);
 
-        const errors = validate(this.state.email, this.state.tel, this.state.firstname, this.state.lastname);
+        // Validate Errors
         var hasError = Object.keys(errors).some(function (k) {
             if (errors[k]) {
                 return true;
@@ -203,19 +195,65 @@ class StudentForm extends React.Component {
             }
         });
         if (hasError) {
-            this.setState({ submitmessage: 'Het formulier bevat nog fouten' })
+            this.setState({ submitmessage: t("form.errormessage_completeform") })
             this.setState({ errorclass: false })
             return;
         } else {
-            let data = {
+            // Upload image
+
+            const config = {
+                bucketName: 'hospihousing-studentfiles',
+                dirName: 'images/' + this.state.email,
+                region: 'eu-west-1',
+                accessKeyId: "AKIA2SZQDYWF25CJPCEZ",
+                secretAccessKey: "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"
+                // accessKeyId: aws.accessKeyId,
+                // secretAccessKey: aws.secretAccessKey
+
+            }
+            // const data = new FormData()
+            // data.append('file', this.state.selectedFile)
+            ReactS3.uploadFile(this.state.selectedFile, config)
+                .then((data) => {
+                    console.log(data.location);
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+
+            // upload(e) {
+            //     console.log(e.target.files[0]);
+            //     ReactS3.uploadFile(e.target.files[0], config)
+            //         .then((data) => {
+            //             console.log(data.location);
+            //         })
+            //         .catch((err) => {
+            //             console.log(err);
+            //             // alert(err.message);
+            //         })
+            // }
+
+
+
+
+            let dynamodata = {
                 "firstname": this.state.firstname,
                 "lastname": this.state.lastname,
                 "email": this.state.email,
                 "tel": this.state.tel,
-                "foundus": this.state.foundus,
-                "description": this.state.description
+                "description": this.state.description,
+                "gender": this.state.gender,
+                "dateofbirth": this.state.dateofbirth,
+                "dateofarrival": this.state.dateofarrival,
+                "dateofdeparture": this.state.dateofdeparture,
+                "study": this.state.study,
+                "languages": this.state.languages,
+                "maxbudget": this.state.maxbudget,
+                "countryofbirth": this.state.countryofbirth,
+                "filename": this.state.filename
             }
-            postData('https://mq58an2et4.execute-api.eu-west-1.amazonaws.com/teststage', data)
+
+            postData("https://cors-anywhere.herokuapp.com/https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/studentform", dynamodata)
             // method for doing something with the returned data
             // .then((data) => {
             //     console.log("wtf:" + data)
@@ -224,10 +262,13 @@ class StudentForm extends React.Component {
             this.setState({ errorclass: true })
             let firstname = this.state.firstname
 
+
             this.setState({
-                submitmessage: 'Bedankt ' + firstname.charAt(0).toUpperCase() +
-                    firstname.slice(1) + ' voor uw aanmelding!'
+                submitmessage: t("form.thankyou_1") + firstname.charAt(0).toUpperCase() +
+                    firstname.slice(1) + t("form.thankyou_2")
             });
+
+
             setTimeout(() => {
                 this.setState({ submitmessage: '' });
             }, 5000);
@@ -236,7 +277,7 @@ class StudentForm extends React.Component {
 
 
     render() {
-        const errors = validate(this.state.email, this.state.tel, this.state.firstname, this.state.lastname);
+        const errors = validate(this.state);
         const { t } = this.props;
 
         const shouldMarkError = (field) => {
@@ -257,7 +298,7 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('firstname')}
                             className={shouldMarkError('firstname') ? "error" : ""}
                             value={this.state.firstname}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
 
@@ -272,7 +313,7 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('lastname')}
                             className={shouldMarkError('lastname') ? "error" : ""}
                             value={this.state.lastname}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
                 </div>
@@ -286,7 +327,7 @@ class StudentForm extends React.Component {
                             className={shouldMarkError('email') ? "error" : ""}
                             placeholder="emailadres@domein.com"
                             value={this.state.email}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("form.errormessage_emailfield")}</span>
                 </div>
@@ -298,9 +339,13 @@ class StudentForm extends React.Component {
                             name="dateofbirth"
                             id="dateofbirth"
                             onChange={this.handleChange}
-                            required
+                            onBlur={this.handleBlur('dateofbirth')}
+                            className={shouldMarkError('dateofbirth') ? "error" : ""}
+                            value={this.state.dateofbirth}
+
                         />
                     </label>
+                    <span className={shouldMarkError('dateofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_birthday")}</span>
                 </div>
                 <div>
                     <label htmlFor="dateofarrival">{t("form.dateofarrival")}
@@ -310,9 +355,13 @@ class StudentForm extends React.Component {
                             name="dateofarrival"
                             id="dateofarrival"
                             onChange={this.handleChange}
-                            required
+                            onBlur={this.handleBlur('dateofarrival')}
+                            className={shouldMarkError('dateofarrival') ? "error" : ""}
+                            value={this.state.dateofarrival}
+
                         />
                     </label>
+                    <span className={shouldMarkError('dateofarrival') ? "errorshow" : "errorhide"}>{t("form.errormessage_datefield")}</span>
                 </div>
                 <div>
                     <label htmlFor="dateofdeparture">{t("form.dateofdeparture")}
@@ -322,9 +371,13 @@ class StudentForm extends React.Component {
                             name="dateofdeparture"
                             id="dateofdeparture"
                             onChange={this.handleChange}
-                            required
+                            onBlur={this.handleBlur('dateofdeparture')}
+                            className={shouldMarkError('dateofdeparture') ? "error" : ""}
+                            value={this.state.dateofdeparture}
+
                         />
                     </label>
+                    <span className={shouldMarkError('dateofdeparture') ? "errorshow" : "errorhide"}>{t("form.errormessage_datefield")}</span>
                 </div>
                 <div className="formcontainer">
                     <label>
@@ -336,9 +389,9 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('study')}
                             className={shouldMarkError('study') ? "error" : ""}
                             value={this.state.study}
-                            required />
+                        />
                     </label>
-                    <span className={shouldMarkError('study') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
+                    <span className={shouldMarkError('study') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                 </div>
                 <div className="formcontainer">
                     <label>
@@ -350,8 +403,8 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('languages')}
                             className={shouldMarkError('languages') ? "error" : ""}
                             value={this.state.languages}
-                            required />
-                    </label><span className={shouldMarkError('languages') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
+                        />
+                    </label><span className={shouldMarkError('languages') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                 </div>
                 <div className="formcontainer">
                     <label>
@@ -363,8 +416,8 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('maxbudget')}
                             className={shouldMarkError('maxbudget') ? "error" : ""}
                             value={this.state.maxbudget}
-                            required />
-                    </label><span className={shouldMarkError('maxbudget') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
+                        />
+                    </label><span className={shouldMarkError('maxbudget') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                 </div>
                 <div className="formcontainer">
                     <label>
@@ -376,13 +429,20 @@ class StudentForm extends React.Component {
                             onBlur={this.handleBlur('countryofbirth')}
                             className={shouldMarkError('countryofbirth') ? "error" : ""}
                             value={this.state.countryofbirth}
-                            required />
-                    </label><span className={shouldMarkError('countryofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_textfield")}</span>
+                        />
+                    </label><span className={shouldMarkError('countryofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                 </div>
                 <div className="signup-form__picturecontainer">
                     <div>
                         <span>{t("form.profilepicture")}</span>
-                        <label className="signup-form__students--profilepicture"><span className="singup-form__students--placeholder-profilepicture">{t("form.profilepicture")} +</span>
+
+                        <label className="signup-form__students--profilepicture">
+                            {/* <span className="singup-form__students--placeholder-profilepicture">
+                                {t("form.profilepicture")} +
+                        </span> */}
+                            <span className="singup-form__students--placeholder-profilepicture">
+                                {this.state.selectedFile != null ? this.state.filename : t("form.profilepicture") + " +"}
+                            </span>
                             <input
                                 type="file"
                                 onChange={this.onChangeHandler}
@@ -390,7 +450,8 @@ class StudentForm extends React.Component {
                                 name="profilepicture"
                                 id="profilepicture"
                                 className="signup-form__students--input"
-                            /></label>
+                            />
+                        </label>
                     </div>
                 </div>
 
@@ -405,7 +466,7 @@ class StudentForm extends React.Component {
                             className={shouldMarkError('tel') ? "error" : ""}
                             placeholder="+31612312123"
                             value={this.state.tel}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("form.errormessage_phonefield")}</span>
                 </div>

@@ -4,5 +4,8 @@
 			"service": "S3AndCloudFront",
 			"providerPlugin": "awscloudformation"
 		}
-	}
+	},
+	"function": {},
+	"auth": {},
+	"api": {}
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import validator from 'validator';
 import { withTranslation } from 'react-i18next';
 
-function validate(email, tel, firstname, lastname) {
+function validate(email, firstname, lastname) {
     return {
         email: validateEmail(email),
         firstname: validateNames(firstname),
@@ -19,8 +19,12 @@ function validateEmail(email) {
 }
 
 function validateNames(name) {
-    if (validator.isAlpha(name)) {
-        return false
+    if (name) {
+        if (validator.isAlpha(name)) {
+            return false
+        } else {
+            return true
+        }
     } else {
         return true
     }
@@ -32,6 +36,7 @@ async function postData(url = '', data = {}) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Origin': 'http://hospihousing.nl'
             },
             body: JSON.stringify(data)
         });
@@ -105,7 +110,11 @@ class ContactForm extends React.Component {
                 "email": this.state.email,
                 "description": this.state.description
             }
-            postData('https://mq58an2et4.execute-api.eu-west-1.amazonaws.com/teststage', data)
+
+            postData('https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/contactform', data)
+                .then((data) => {
+                    console.log(data);
+                })
             // method for doing something with the returned data
             // .then((data) => {
             //     console.log("wtf:" + data)
@@ -124,7 +133,7 @@ class ContactForm extends React.Component {
         }
     }
     render() {
-        const errors = validate(this.state.email, this.state.tel, this.state.firstname, this.state.lastname);
+        const errors = validate(this.state.email, this.state.firstname, this.state.lastname);
         const { t } = this.props;
         const shouldMarkError = (field) => {
             const hasError = errors[field];
@@ -143,7 +152,7 @@ class ContactForm extends React.Component {
                             onBlur={this.handleBlur('firstname')}
                             className={shouldMarkError('firstname') ? "error" : ""}
                             value={this.state.firstname}
-                            required />
+                        />
                     </label><span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("contactform.errormsg_text")}</span>
 
                 </div>
@@ -156,7 +165,7 @@ class ContactForm extends React.Component {
                             onBlur={this.handleBlur('lastname')}
                             className={shouldMarkError('lastname') ? "error" : ""}
                             value={this.state.lastname}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("contactform.errormsg_text")}</span>
                 </div>
@@ -170,7 +179,7 @@ class ContactForm extends React.Component {
                             className={shouldMarkError('email') ? "error" : ""}
                             placeholder="emailadres@domein.com"
                             value={this.state.email}
-                            required />
+                        />
                     </label>
                     <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("contactform.errormsg_email")}</span>
                 </div>

@@ -111,6 +111,7 @@
 .signup-form__students select {
     display: block;
     width: 100%;
+    max-width: 80vw;
 }
 
 [type="date"] {
@@ -128,7 +129,7 @@
 }
 
 
-.signup-form__students--input {
+.signup-form__students .signup-form__students--input {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -158,6 +159,7 @@
   width:100%;
   text-align: left;
   padding-left: 2px;
+  overflow: hidden;
 }
 
 /* input[type="file"] {
@@ -196,9 +198,24 @@
     .singup-form__students--placeholder-profilepicture {
       font-size: 1rem;
     }
+
+    .signup-form__students label,
+    .signup-form__students input,
+    .signup-form__students select {
+        display: block;
+        width: 100%;
+        max-width: 17.5rem;
+    }
+
+    .form__moreinfo label {
+      max-width: 40rem;
+    }
+    
     input[type=file] {
       width: 10%;
     }
+
+    
 
 
 }

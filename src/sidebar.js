@@ -1,6 +1,6 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import { Link } from 'react-router-dom'
+import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 class sidebar extends React.Component {

@@ -125,11 +125,17 @@
         "countryofbirth": "Geboorteland*",
         "profilepicture": "Profiel foto*",
         "phonenumber": "Telefoonnummer*",
+        "errormessage_completeform": "Het formulier bevat nog fouten",
         "errormessage_textfield": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
         "errormessage_emailfield": "Dit veld is verplicht: e-mailadres@domein.com",
         "errormessage_phonefield": "Dit veld is verplicht mag geen letters bevatten",
+        "errormessage_birthday": "Dit veld is verplicht en je geboortedatum kan niet in de toekomst liggen!",
+        "errormessage_datefield": "Dit veld is verplicht",
+        "errormessage_generic": "Dit veld is verplicht",
         "shortdescription": "Korte omschrijving van jezelf",
         "descriptionplaceholder": "Korte omschrijving over wie jij bent. We gebruiken deze tekst om je voor te stellen aan de hospita. Je zou bijvoorbeeld iets kunnen vertellen over je hobby's, landen die je hebt bezocht of je eerder bij een hospita hebt gewoond en wat je van plan bent te gaan doen in Nederland.",
-        "submit": "Verzenden"
+        "submit": "Verzenden",
+        "thankyou_1": "Bedankt ",
+        "thankyou_2": " voor uw aanmelding!"
     }
 }

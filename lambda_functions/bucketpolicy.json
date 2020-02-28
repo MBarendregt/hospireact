@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Id": "http referer policy example",
+    "Statement": [
+        {
+            "Sid": "Allow all kind of http requests originating from http://www.your-website.com and https://www.your-website.com",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:GetObject",
+                "s3:GetObjectAcl"
+            ],
+            "Resource": "arn:aws:s3:::hospihousing-studentfiles/*",
+            "Condition": {
+                "StringLike": {
+                    "aws:Referer": [
+                        "https://www.hospihousing.nl",
+                        "http://www.hospihousing.nl"
+                    ]
+                }
+            }
+        }
+    ]
+}

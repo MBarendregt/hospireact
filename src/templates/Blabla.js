@@ -12,33 +12,38 @@ const config = {
     secretAccessKey: "V1gtCeakbqyjo+eT5spYZV2mY4bPEVlmQN68XC3c"
     // accessKeyId: aws.accessKeyId,
     // secretAccessKey: aws.secretAccessKey
-
 }
 
-class S3uploads extends React.Component {
-
-
-    uploadFile(e) {
+class Blabla extends React.Component {
+    constructor() {
+        super();
+    }
+    upload(e) {
         console.log(e.target.files[0]);
         ReactS3.uploadFile(e.target.files[0], config)
             .then((data) => {
                 console.log(data.location);
             })
             .catch((err) => {
-                alert(err);
+                console.log(err);
+                // alert(err.message);
             })
     }
 
+
+
     render() {
         return (
-            <div>
-                <h3>Upload</h3>
-                <input type="file"
-                    onChange={this.uploadFile} />
-            </div>
+            <section>
+                <div>
+                    <h3>Upload</h3>
+                    <input type="file"
+                        onChange={this.upload} />
+                </div>
+            </section>
         )
     }
 }
 
 
-export default S3uploads;
+export default Blabla;
