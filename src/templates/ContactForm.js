@@ -2,6 +2,9 @@ import React from 'react';
 import validator from 'validator';
 import { withTranslation } from 'react-i18next';
 
+
+
+
 function validate(email, firstname, lastname) {
     return {
         email: validateEmail(email),
@@ -29,6 +32,8 @@ function validateNames(name) {
         return true
     }
 }
+
+
 
 async function postData(url = '', data = {}) {
     const response = await fetch(url,
@@ -110,6 +115,8 @@ class ContactForm extends React.Component {
                 "email": this.state.email,
                 "description": this.state.description
             }
+                
+
 
             postData('https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/contactform', data)
                 .then((data) => {

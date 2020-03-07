@@ -90,6 +90,19 @@ function validateNotEmpty(value) {
     }
 }
 
+async function getData(url = '') {
+    const response = await fetch(url,
+        {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Origin': 'http://hospihousing.nl'
+            }
+        });
+
+    console.log(response)
+    return await response.text();
+}
 
 
 async function postData(url = '', data = {}) {
@@ -106,6 +119,7 @@ async function postData(url = '', data = {}) {
     console.log(response)
     return await response.text();
 }
+
 
 class StudentForm extends React.Component {
     constructor(props) {
@@ -129,6 +143,7 @@ class StudentForm extends React.Component {
             countryofbirth: '',
             selectedFile: null,
             filename: "",
+            keys: "",
             touched: {
                 firstname: '',
                 lastname: '',
@@ -182,7 +197,6 @@ class StudentForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
         const { t } = this.props;
         const errors = validate(this.state);
 
@@ -200,42 +214,27 @@ class StudentForm extends React.Component {
             return;
         } else {
             // Upload image
-
-            const config = {
-                bucketName: 'hospihousing-studentfiles',
-                dirName: 'images/' + this.state.email,
-                region: 'eu-west-1',
-                accessKeyId: "AKIA2SZQDYWF25CJPCEZ",
-                secretAccessKey: "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"
-                // accessKeyId: aws.accessKeyId,
-                // secretAccessKey: aws.secretAccessKey
-
-            }
-            // const data = new FormData()
-            // data.append('file', this.state.selectedFile)
-            ReactS3.uploadFile(this.state.selectedFile, config)
-                .then((data) => {
-                    console.log(data.location);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
-
-            // upload(e) {
-            //     console.log(e.target.files[0]);
-            //     ReactS3.uploadFile(e.target.files[0], config)
-            //         .then((data) => {
-            //             console.log(data.location);
-            //         })
-            //         .catch((err) => {
-            //             console.log(err);
-            //             // alert(err.message);
-            //         })
-            // }
-
-
-
-
+            // this.state.persist()
+            let state = this.state;
+            getData('https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/getkeys')
+            .then((data) => {
+                console.log(state)
+                var data2 = JSON.parse(JSON.parse(data))
+                const config = {
+                    bucketName: 'hospihousing-studentfiles',
+                    dirName: 'images/' + state.email,
+                    region: 'eu-west-1',
+                    accessKeyId: data2.access,
+                    secretAccessKey: data2.keys
+                }
+            ReactS3.uploadFile(state.selectedFile, config)
+            .then((data) => {
+                console.log(data.location);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            })
             let dynamodata = {
                 "firstname": this.state.firstname,
                 "lastname": this.state.lastname,
