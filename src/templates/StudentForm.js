@@ -2,8 +2,8 @@ import React from 'react';
 import validator from 'validator';
 import ReactS3 from 'react-s3';
 import { withTranslation } from 'react-i18next';
-import '../static/shared.css'
-import '../static/students.css'
+// import '../static/shared.css'
+// import '../static/students.css'
 
 
 
@@ -83,7 +83,7 @@ function validateNames(name) {
 }
 
 function validateNotEmpty(value) {
-    if (value != "") {
+    if (value !== "") {
         return false
     } else {
         return true
@@ -330,48 +330,51 @@ class StudentForm extends React.Component {
                     </label>
                     <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("form.errormessage_emailfield")}</span>
                 </div>
-                <div>
-                    <label htmlFor="dateofbirth">{t("form.dateofbirth")}
+                <div className="formcontainer">
+                    <label>{t("form.dateofbirth")}
+                    {/* htmlFor="dateofbirth" */}
                         <input
-                            className="date_picker"
+                            // className="date_picker"
                             type="date"
                             name="dateofbirth"
                             id="dateofbirth"
                             onChange={this.handleChange}
                             onBlur={this.handleBlur('dateofbirth')}
-                            className={shouldMarkError('dateofbirth') ? "error" : ""}
+                            className={shouldMarkError('dateofbirth') ? "error extraclassforyou" : "extraclassforyou"}
                             value={this.state.dateofbirth}
 
                         />
                     </label>
                     <span className={shouldMarkError('dateofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_birthday")}</span>
                 </div>
-                <div>
-                    <label htmlFor="dateofarrival">{t("form.dateofarrival")}
+                <div className="formcontainer">
+                    <label >{t("form.dateofarrival")}
+                    {/* htmlFor="dateofarrival" */}
                         <input
-                            className="date_picker"
+                            // className="date_picker"
                             type="date"
                             name="dateofarrival"
                             id="dateofarrival"
                             onChange={this.handleChange}
                             onBlur={this.handleBlur('dateofarrival')}
-                            className={shouldMarkError('dateofarrival') ? "error" : ""}
+                            className={shouldMarkError('dateofarrival') ? "error extraclassforyou" : "extraclassforyou"}
                             value={this.state.dateofarrival}
 
                         />
                     </label>
                     <span className={shouldMarkError('dateofarrival') ? "errorshow" : "errorhide"}>{t("form.errormessage_datefield")}</span>
                 </div>
-                <div>
-                    <label htmlFor="dateofdeparture">{t("form.dateofdeparture")}
+                <div className="formcontainer">
+                    <label >{t("form.dateofdeparture")}
+                    {/* htmlFor="dateofdeparture" */}
                         <input
-                            className="date_picker"
+                            // className="date_picker"
                             type="date"
                             name="dateofdeparture"
                             id="dateofdeparture"
                             onChange={this.handleChange}
                             onBlur={this.handleBlur('dateofdeparture')}
-                            className={shouldMarkError('dateofdeparture') ? "error" : ""}
+                            className={shouldMarkError('dateofdeparture') ? "error extraclassforyou" : "extraclassforyou"}
                             value={this.state.dateofdeparture}
 
                         />
@@ -436,11 +439,8 @@ class StudentForm extends React.Component {
                         <span>{t("form.profilepicture")}</span>
 
                         <label className="signup-form__students--profilepicture">
-                            {/* <span className="singup-form__students--placeholder-profilepicture">
-                                {t("form.profilepicture")} +
-                        </span> */}
                             <span className="singup-form__students--placeholder-profilepicture">
-                                {this.state.selectedFile != null ? this.state.filename : t("form.profilepicture") + " +"}
+                                {this.state.selectedFile !== null ? this.state.filename : t("form.profilepicture") + " +"}
                             </span>
                             <input
                                 type="file"
@@ -453,8 +453,6 @@ class StudentForm extends React.Component {
                         </label>
                     </div>
                 </div>
-
-
                 <div className="formcontainer">
                     <label >{t("form.phonenumber")}
                         <input
@@ -480,6 +478,7 @@ class StudentForm extends React.Component {
                                 id="male"
                                 defaultValue="male"
                                 onChange={this.handleChange}
+            
                             />
                             <span className="checkmark"></span>
                         </label>
@@ -490,6 +489,7 @@ class StudentForm extends React.Component {
                                 id="female"
                                 defaultValue="female"
                                 onChange={this.handleChange}
+                                
                             />
                             <span className="checkmark"></span>
                         </label>
@@ -500,6 +500,7 @@ class StudentForm extends React.Component {
                                 id="neutral"
                                 defaultValue="neutral"
                                 onChange={this.handleChange}
+                
                             />
                             <span className="checkmark"></span>
                         </label>
@@ -517,7 +518,10 @@ class StudentForm extends React.Component {
                 </div>
 
                 <div className="form__submit">
-                    <input type="submit" value={t("form.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
+                    <input type="submit" value={t("form.submit")} className="send-form" /> 
+                </div>
+                <div>
+                <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
             </form >
         );

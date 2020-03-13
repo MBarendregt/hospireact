@@ -1,6 +1,8 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .iti__flag {background-image: url("./images/img/flags.png");}
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .iti__flag {background-image: url("./images/img/flags@2x.png");}
 }
 
@@ -14,7 +16,7 @@
 
 
 .accordion__studentstable-title {
-  font-size:0.8rem;
+  font-size:1.2rem;
   font-weight: bold;
   margin-bottom:0.5rem;
 }
@@ -27,7 +29,7 @@
   }
 
 .accordion__studentstable td {
-  font-size:0.8rem;
+  font-size:1.2rem;
   padding:0;
 }
 
@@ -41,7 +43,7 @@
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.4rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -103,6 +105,7 @@
 
 .signup-form__students {
     padding: 0 2rem;
+    display: -ms-grid;
     display: grid;
 }
 
@@ -115,7 +118,9 @@
 }
 
 [type="date"] {
-    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  95% 50% no-repeat ;
+    line-height: 2rem;
+    height: 2rem;
   }
   [type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -123,10 +128,6 @@
   [type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
   }
-
-.date_picker {
-    padding-right:10px;
-}
 
 
 .signup-form__students .signup-form__students--input {
@@ -138,13 +139,17 @@
 	z-index: -1;
 }
 .signup-form__picturecontainer {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 
 .signup-form__students--profilepicture {
   color: grey;
   background-color: white;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important; 
   border: solid 2px black;
   border-radius: 4px;
@@ -155,7 +160,9 @@
 }
 
 .singup-form__students--placeholder-profilepicture {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width:100%;
   text-align: left;
   padding-left: 2px;
@@ -166,6 +173,20 @@
   display: none;
 } */
 
+input[type=submit] {
+  /* line-height: 3rem;
+  width: 70%; */
+  width: 50%;
+  /* grid-row: 8 ; */
+  /* font-size: 1rem; */
+}  
+
+
+.formcontainer__gender label,
+.formcontainer__gender div
+ {
+  font-size:1.2rem;
+}
 
 
 @media (min-width: 600px) {
@@ -174,29 +195,38 @@
         margin: 2rem auto;
         max-width: 40rem;
         grid-column-gap: 1rem;
+        -ms-grid-columns: 1fr 1rem 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .formcontainer__gender {
         position: relative;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
         grid-column: 1 /3;
     }
     
     .form__moreinfo {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
         grid-column: 1 /3;
+        -ms-grid-row: 8;
         grid-row: 8;
     }
 
     input[type=submit] {
         /* line-height: 3rem;
         width: 70%; */
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
         grid-column: 1 / 2;
+        -ms-grid-row: 8 ;
         grid-row: 8 ;
         /* font-size: 1rem; */
     }    
 
     .singup-form__students--placeholder-profilepicture {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
 
     .signup-form__students label,

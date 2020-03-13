@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { withTranslation } from 'react-i18next';
 import Chevron from "./Chevron";
-import "../static/shared.css";
+// import "../static/shared.css";
 
 function Accordion(props) {
 
@@ -48,26 +48,3 @@ function Accordion(props) {
 }
 
 export default withTranslation(['accordion', 'common'])(Accordion);
-    // return (
-    //     <div className="accordion__section">
-    //         <button className={`accordion ${setActive}`} onClick={toggleAccordion} >
-    //             <p className="accordion__title">{props.title}</p>
-    //             <Chevron className={`${setRotate}`} fill={"#777"} />
-    //         </button>
-    //         <div
-    //             ref={content}
-    //             style={{ maxHeight: `${setHeight}` }}
-    //             className="accordion__content"
-    //         >
-    //             <div
-    //                 className="accordion__text"
-    //                 dangerouslySetInnerHTML={{ __html: props.content }}
-    //             />
-    //         </div>
-    //         <div className="accordion__border"></div>
-    //     </div>
-
-    // );
-// }
-
-// export default withTranslation(['accordion', 'common'])(Accordion);

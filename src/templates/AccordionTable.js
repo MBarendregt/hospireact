@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { withTranslation, Trans } from 'react-i18next';
 import Chevron from "./Chevron";
-import "../static/shared.css";
-import '../static/students.css'
+// import "../static/shared.css";
+// import '../static/students.css'
 
 function AccordionTable(props) {
     const [setActive, setActiveState] = useState("");

@@ -122,10 +122,6 @@ class ContactForm extends React.Component {
                 .then((data) => {
                     console.log(data);
                 })
-            // method for doing something with the returned data
-            // .then((data) => {
-            //     console.log("wtf:" + data)
-            // })
             this.setState(this.baseState)
             this.setState({ errorclass: true })
             let firstname = this.state.firstname

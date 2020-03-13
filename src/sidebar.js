@@ -1,7 +1,8 @@
 import React from "react";
 import { slide as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+// import {  } from 'react-router'
 
 class sidebar extends React.Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class sidebar extends React.Component {
         this.setState(state => ({ menuOpen: !state.menuOpen }))
     }
     render() {
+        const {location } = this.props
         return (
             <div>
                 <Menu
@@ -35,16 +37,20 @@ class sidebar extends React.Component {
                     onStateChange={(state) => this.handleStateChange(state)}
                     {...this.props}
                 >
-
+                    
                     {/* {t("home")} */}
-                    <Link onClick={() => this.closeMenu()} className="menu-item" to="/">{this.props.t("home")}</Link>
-                    <Link onClick={() => this.closeMenu()} className="menu-item" to="/students">{this.props.t("lookingforroom")}</Link>
-                    <Link onClick={() => this.closeMenu()} className="menu-item" to="/hospita">{this.props.t("becomehost")}</Link>
-                    <Link onClick={() => this.closeMenu()} className="menu-item" to="/blog">{this.props.t("blog")}</Link>
-                    <Link onClick={() => this.closeMenu()} className="menu-item" to="/contact">{this.props.t("contact")}</Link>
+                    <Link onClick={() => this.closeMenu()} className={location.pathname === '/' ?  "menu-item active-page" : "menu-item"} to="/">{this.props.t("home")}</Link>
+                    <Link onClick={() => this.closeMenu()} className={location.pathname.indexOf('/students') !== -1 ? "menu-item active-page" : "menu-item"} to="/students">{this.props.t("lookingforroom")}</Link>
+                    <Link onClick={() => this.closeMenu()} className={location.pathname.indexOf('/hospita') !== -1 ?  "menu-item active-page" : "menu-item"} to="/hospita">{this.props.t("becomehost")}</Link>
+                    <Link onClick={() => this.closeMenu()} className={location.pathname.indexOf('/blog') !== -1 ?  "menu-item active-page" : "menu-item"} to="/blog">{this.props.t("blog")}</Link>
+                    <Link onClick={() => this.closeMenu()} className={location.pathname.indexOf('/contact') !== -1 ?  "menu-item active-page" : "menu-item"} to="/contact">{this.props.t("contact")}</Link>
                 </Menu>
             </div>
         )
     }
 }
-export default withTranslation(['header'])(sidebar);
+
+const AdaptiveHeader = withRouter(sidebar)
+
+
+export default withTranslation(['header'])(AdaptiveHeader);

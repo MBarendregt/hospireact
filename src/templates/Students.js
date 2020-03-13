@@ -1,7 +1,9 @@
 /* eslint-disable */
 import React from 'react'
+
 import '../static/shared.css'
 import '../static/students.css'
+
 import Accordion from "./Accordion";
 import AccordionTable from "./AccordionTable";
 import { HashLink as Link2 } from 'react-router-hash-link';

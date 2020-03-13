@@ -82,11 +82,11 @@ li:empty {
 
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 span {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 section {
     /* height: 100%; */
@@ -110,7 +110,7 @@ section {
   
 #main-banner h1 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
     width: 100%;
     padding:1rem;
@@ -122,9 +122,10 @@ section {
     padding: 0.6rem;
     position: relative
 }
+
 .banner-otherpages h1 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     width: 90%;    
     position: absolute;
@@ -219,6 +220,9 @@ section {
     color: var(--main-bg-color);
   }
   
+  .active-page {
+    color: var(--main-bg-color) !important;
+  }
   /* The rest copied directly from react-burger-menu docs */
   
   /* Position and sizing of burger button */
@@ -269,7 +273,7 @@ section {
     background: rgba(0, 0, 0, 0.3);
   }
 
-
+/* 
 
 #sidebarMenu {
     height: 100%;
@@ -382,7 +386,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
-}
+} */
 
 .main-nav--mobile{
     display: flex;
@@ -542,12 +546,12 @@ main {
 }
 
 .circle {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fff;
-    line-height: 32px;
+    line-height: 40px;
     text-align: center;
     background:var(--main-bg-color)
   }
@@ -567,8 +571,8 @@ main {
 
 .titlecontainer {
     display: flex;
-
 }
+
 .accordion {
     background-color: #fff;
     color:black;
@@ -578,7 +582,7 @@ main {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     transition: 0.6s;
     margin:0;
     font-weight: 500;
@@ -633,7 +637,7 @@ main {
 }
 
 .innerpanel > span {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .panel.show {
@@ -648,6 +652,10 @@ main {
     display: grid;
     /* grid-row-gap: 0.5rem; */
     /* position: relative; */
+}
+
+.formcontainer label {
+    font-size:1.2rem;
 }
 
 .signup-form label,
@@ -665,7 +673,6 @@ input {
 input[type=text],
 input[type=email],
 input[type=tel],
-input[type=date],
 input[type=file] {
     line-height: 2rem;
     padding-left: 0.3rem;
@@ -674,7 +681,7 @@ input[type=file] {
 /* Add text below invalid form inputs */
 .invalid_email{
     color: #b43f3f;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     position: absolute;
     margin: -0.3rem 0 ;
 }
@@ -725,7 +732,7 @@ input[type=submit] {
 .send-form {
     /* height: 3rem; */
     line-height: 2rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     border: solid rgba(255, 153, 51, 1) 2px;
     background-color:white;
     transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s, color 0.4s ease 0s;
@@ -762,7 +769,7 @@ input[type=submit]:hover{
     height: 3rem;
     width: 16vw;
     min-width: 8rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     align-self: center;
     border: solid rgba(255, 153, 51, 1) 2px;
     background-color: rgba(255, 153, 51, 1);
@@ -816,8 +823,9 @@ input[type=submit]:hover{
     background-color: rgba(255, 153, 51, 0.5);
   }
 
+
 .accordion__title {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   
   /* Style the accordion chevron icon */
@@ -841,12 +849,12 @@ input[type=submit]:hover{
   
   /* Style the accordion content text */
 .accordion__text {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding: 18px;
 }  
 
 .accordion__paragraph {
-    font-size:0.8rem;
+    font-size:1.2rem;
   }
   
 /* FOOTER STYLING */
@@ -909,6 +917,10 @@ input[type=submit]:hover{
     padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
+.bm-item:focus,
+.bm-burger-button:focus {
+    outline: none;
+}
 
 @media (min-width: 600px) {
     /* section {
@@ -918,8 +930,11 @@ input[type=submit]:hover{
     .bm-burger-button {
         display: none;
     }
+
+
+    
     span {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .sidebarIconToggle { 
@@ -932,7 +947,7 @@ input[type=submit]:hover{
 
      #main-banner h1 {
          /* top: 65%; */
-         font-size: 1.3rem;   
+         font-size: 1.5rem;   
          display: inline-block;
      }
 
@@ -1015,15 +1030,15 @@ input[type=submit]:hover{
     }   
 
     .accordion {
-       font-size: 1rem;
+       font-size: 1.4rem;
      }    
 
      .panel {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }     
 
     .innerpannel  span {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
 /* SIGNUP FORM GENERAL STYLING */
@@ -1039,7 +1054,7 @@ input[type=submit]:hover{
     input[type=submit] {
         line-height: 3rem;
         width: 70%;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     input[type=text],
@@ -1114,7 +1129,7 @@ input[type=submit]:hover{
     input[type=tel],
     input[type=date],
     input[type=file] {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 }
@@ -1125,7 +1140,7 @@ input[type=submit]:hover{
         margin-top: 5.75rem;
     }
     span {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .main-banner__title {
@@ -1134,7 +1149,7 @@ input[type=submit]:hover{
     }
 
     #main-banner h1 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         margin: 2.5rem auto;
     }
     
@@ -1143,23 +1158,23 @@ input[type=submit]:hover{
     }
 
     .main-nav__item {
-        font-size:1.2rem;
+        font-size:1.6rem;
     }
     .text-container {
         margin: 2.5rem auto;
     }
 
     .banner-otherpages h1 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
 
 
     .accordion__title {
-        font-size: 1rem;
+        font-size: 1.4rem;
       }    
 
     .accordion__paragraph {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
 
 }
