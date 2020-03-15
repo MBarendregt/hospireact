@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 import { withTranslation, Trans } from 'react-i18next';
 
 
-function MainPage({ t }) {
+function MainPage({ t, tReady }) {
+    if (!tReady) return <p></p>
+
     return (
         // <main>
         <>
@@ -73,7 +75,7 @@ function MainPage({ t }) {
                     <div className="main-linkedin__container__sub">
                         <div className="main-linkedin__photos-container">
                             <h2>{t("aboutus.mauritstitle")}</h2>
-                            <div className="main--underline" />
+                            {/* <div className="main--underline" /> */}
                             <span className="maurits__text">
                                 {t("aboutus.mauritsabout")}</span>
                             <img src={require("./static/images/maurits_bridge.jpg")} alt="Maurits on bridge" className="main-linkedin__photos-image" />
@@ -83,7 +85,7 @@ function MainPage({ t }) {
                     <div className="main-linkedin__container__sub">
                         <div className="main-linkedin__photos-container">
                             <h2>{t("aboutus.joosttitle")}</h2>
-                            <div className="main--underline" />
+                            {/* <div className="main--underline" /> */}
                             <span className="joost__text">
                                 {t("aboutus.joostabout")}</span>
                             <img src={require("./static/images/joost_bridge.jpg")} alt="Joost on bridge" className="main-linkedin__photos-image" />
@@ -93,7 +95,7 @@ function MainPage({ t }) {
                     <div className="main-linkedin__container__sub">
                         <div className="main-linkedin__photos-container">
                             <h2>{t("aboutus.daantitle")}</h2>
-                            <div className="main--underline" />
+                            {/* <div className="main--underline" /> */}
                             <span className="daan__text">
                                 {t("aboutus.joostabout")}</span>
                             <img src={require("./static/images/daan_bridge.jpg")} alt="Daan on bridge" className="main-linkedin__photos-image" />

@@ -4,8 +4,8 @@ import '../../static/blog.css'
 import { withTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
 
-function backtoallblogs({ t }) {
-
+function backtoallblogs({ t, tReady }) {
+    if (!tReady) return <p></p>
     return (
         <div className="backtoallblogs">
             <h2>

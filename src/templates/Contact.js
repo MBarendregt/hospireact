@@ -4,8 +4,8 @@ import '../static/contact.css'
 import { withTranslation, Trans } from 'react-i18next';
 import ContactForm from './ContactForm'
 
-function Contact({ t }) {
-
+function Contact({ t, tReady }) {
+    if (!tReady) return <p></p>
     return (
         <>
             <section>

@@ -62,6 +62,37 @@ li:empty {
     background: rgba(0,0,0,0.5);
     transition: opacity 4s linear;
 }  
+a {
+    color: var(--main-bg-color);
+}
+
+a:hover {
+    color: #F27D07;
+}
+
+.cookiecontainer {
+    display: flex !important;
+}
+
+.cookiecontainer--button-accept {
+    align-self: center;
+    font-size: 1.2rem;
+    margin:1rem 2rem !important;
+}
+
+.cookiecontainer--button-accept:hover {
+    background-color: rgb(187, 150, 2) !important;
+}
+.cookiecontainer--button-decline {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.cookiecontainer--button-decline:hover {
+   background-color: rgb(156, 7, 7) !important;
+}
+
+
 
 .italic_style {
     font-style: italic;
@@ -110,7 +141,7 @@ section {
   
 #main-banner h1 {
     color: white;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     width: 100%;
     padding:1rem;
@@ -272,121 +303,6 @@ section {
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-
-/* 
-
-#sidebarMenu {
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 3.5rem;
-    width: 50%;
-    transform: translateX(130%);
-    transition: transform 250ms ease-in-out;
-    background: #323232;
-    z-index: 101;
-}
-
-.sidebarMenuInner{
-    margin:0;
-    padding:0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li{
-    list-style: none;
-    color: #fff;
-    padding: 1.2rem;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li span{
-    display: block;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.50);
-}
-.sidebarMenuInner li a{
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    transition: color 0.4s ease 0s; 
-}
-.sidebarMenuInner li a:hover {
-    color: var(--main-bg-color);
-    transition: color 0.4s ease 0s; 
-}
-
-.sidebarMenuInner li:focus,
-.sidebarMenuInner li a:focus {
-    outline: none;
-}
-
-input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(0);
-}
-
-input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    display: none;
-}
-.sidebarIconToggle {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    cursor: pointer;
-    position: absolute;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    top: 22px;
-    right: 15px;
-    height: 22px;
-    width: 22px;
-}
-.spinner {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color: black;
-}
-.horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
-.diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: left;
-}
-.diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    opacity: 0;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(135deg);
-    margin-top: 8px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(-135deg);
-    margin-top: -9px;
-} */
 
 .main-nav--mobile{
     display: flex;
@@ -726,9 +642,6 @@ form label {
     margin: 0.5rem 0 0 0;
 }
 
-input[type=submit] {
-    width: 50%;
-}
 .send-form {
     /* height: 3rem; */
     line-height: 2rem;
@@ -741,6 +654,10 @@ input[type=submit] {
     font-weight: bold;
     margin-top: 1.5rem;
 }
+
+input[type=submit] {
+    width: 50%;
+  }
 
 input[type=submit]:focus,
 input[type=submit]:hover{
@@ -767,7 +684,7 @@ input[type=submit]:hover{
 
 .main-contactus button {
     height: 3rem;
-    width: 16vw;
+    width: 25vw;
     min-width: 8rem;
     font-size: 1.2rem;
     align-self: center;
@@ -895,6 +812,7 @@ input[type=submit]:hover{
     text-decoration: none;
     transition: color 0.4s ease 0s; 
     margin: 0.5rem;
+    font-size:1.2rem;
  }
 
  .main-footer__links a:hover{
@@ -910,6 +828,7 @@ input[type=submit]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .social-image {
@@ -926,12 +845,23 @@ input[type=submit]:hover{
     /* section {
         margin: 3.5rem 0;
     }    */
+
+    input[type=submit] {
+        width: 100%;
+        line-height: 3rem;
+      }
+      
+    .main-header {
+        height: 5rem;
+    }
+
+    .main-nav__items {
+        font-size: 1.2rem;
+    }
     .bm-item,
     .bm-burger-button {
         display: none;
     }
-
-
     
     span {
         font-size: 1.4rem;
@@ -947,7 +877,7 @@ input[type=submit]:hover{
 
      #main-banner h1 {
          /* top: 65%; */
-         font-size: 1.5rem;   
+         font-size: 2.5rem;   
          display: inline-block;
      }
 
@@ -960,6 +890,7 @@ input[type=submit]:hover{
     }
     .banner-otherpages h1 {
         top: 35%;
+        font-size: 2.5rem;
     }
     
     .main-nav__item {
@@ -993,9 +924,10 @@ input[type=submit]:hover{
     .circle__container-big {
         margin: 2rem auto;
     }
+
     .circle__container {
-        grid-template-columns: repeat(6, 1fr) ;
-        grid-template-rows: repeat(1, 1fr) ;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 1fr) ;
         max-width: 90%;
         margin: auto;
     }
@@ -1008,7 +940,7 @@ input[type=submit]:hover{
     
     .circle__container--circle {
         flex-direction: column;
-        margin: 0;
+        margin: 0.5rem;
         padding: 0;
     }
     
@@ -1051,11 +983,11 @@ input[type=submit]:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    input[type=submit] {
+    /* input[type=submit] {
         line-height: 3rem;
-        width: 70%;
+        width: 100%;
         font-size: 1.4rem;
-    }
+    } */
 
     input[type=text],
     input[type=email],
@@ -1168,6 +1100,10 @@ input[type=submit]:hover{
         font-size: 2.6rem;
     }
 
+    .circle__container {
+        grid-template-columns: repeat(6, 1fr) ;
+        grid-template-rows: repeat(1, 1fr) ;
+    }
 
     .accordion__title {
         font-size: 1.4rem;

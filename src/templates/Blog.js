@@ -5,41 +5,6 @@ import '../static/shared.css'
 import '../static/blog.css'
 import blogLoader from './blogs';
 import i18n from '../i18n';
-// import scammed from './blogs/scammedbrokeanddesperate'
-// 
-
-// function renderImages({ t }, images, index) {
-//     /**
-//      * Create image container
-//      */
-//     if (images[index].id === t("blogs" + "." + index + ".blog_id")) {
-//         return (
-//             <>
-//                 <div>
-//                     <img className="blog_container" src={images[index].src} />
-//                 </div>
-//             </>
-//         )
-//     }
-// }
-
-// function returnOnlyForSpecificLanguage(blog, lng) {
-//     /**
-//      * Get current language that is selected by i18n and return true if that blog exists for that language
-//      */
-//     if (lng === "nl") {
-//         if (blog.nl === 0) {
-//             return true
-//         }
-//     } else if (lng === 'en') {
-//         if (blog.eng === 0) {
-//             return true
-//         }
-//     } else {
-//         return false
-//     }
-// }
-
 
 class Blog extends React.Component {
     constructor(props) {
@@ -84,10 +49,11 @@ class Blog extends React.Component {
 
     }
 
-    renderImages({ t }, images, index) {
+    renderImages({ t, tReady }, images, index) {
         /**
          * Create image container
          */
+        if (!tReady) return <p></p>
         if (images[index].id === t("blogs." + index + ".blog_id")) {
 
             const divStyle = {
@@ -128,12 +94,14 @@ class Blog extends React.Component {
 
 
     render() {
-        const { t } = this.props;
+        const { t, tReady } = this.props;
+        if (!tReady) return <div id="wholepagesection" ref="myscroll" className="tiles" aria-live="polite"><p></p></div>
         const getLanguage = () => {
             return i18n.language ||
                 (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
                 'en';
         };
+        
         return (
             <section >
                 <div className="text-concept">
@@ -165,7 +133,7 @@ class Blog extends React.Component {
 
                                 <div className="tile fade-in" key={item.id}>
                                     <Link className="tile_link" to={`/blog/${item.url}`}>
-                                        {this.renderImages({ t }, this.state.items, item.id)}
+                                        {this.renderImages({ t, tReady }, this.state.items, item.id)}
                                         <div className="tile_text">
                                             <h2>
                                                 {t("blogs." + item.id + ".title")}

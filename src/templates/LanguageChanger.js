@@ -10,10 +10,11 @@ class LanguageChanger extends React.Component {
     }
 
     render() {
-        const {t, location } = this.props
+        const {t, location, tReady } = this.props
         const changeLanguage = (lng) => {
             i18n.changeLanguage(lng);
         }
+        if (!tReady) return <p></p>
         return (
             <nav className="main-nav">
                 <ul className="main-nav__items">

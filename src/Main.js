@@ -9,17 +9,18 @@ import Privacy from './templates/Privacy'
 import Cookies from './templates/Cookies'
 import BlogSwitch from './templates/BlogSwitch'
 import Blabla from './templates/Blabla'
+import withTracker from './templates/tracking';
 
 function Main() {
     return (
         <main>
             <Switch>
-                <Route exact path='/' component={MainPage} />
-                <Route path='/hospita' component={Hospita} />
-                <Route path='/students' component={Students} />
-                <Route path='/contact' component={Contact} />
-                <Route path='/privacy' component={Privacy} />
-                <Route path='/cookies' component={Cookies} />
+                <Route exact path='/' component={withTracker(MainPage)} />
+                <Route path='/hospita' component={withTracker(Hospita)} />
+                <Route path='/students' component={withTracker(Students)} />
+                <Route path='/contact' component={withTracker(Contact)} />
+                <Route path='/privacy' component={withTracker(Privacy)} />
+                <Route path='/cookies' component={withTracker(Cookies)} />
                 <Route path='/blog' component={BlogSwitch} />
                 <Route path='/blabla' component={Blabla} />>
             </Switch>

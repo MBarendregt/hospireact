@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { withTranslation } from 'react-i18next';
 
-function Footer({ t }) {
+function Footer({ t, tReady }) {
+    if (!tReady) return <p></p>
     return (
         <footer className="main-footer">
             <div className="footer-container">

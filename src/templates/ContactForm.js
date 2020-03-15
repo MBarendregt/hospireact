@@ -137,12 +137,13 @@ class ContactForm extends React.Component {
     }
     render() {
         const errors = validate(this.state.email, this.state.firstname, this.state.lastname);
-        const { t } = this.props;
+        const { t, tReady } = this.props;
         const shouldMarkError = (field) => {
             const hasError = errors[field];
             const shouldShow = this.state.touched[field];
             return hasError ? shouldShow : false;
         };
+        if (!tReady) return <p></p>
         return (
             <form className="signup-form" onSubmit={this.handleSubmit}>
                 <div className="formcontainer">

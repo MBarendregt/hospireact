@@ -8,7 +8,8 @@ import BackToAllBlogs from './backtoallblogs'
 import RenderImages from './RenderImages'
 
 
-function Letsintroduce({ t }) {
+function Letsintroduce({ t, tReady }) {
+    if (!tReady) return <p></p>
     const blog = blogLoader.get("letsintroduce")
 
     const renderedimage_1 = RenderImages(blog.secondsource, { "backgroundPosition": "80% 40%" })

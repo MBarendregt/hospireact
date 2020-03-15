@@ -14,6 +14,19 @@
     height: 10rem;
 }
 
+/* 
+.Labeltest {
+  height: 3rem;
+} */
+
+.formcontainer__labeltitle {
+  display: flex;
+  align-items: flex-end;
+  height: 3rem;
+  margin: 0.5rem 0;
+
+}
+
 
 .accordion__studentstable-title {
   font-size:1.2rem;
@@ -120,7 +133,7 @@
 [type="date"] {
     background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  95% 50% no-repeat ;
     line-height: 2rem;
-    height: 2rem;
+    /* height: 2rem; */
   }
   [type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -169,25 +182,15 @@
   overflow: hidden;
 }
 
-/* input[type="file"] {
-  display: none;
-} */
-
-input[type=submit] {
-  /* line-height: 3rem;
-  width: 70%; */
-  width: 50%;
-  /* grid-row: 8 ; */
-  /* font-size: 1rem; */
-}  
-
-
 .formcontainer__gender label,
 .formcontainer__gender div
  {
   font-size:1.2rem;
 }
-
+/* 
+input[type=submit] {
+  width: 50%;
+} */
 
 @media (min-width: 600px) {
 

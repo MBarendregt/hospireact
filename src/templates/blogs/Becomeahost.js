@@ -8,10 +8,12 @@ import BackToAllBlogs from './backtoallblogs'
 import RenderImages from './RenderImages'
 
 
-function Becomeahost({ t }) {
+function Becomeahost({ t, tReady }) {
+    if (!tReady) return <p></p>
     const blog = blogLoader.get("becomeahost")
 
     const renderedimage_1 = RenderImages(blog.secondsource)
+    
     return (
         <>
             <section>

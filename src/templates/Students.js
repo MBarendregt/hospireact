@@ -13,7 +13,7 @@ import StudentForm from './StudentForm'
 import S3uploads from './s3uploadinput'
 
 
-function Students({ t }) {
+function Students({ t, tReady}) {
 
     function setStudentVragen(block, start, end) {
         var i
@@ -30,37 +30,9 @@ function Students({ t }) {
         }
         return accordionarray
     }
-    // function setStudentVragen(questionblock) {
-    //     var i = 0
-    //     const items = questionblock.map(item => {
-    //         var i = i + 1
-    //         console.log(i)
-    //         return (< Accordion
-    //             key={i}
-    //             title={t("faq.questionblok.0.question")}
-    //             content={t("faq.questionblok.0.answer")}
-    //         />);
-    //     });
-    //     return items
-    // };
-
-    // return questionblock.map((item) => {
-    //     // console.log(item["question"]);
-    //     var quest = item["question"];
-    //     var anws = item["answer"];
-    //     // console.log(quest);
-    //     <Accordion
-    //         title={t("faq.")}
-    //         content={t("faq.")}
-    //     />
-    //     // < Accordion
-    //     //     title="hallo"
-    //     //     content="bla"
-    //     // />
-    // });
-    // console.log(ding)
-    // return ding
+    if (!tReady) return <p></p>
     return (
+       
         <>
 
             <section>

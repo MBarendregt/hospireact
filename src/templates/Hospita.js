@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import Accordion from "./Accordion";
 
 
-function Hospita({ t }) {
+function Hospita({ t, tReady }) {
 
     function setHospitaQuestions(block, start, end) {
         var i
@@ -25,7 +25,7 @@ function Hospita({ t }) {
         return accordionarray
     }
 
-
+    if (!tReady) return <p></p>
     return (
         <>
             <section>

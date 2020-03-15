@@ -5,8 +5,8 @@ import '../static/shared.css'
 import '../static/privacy_cookies.css'
 
 
-function Cookies({ t }) {
-
+function Cookies({ t, tReady }) {
+    if (!tReady) return <p></p>
     return (
         <main>
             <section>

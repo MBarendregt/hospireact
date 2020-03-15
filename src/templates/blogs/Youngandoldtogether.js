@@ -7,8 +7,8 @@ import blogLoader from '../blogs'
 import BackToAllBlogs from './backtoallblogs'
 import RenderImages from './RenderImages'
 
-
-function Youngandoldtogether({ t }) {
+function Youngandoldtogether({ t, tReady }) {
+    if (!tReady) return <p></p>
     const blog = blogLoader.get("youngandoldtogether")
 
     const renderedimage_1 = RenderImages(blog.secondsource)

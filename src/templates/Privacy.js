@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import '../static/shared.css'
 import '../static/privacy_cookies.css'
 
-function Privacy({ t }) {
-
+function Privacy({ t, tReady }) {
+    if (!tReady) return <p></p>
     return (
         <main>
             <section>

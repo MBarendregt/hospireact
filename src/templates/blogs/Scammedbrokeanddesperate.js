@@ -8,7 +8,8 @@ import BackToAllBlogs from './backtoallblogs'
 import RenderImages from './RenderImages'
 
 
-function Scammedbrokeanddesperate({ t }) {
+function Scammedbrokeanddesperate({ t, tReady }) {
+    if (!tReady) return <p></p>
     const blog = blogLoader.get("scammedbrokeanddesperate")
 
     const renderedimage_1 = RenderImages(blog.secondsource)
