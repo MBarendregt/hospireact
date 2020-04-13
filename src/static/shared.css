@@ -588,10 +588,12 @@ input {
   
 input[type=text],
 input[type=email],
+input[type=date],
 input[type=tel],
 input[type=file] {
     line-height: 2rem;
     padding-left: 0.3rem;
+    width: 100%;
 }
 
 /* Add text below invalid form inputs */
@@ -607,9 +609,9 @@ input[type=file] {
     border: solid 2px  #b43f3f;
 }
 
-form label {
+/* form label {
     margin:0.5rem 0;
-  }
+  } */
     
 .signup-form__text  {
     padding:10px;
@@ -995,6 +997,7 @@ input[type=submit]:hover{
     input[type=date],
     input[type=file] {
         line-height: 3rem;
+        width: 100%;
     } 
 
 
@@ -1061,6 +1064,7 @@ input[type=submit]:hover{
     input[type=tel],
     input[type=date],
     input[type=file] {
+        width: 100%;        
     font-size: 1.4rem;
 }
 

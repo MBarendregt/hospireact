@@ -129,7 +129,7 @@ class HospitaForm extends React.Component {
                 "description": this.state.description
             }
             // "https://cors-anywhere.herokuapp.com/"
-            postData("https://cors-anywhere.herokuapp.com/https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/hospitaform", data)
+            postData("https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/hospitaform", data)
             // postData('https://mq58an2et4.execute-api.eu-west-1.amazonaws.com/teststage', data)
             // method for doing something with the returned data
             // .then((data) => {
@@ -159,10 +159,14 @@ class HospitaForm extends React.Component {
         };
         if (!tReady) return <p></p>
         return (
-            <form className="signup-form" onSubmit={this.handleSubmit}>
-                <div className="formcontainer">
-                    <label>
-                        {t("hospitaform.firstname")}*
+
+
+            <form className="hospitaform" onSubmit={this.handleSubmit}>
+                <div className="hospitaform_inputcontainer">
+                    <div className="hospitaform__labeltitle">
+                        <label> {t("hospitaform.firstname")}* </label>
+                    </div>
+                    <div className="hospitaform__input">
                         <input
                             type="text"
                             name="firstname"
@@ -171,12 +175,19 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('firstname') ? "error" : ""}
                             value={this.state.firstname}
                         />
-                    </label><span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
 
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                    </div>
                 </div>
-                <div className="formcontainer">
-                    <label>{t("hospitaform.lastname")}*
-                <input
+
+                <div className="hospitaform_inputcontainer">
+                    <div className="hospitaform__labeltitle">
+                        <label>{t("hospitaform.lastname")}*</label>
+                    </div>
+                    <div className="hospitaform__input">
+                        <input
                             type="text"
                             name="lastname"
                             onChange={this.handleChange}
@@ -184,12 +195,19 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('lastname') ? "error" : ""}
                             value={this.state.lastname}
                         />
-                    </label>
-                    <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                    </div>
                 </div>
-                <div className="formcontainer">
-                    <label  >{t("hospitaform.email")}*
-                <input
+
+                <div className="hospitaform_inputcontainer">
+                    <div className="hospitaform__labeltitle">
+                        <label  >{t("hospitaform.email")}*</label>
+                    </div>
+                    <div className="hospitaform__input">
+                        <input
                             type="email"
                             name="email"
                             onChange={this.handleChange}
@@ -198,12 +216,19 @@ class HospitaForm extends React.Component {
                             placeholder="emailadres@domein.com"
                             value={this.state.email}
                         />
-                    </label>
-                    <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
+
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
+                    </div>
                 </div>
-                <div className="formcontainer">
-                    <label >{t("hospitaform.phonenumber")}*
-                    <input
+
+                <div className="hospitaform_inputcontainer">
+                    <div className="hospitaform__labeltitle">
+                        <label> {t("hospitaform.phonenumber")}* </label>
+                    </div>
+                    <div className="hospitaform__input">
+                        <input
                             type="tel"
                             name="tel"
                             onChange={this.handleChange}
@@ -212,32 +237,52 @@ class HospitaForm extends React.Component {
                             placeholder="+31612312123"
                             value={this.state.tel}
                         />
-                    </label>
-                    <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
+
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
+                    </div>
                 </div>
-                <label>{t("hospitaform.foundus")}
-                    <input
-                        type="text"
-                        name="foundus"
-                        onChange={this.handleChange}
-                        value={this.state.foundus} />
-                </label>
+
+                <div className="hospitaform_inputcontainer">
+                    <div className="hospitaform__labeltitle">
+                        <label> {t("hospitaform.foundus")} </label>
+                    </div>
+                    <div className="hospitaform__input">
+                        <input
+                            type="text"
+                            name="foundus"
+                            onChange={this.handleChange}
+                            value={this.state.foundus} />
+
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                    </div>
+                </div>
+
                 <div className="hospita_form__moreinfo">
-                    <label> {t("hospitaform.moreinfo")}
+                    <div className="hospitaform__labeltitle">
+                        <label> {t("hospitaform.moreinfo")} </label>
+                    </div>
+                    <div className="hospitaform__input">
                         <textarea
                             className="form__moreinfo-textarea"
                             name="description"
                             placeholder=""
                             onChange={this.handleChange}
                             value={this.state.description} />
-                    </label>
+
+                    </div>
                 </div>
                 <div className="hospita_form__submit">
                     <input type="submit" value={t("hospitaform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
-            </form >
+            </form>
+
         );
     }
 }
 
 export default withTranslation(["hospita", "common"])(HospitaForm);
+
