@@ -1,7 +1,6 @@
-#main-banner {
-    background: url("./images/adamgrey1filterscaledB.jpg") no-repeat center/cover border-box;
-    }
-
+.banner-contact {
+    background: url("./images/contactbanner.jpg") no-repeat center top/cover border-box;
+}
 
 @media (min-width: 600px) {
     

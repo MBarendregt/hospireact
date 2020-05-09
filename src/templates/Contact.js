@@ -9,7 +9,7 @@ function Contact({ t, tReady }) {
     return (
         <>
             <section>
-                <div className="banner-otherpages">
+                <div className="banner-contact banner-otherpages">
                     <h1>
                         <Trans>{t("bannertext")}<span className="colored-text"></span></Trans>
                     </h1>

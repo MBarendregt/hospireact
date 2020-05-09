@@ -24,15 +24,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  height: 100%;
-  font-family: "AvenirCustom";
-
-}
-
-body {
-    margin: 0;
-} */
 
 html, body {
     font-family: "AvenirCustom";
@@ -119,33 +110,11 @@ h2 {
 span {
     font-size: 1.2rem;
 }
-section {
-    /* height: 100%; */
-    /* margin: 1rem 0; */
-}
+
 .openSidebarMenu {
     z-index: 9999;
 }
-
-#main-banner {
-    background: url("./images/domtower_gray1.jpg") no-repeat center/cover border-box;
-    width: 100vw;
-    height: 50vh;   
-    /* background-size: 100%; */
-    /* padding: 0.6rem; */
- }
- .frontpage_banner {
-     position: relative;
- }
-
-  
-#main-banner h1 {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-    padding:1rem;
-}
+ 
 
 .banner-otherpages {
     width: 100%;
@@ -505,23 +474,6 @@ main {
     font-family: "AvenirCustom";
 }
 
-
- /* TODO Look for a nice solution later to add somesort of arrow next to the dropdown */
-/* .accordion:after {
-    content: '\276F'; 
-    font-size: 0.8rem;
-    color: black;
-    float: right;
-    margin: 0 0.5rem;
-    transition: 0.3s linear;
-}
-
-.accordion.active:after {
-    transform: rotate(90deg);
-    transition: 0.3s linear;
-    } */
-
-
 .accordion.active, .accordion:hover {
     background-color:rgba(255, 153, 51, 0.5);
 }
@@ -843,11 +795,18 @@ input[type=submit]:hover{
     outline: none;
 }
 
-@media (min-width: 600px) {
-    /* section {
-        margin: 3.5rem 0;
-    }    */
 
+
+/* ######################################################################################################################################################## */
+
+@media (min-width: 600px) {
+    section {
+        margin: 5rem 0;
+    }   
+
+    .banner-otherpages {
+        height: 70vh;
+    }    
     input[type=submit] {
         width: 100%;
         line-height: 3rem;
@@ -866,7 +825,7 @@ input[type=submit]:hover{
     }
     
     span {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .sidebarIconToggle { 
@@ -920,6 +879,10 @@ input[type=submit]:hover{
         margin: 1.5rem auto;
         max-width: 50rem;
     }
+
+    .main-contactus  {
+        margin: 5rem 0;
+    }
     
     /* ORANGE CIRCLES WITH TEXT */    
 
@@ -964,7 +927,7 @@ input[type=submit]:hover{
     }   
 
     .accordion {
-       font-size: 1.4rem;
+       font-size: 1.3rem;
      }    
 
      .panel {
@@ -988,7 +951,7 @@ input[type=submit]:hover{
     /* input[type=submit] {
         line-height: 3rem;
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     } */
 
     input[type=text],
@@ -1065,7 +1028,7 @@ input[type=submit]:hover{
     input[type=date],
     input[type=file] {
         width: 100%;        
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 }
@@ -1076,25 +1039,16 @@ input[type=submit]:hover{
         margin-top: 5.75rem;
     }
     span {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
-    .main-banner__title {
-        width: 50%;
-        margin: auto;
-    }
-
-    #main-banner h1 {
-        font-size: 2.6rem;
-        margin: 2.5rem auto;
-    }
     
     .main-header {
         height: 5.75rem ;
     }
 
     .main-nav__item {
-        font-size:1.6rem;
+        font-size:1.4rem;
     }
     .text-container {
         margin: 2.5rem auto;
@@ -1110,11 +1064,11 @@ input[type=submit]:hover{
     }
 
     .accordion__title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }    
 
     .accordion__paragraph {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
 }
@@ -1122,25 +1076,3 @@ input[type=submit]:hover{
 @media (min-width: 1200px) {}
 
 @media (min-width: 1800px) {}
-
-/* 
-#cookie-bar {
-    background:#111111;
-     height:auto;
-      line-height:24px; 
-      color:#eeeeee;
-       text-align:center;
-        padding:3px 0;
-    position: fixed;
-    bottom: 0;
-width: 100%}
-#cookie-bar.fixed {position:fixed; bottom;:0; left:0; width:100%;}
-#cookie-bar.fixed.bottom {bottom:0; top:auto;}
-#cookie-bar p {margin:0; padding:0;}
-#cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
-#cookie-bar .cb-enable {background:#007700;}
-#cookie-bar .cb-enable:hover {background:#009900;}
-#cookie-bar .cb-disable {background:#990000;}
-#cookie-bar .cb-disable:hover {background:#bb0000;}
-#cookie-bar .cb-policy {background:#0033bb;}
-#cookie-bar .cb-policy:hover {background:#0055dd;} */

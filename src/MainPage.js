@@ -10,8 +10,9 @@ function MainPage({ t, tReady }) {
 
     return (
         // <main>
+        // id="main-banner"
         <>
-            <section id="main-banner" className="frontpage_banner">
+            <section className="frontpage_banner">
                 <div className="main-banner__title">
                     <h1 className=""><Trans>{t('banner.bannertitle')}<span className="colored-text"></span></Trans></h1>
                 </div>
@@ -97,7 +98,7 @@ function MainPage({ t, tReady }) {
                             <h2>{t("aboutus.daantitle")}</h2>
                             {/* <div className="main--underline" /> */}
                             <span className="daan__text">
-                                {t("aboutus.joostabout")}</span>
+                                {t("aboutus.daanabout")}</span>
                             <img src={require("./static/images/daan_bridge.jpg")} alt="Daan on bridge" className="main-linkedin__photos-image" />
                             <a href="https://www.linkedin.com/in/daandonkers/" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/linkedinlogo-white.png")} alt="Logo linkedin" className="main-linkedin__photos-logo" /></a>
                         </div>
@@ -139,6 +140,9 @@ function MainPage({ t, tReady }) {
                         <div className="gallery__container">
                             <a href="https://www.uu.nl" target="__blank" rel="noopener noreferrer"> <img src={require("./static/images/UU_logo_NL_CMYK.png")} alt="Logo Universiteit Utrecht" className="gallery__img" /></a>
                         </div>
+                        <div className="gallery__container">
+                            <a href="http://www.access-nl.org" target="__blank" rel="noopener noreferrer"> <img src={require("./static/images/ACCESS logo_tagline.jpg")} alt="Logo ACCESS" className="gallery__img" /></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -151,15 +155,16 @@ function MainPage({ t, tReady }) {
                 </div>
                 <div className="align_center">
                     <div className="articles">
+
                         <div className="article__container">
                             <div className="article__imgcontainer">
-                                <a href="https://www.duic.nl/algemeen/kamernood-de-ouderwetse-hospita-is-terug-in-utrecht/" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/duiclogo.png")} alt="Logo De Utrechtse Internet Courant" className="article__img" />
+                                <a href="https://www.volkskrant.nl/columns-opinie/de-hospita-keert-terug-en-dat-is-een-heel-goed-idee~b662084b/?utm_source=link&utm_medium=app&utm_campaign=shared%20content&utm_content=free" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/volkskrant.svg")} alt="Logo De Volkskrant" className="article__img" />
                                 </a>
                             </div>
                             <div className="article__text">
                                 <span className="article__item--text">
-                                    <Trans i18nKey="knowus.duictext">
-                                        {t("knowus.duictext")}<b></b><br></br>
+                                    <Trans i18nKey="knowus.volkskranttext">
+                                        {t("knowus.volkskranttext")}<b></b><br></br>
                                     </Trans>
                                 </span>
                             </div>
@@ -175,6 +180,49 @@ function MainPage({ t, tReady }) {
                                     </Trans></span>
                             </div>
                         </div>
+                        <div className="article__container">
+                            <div className="article__imgcontainer">
+                                <a href="https://www.nporadio1.nl/radio-eenvandaag/uitzendingen/629580-2019-12-27" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/NPO_Radio_1_logo_2014.svg")} alt="Logo NPO Radio 1" className="article__img npo_specific_scaling" />
+                                </a>
+                            </div>
+                            <div className="article__text">
+                                <span className="article__item--text">
+                                    <Trans i18nKey="knowus.npo1text">
+                                        {t("knowus.npo1text")}<b></b><br></br>
+                                    </Trans>
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <div className="article__container">
+                            <div className="article__imgcontainer">
+                                <a href="https://www.duic.nl/algemeen/kamernood-de-ouderwetse-hospita-is-terug-in-utrecht/" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/duiclogo.png")} alt="Logo De Utrechtse Internet Courant" className="article__img" />
+                                </a>
+                            </div>
+                            <div className="article__text">
+                                <span className="article__item--text">
+                                    <Trans i18nKey="knowus.duictext">
+                                        {t("knowus.duictext")}<b></b><br></br>
+                                    </Trans>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="article__container">
+                            <div className="article__imgcontainer">
+                                <a href="https://trajectum.hu.nl/opgelicht-blut-en-wanhopig-internationale-studenten-hebben-het-zwaar-op-de-utrechtse-woningmarkt/" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/trajectum-logo.svg")} alt="Logo Trajectum" className="article__img" />
+                                </a>
+                            </div>
+                            <div className="article__text">
+                                <span className="article__item--text">
+                                    <Trans i18nKey="knowus.trajectumtext">
+                                        {t("knowus.trajectumtext")}<b></b><br></br>
+                                    </Trans>
+                                </span>
+                            </div>
+                        </div>
+
                         <div className="article__container">
                             <div className="article__imgcontainer">
                                 <a href="https://www.rtvutrecht.nl/nieuws/1962678/nieuwe-hoop-voor-buitenlandse-studenten-om-kamer-te-vinden-in-utrecht-via-hospes.html/" target="__blank" rel="noopener noreferrer"><img src={require("./static/images/rtvutrecht.png")} alt="Logo Regio Televisie Utrecht." className="article__img" /></a>

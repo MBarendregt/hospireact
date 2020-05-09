@@ -1,6 +1,6 @@
 {
     "banner": {
-        "bannertitle": "Hospi verbindt internationale studenten met lokale hospita's<1>.</1>"
+        "bannertitle": "Hospi Housing verbindt internationale studenten met lokale hospita's<1>.</1>"
     },
     "concept": {
         "concept": "Het concept",
@@ -18,7 +18,7 @@
     },
     "abouthospi": {
         "title": "Over Hospi Housing",
-        "text": "Hospi - afkorting van hospita - is ontstaan vanuit noodzaak met een sociale gedachte. De woningmarkt voor internationale studenten en starters is krap en kamerprijzen rijzen de pan uit.<1></1><2></2>Hospi bouwt geen huizen, Hospi heeft geen vastgoed, wat Hospi doet is het koppelen van vraag en aanbod. Hospi brengt mensen met verschillende achtergronden met elkaar in contact. Studenten op zoek naar een kamer en gastgezinnen met ruimte over.<3></3><4></4>Room for Experience.<5></5>Dat is Hospi Housing."
+        "text": "Hospi - afkorting van hospita - is ontstaan vanuit noodzaak met een sociale gedachte. De woningmarkt voor internationale studenten en starters is krap en kamerprijzen rijzen de pan uit.<1></1><2></2>Hospi bouwt geen huizen, Hospi heeft geen vastgoed, wat Hospi doet is het koppelen van vraag en aanbod. Hospi brengt mensen met verschillende achtergronden met elkaar in contact. Studenten op zoek naar een kamer en gastgezinnen met ruimte over.<3></3><4></4>Room for Experience.<5></5> Dat is Hospi Housing."
     },
     "aboutus": {
         "mauritstitle": "Maurits /\\ co-founder",
@@ -33,11 +33,14 @@
     },
     "knowus": {
         "title": "Je kent ons misschien van",
-        "duictext": "<1>Kamernood: De ouderwetse hospita is terug in Utrecht.</1> <2></2> Hoe een hospita van Hospi Housing een Spaanse student helpt.",
-        "adtext": "<1>Hoe de ouderwetse hospita de hopeloze Utrechtse student aan onderdak helpt.</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt.",
-        "rtvtext": "<1>Nieuwe hoop voor buitenlandse studenten om kamer te vinden in Utrecht via hospes.</1><2></2>Hoe een hospita van Hospi Housing een Portugese student helpt.",
+        "duictext": "<1>Kamernood: De ouderwetse hospita is terug in Utrecht</1> <2></2> Hoe een hospita van Hospi Housing een Spaanse student helpt.",
+        "adtext": "<1>Hoe de ouderwetse hospita de hopeloze Utrechtse student aan onderdak helpt</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt.",
+        "rtvtext": "<1>Nieuwe hoop voor buitenlandse studenten om kamer te vinden in Utrecht via hospes</1><2></2>Hoe een hospita van Hospi Housing een Portugese student helpt.",
         "dubtext": "<1>Utrechtse studenten blazen 'hospita' nieuw leven in:</1><2></2>We matchen vraag en aanbod",
-        "nuffictext": "<1>Hospita neemt het op tegen huisjesmelker.</1><2></2>Hoe een hospita van Hospi Housing een Poolse student helpt.",
-        "indebuurttext": "<1>Internationale student En Ning Leow woont noodgedwongen bij een hospita.</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt."
+        "nuffictext": "<1>Hospita neemt het op tegen huisjesmelker</1><2></2>Hoe een hospita van Hospi Housing een Poolse student helpt.",
+        "indebuurttext": "<1>Internationale student En Ning Leow woont noodgedwongen bij een hospita</1><2></2>Hoe een hospita van Hospi Housing een Maleisische student helpt.",
+        "volkskranttext": "<1>​De hospita keert terug en dat is een heel goed idee</1><2></2>Hoe een hospita van Hospi Housing een Duitse student helpt.",
+        "npo1text": "<1>Interview met Hospi Housing bij EenVandaag</1><2></2>Hoe een hospita van Hospi Housing een Italiaanse student helpt.",
+        "trajectumtext": "<1>Opgelicht, blut en wanhopig: Internationale studenten op de Utrechtse woningmarkt</1><2></2>Hoe Hospi Housing een oplossing kan bieden voor dit probleem."
     }
 }

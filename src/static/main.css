@@ -1,3 +1,19 @@
+.frontpage_banner {
+    background: url("./images/homepagebanner.jpg") no-repeat center/cover border-box;
+    width: 100%;
+    height: 50vh;   
+     position: relative;
+ }
+
+
+.frontpage_banner h1 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding:1rem;
+}
+
 
 .main-banner__title {
     text-align: center;
@@ -178,7 +194,7 @@
     color: white;
     padding: 0 1rem;
     overflow: hidden;
-    max-height: 10rem;
+    max-height: 15rem;
 }
 
 
@@ -329,15 +345,25 @@
 
 @media (min-width: 600px) {
 
+    .frontpage_banner {
+        height: 70vh;
+    }
+
+    .frontpage_banner h1 {
+        padding:5rem;
+    }
+    
+
     .main-banner__buttons {
         flex-direction: row;
         justify-content: space-evenly;
+        bottom: 25%;
     }
 
     
     .main-banner__buttons  button {  
         height: 4rem;
-        width: 25vw;
+        width: 20vw;
         min-width: 8rem;
         font-size: 1.1rem;
         line-height: 1.4em;
@@ -359,7 +385,7 @@
         }
     
         .main--underline > h2 {
-            font-size: 1.6rem;
+            font-size: 1.9rem;
         }
 
         .main-concept__top {
@@ -436,7 +462,11 @@
             flex-direction: column;
         }
 
+        
       }
+      .article__item--text {
+        font-size: 1.2rem;
+    }
 
       .main-aboutus {
         max-width:50rem;
@@ -520,6 +550,11 @@
 
 @media (min-width: 900px) {
 
+    .main-banner__title {
+        width: 70%;
+        margin: auto;
+    }
+
     #main-concept {
         margin-bottom: 2rem;
     }
@@ -532,5 +567,9 @@
     }
     .main-linkedin__photos-container span {
         font-size: 1rem;
+    }
+    
+    .npo_specific_scaling {
+        width: 30%;
     }
 }

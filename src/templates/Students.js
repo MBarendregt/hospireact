@@ -13,7 +13,7 @@ import StudentForm from './StudentForm'
 import S3uploads from './s3uploadinput'
 
 
-function Students({ t, tReady}) {
+function Students({ t, tReady }) {
 
     function setStudentVragen(block, start, end) {
         var i
@@ -32,11 +32,11 @@ function Students({ t, tReady}) {
     }
     if (!tReady) return <p></p>
     return (
-       
+
         <>
 
             <section>
-                <div className="banner-otherpages">
+                <div className="banner-student banner-otherpages">
                     <h1><Trans>{t("bannertext")}<span className="colored-text"></span></Trans></h1>
                 </div>
             </section>

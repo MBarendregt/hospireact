@@ -18,7 +18,7 @@
     },
     "abouthospi": {
         "title": "About Hospi Housing",
-        "text": "Hospi - short for hospita; host in english - started from necessity and as a social initiative. The Dutch housing market experiences major shortages for international students and starters and prices are skyrocketing.<1></1><2></2>Hospi Housing builds no houses, Hospi owns no houses, what Hospi does is providing a platform for unused rooms and people looking for a room. Hospi connects people with different backgrounds. With Hospi you don't rent a room. With Hospi you stay at someone's place.<3></3><4></4>Room for Experience.<5></5>That's Hospi Housing."
+        "text": "Hospi - short for hospita; host in english - started from necessity and as a social initiative. The Dutch housing market experiences major shortages for international students and starters and prices are skyrocketing.<1></1><2></2>Hospi Housing builds no houses, Hospi owns no houses, what Hospi does is providing a platform for unused rooms and people looking for a room. Hospi connects people with different backgrounds. With Hospi you don't rent a room. With Hospi you stay at someone's place.<3></3><4></4>Room for Experience.<5></5> That's Hospi Housing."
     },
     "aboutus": {
         "mauritstitle": "Maurits /\\ co-founder",
@@ -33,11 +33,14 @@
     },
     "knowus": {
         "title": "You might know us from",
-        "duictext": "<1>Room shortage: The old-fashioned landlady is back in Utrecht.</1><2></2>How a landlady of Hospi Housing helps a Spanish student.",
-        "adtext": "<1>How the old-fashioned landlady helps shelter the hopeless students Utrecht.</1><2></2>How a landlady of Hospi Housing helps a Malaysian student.",
-        "rtvtext": "<1>New hope for foreign students to find a room in Utrecht via a Landlady.</1><2></2>How a landlady of Hospi Housing helps a Portuguese student.",
+        "duictext": "<1>Room shortage: The old-fashioned landlady is back in Utrecht</1><2></2>How a landlady of Hospi Housing helps a Spanish student.",
+        "adtext": "<1>How the old-fashioned landlady helps shelter the hopeless students Utrecht</1><2></2>How a landlady of Hospi Housing helps a Malaysian student.",
+        "rtvtext": "<1>New hope for foreign students to find a room in Utrecht via a Landlady</1><2></2>How a landlady of Hospi Housing helps a Portuguese student.",
         "dubtext": "<1>Students from Utrecht breathe new life into 'Landlady concept':</1><2></2>\"We match supply and demand\"",
-        "nuffictext": "<1>Landlady takes on house-fancier.</1><2></2>How a landlady of Hospi housing helps a Polish student.",
-        "indebuurttext": "<1>International student En Ning Leow is forced to live with a landlady.</1><2></2>How a landlady of Hospi Housing helps a Malaysian student."
+        "nuffictext": "<1>Landlady takes on house-fancier</1><2></2>How a landlady of Hospi housing helps a Polish student.",
+        "indebuurttext": "<1>International student En Ning Leow is forced to live with a landlady</1><2></2>How a landlady of Hospi Housing helps a Malaysian student.",
+        "volkskranttext": "<1>The landlady returns, and that is a very good idea</1><2></2>How a landlady of Hospi Housing helps a German student.",
+        "npo1text": "<1>Interview with Hospi Housing with EenVandaag</1><2></2>How a landlady of Hospi Housing helps a Italian student.",
+        "trajectumtext": "<1>Scammed, broke and desprate; the International student on the Utrecht housing Market</1><2></2>How Hospi Housing offers a solution to this problem."
     }
 }
