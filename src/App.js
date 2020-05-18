@@ -5,7 +5,7 @@ import Header from './Header'
 import Main from './Main'
 import Footer from './Footer'
 import { withTranslation, Trans } from 'react-i18next';
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga';
 
@@ -47,7 +47,7 @@ function App({ t, tReady }) {
                     <Footer />
                 </div>
             </div>
-
+            {setupGa()}
             <CookieConsent
                 // enableDeclineButton
                 // flipButtons
@@ -60,7 +60,7 @@ function App({ t, tReady }) {
                 buttonClasses="cookiecontainer--button-accept"
                 // declineButtonClasses="cookiecontainer--button-decline"
                 expires={150}
-                onAccept={setupGa}
+            // onAccept={setupGa}
             >
                 <Trans>{t("cookie_text")}<Link to="/cookies"></Link></Trans>{" "}
             </CookieConsent>

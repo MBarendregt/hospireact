@@ -20,6 +20,7 @@ function validate(state) {
         study: validateNotEmpty(state.study),
         languages: validateNotEmpty(state.languages),
         maxbudget: validateNotEmpty(state.maxbudget),
+        whichcity: validateNotEmpty(state.whichcity),
         countryofbirth: validateNotEmpty(state.countryofbirth)
 
     };
@@ -94,7 +95,7 @@ async function getData(url = '') {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            'Origin': 'http://hospihousing.nl'
+            'Origin': 'https://hospihousing.nl'
         }
     });
 
@@ -108,7 +109,7 @@ async function postData(url = '', data = {}) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Origin': 'http://hospihousing.nl'
+            'Origin': 'https://hospihousing.nl'
         },
         body: JSON.stringify(data)
     });
@@ -137,6 +138,7 @@ class StudentForm extends React.Component {
             study: '',
             languages: '',
             maxbudget: '',
+            whichcity: '',
             countryofbirth: '',
             selectedFile: null,
             filename: "",
@@ -153,6 +155,7 @@ class StudentForm extends React.Component {
                 study: '',
                 languages: '',
                 maxbudget: '',
+                whichcity: '',
                 countryofbirth: '',
                 selectedFile: null
             },
@@ -247,6 +250,7 @@ class StudentForm extends React.Component {
                 "study": this.state.study,
                 "languages": this.state.languages,
                 "maxbudget": this.state.maxbudget,
+                "whichcity": this.state.whichcity,
                 "countryofbirth": this.state.countryofbirth,
                 "filename": this.state.filename
             }
@@ -459,6 +463,27 @@ class StudentForm extends React.Component {
                         <span className={shouldMarkError('maxbudget') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                     </div>
                 </div>
+
+                <div className="studentsform_inputcontainer">
+                    <div className="studentsform__labeltitle" >
+                        <label > {t("form.whichcity")} </label>
+                    </div>
+                    <div className="studentsform__input">
+                        <input
+                            type="text"
+                            name="whichcity"
+                            onChange={this.handleChange}
+                            onBlur={this.handleBlur('whichcity')}
+                            className={shouldMarkError('whichcity') ? "error" : ""}
+                            value={this.state.whichcity}
+                        />
+
+                    </div>
+                    <div>
+                        <span className={shouldMarkError('whichcity') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
+                    </div>
+                </div>
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle">
                         <label > {t("form.countryofbirth")} </label>
@@ -492,11 +517,10 @@ class StudentForm extends React.Component {
                             required
                             name="profilepicture"
                             id="profilepicture"
-
                         />
                     </div>
                     <div>
-                        <span className="errorhide" > {t("form.errormessage_phonefield")} </span>
+                        <span className="errorhide" > {t("form.errormessage_generic")} </span>
                     </div>
                 </div >
                 <div className="studentsform_inputcontainer">
@@ -556,6 +580,7 @@ class StudentForm extends React.Component {
                         </label>
                     </div>
                     <textarea className="form__moreinfo-textarea"
+                        required
                         name="description"
                         placeholder={t("form.descriptionplaceholder")}
                         onChange={this.handleChange}
@@ -568,7 +593,7 @@ class StudentForm extends React.Component {
                         value={t("form.submit")}
                         className="send-form" />
                 </div>
-                <div >
+                <div className="form__submitmessage-container">
                     <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"} > {this.state.submitmessage} </span>
                 </div>
 

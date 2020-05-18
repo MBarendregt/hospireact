@@ -88,11 +88,7 @@ function Prepareforthedutchwayofliving({ t, tReady }) {
             </section>
             <section>
                 <div className="blog_container">
-                    <div className="second_image"></div>
-                    {/* <img
-                            className="blog_image"
-                            src={require("../../static/images/blogs/glurenbijdeburen.jpg")}
-                            alt={t("picture_alt_2")} /> */}
+                    {renderedimage_2}
                     <span className="italic_style">
                         {t("picture_subtext_2")}
                     </span>

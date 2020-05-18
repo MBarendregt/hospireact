@@ -322,6 +322,11 @@ input[type=date] {
 
 
 @media (min-width: 600px) {
+
+    .formcontainer__gender {
+        grid-column: 1 /3;
+    
+    }
 /* 
     .signup-form__students {
         margin: 2rem auto;

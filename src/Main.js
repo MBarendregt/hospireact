@@ -8,7 +8,6 @@ import Contact from './templates/Contact'
 import Privacy from './templates/Privacy'
 import Cookies from './templates/Cookies'
 import BlogSwitch from './templates/BlogSwitch'
-import Blabla from './templates/Blabla'
 import withTracker from './templates/tracking';
 
 function Main() {
@@ -22,7 +21,7 @@ function Main() {
                 <Route path='/privacy' component={withTracker(Privacy)} />
                 <Route path='/cookies' component={withTracker(Cookies)} />
                 <Route path='/blog' component={BlogSwitch} />
-                <Route path='/blabla' component={Blabla} />>
+
             </Switch>
         </main>
     );

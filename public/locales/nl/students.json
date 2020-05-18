@@ -10,10 +10,10 @@
         "text3": "<1>Wij doen jou een suggestie</1><2 />voor een of meerdere hospita's of gastgezinnen. Jij maakt de keuze.",
         "text4": "<1>Wij regelen een contactmoment </1><2 />op bezoek of via skype. Een klik is namelijk erg belangrijk.",
         "text5": "<1>Wij stellen een contract op</1><2 />en helpen je met het maken van betaalafspraken.",
-        "text6": "<1>Je kan verhuizen!</1><2 />Tijdens je verblijf kun je Hospi housing altijd gratis contacten, wij zullen je helpen."
+        "text6": "<1>Je kan verhuizen!</1><2 />Tijdens je verblijf kun je Hospi Housing altijd gratis contacten, wij zullen je helpen."
     },
     "faq": {
-        "title": "Veel gestelde vragen",
+        "title": "Veelgestelde vragen",
         "h3questions": "Aanmelding",
         "questionblok1": [
             {
@@ -122,17 +122,18 @@
         "study": "Studie*",
         "languages": "Ik spreek de volgende talen*",
         "maxbudget": "Maximum budget*",
+        "whichcity": "In welke stad zoek je?",
         "countryofbirth": "Geboorteland*",
-        "profilepicture": "Profiel foto*",
+        "profilepicture": "Profielfoto*",
         "phonenumber": "Telefoonnummer*",
         "errormessage_completeform": "Het formulier bevat nog fouten",
         "errormessage_textfield": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
-        "errormessage_emailfield": "Dit veld is verplicht: e-mailadres@domein.com",
+        "errormessage_emailfield": "Let op! Dit veld is verplicht: e-mailadres@domein.com",
         "errormessage_phonefield": "Dit veld is verplicht mag geen letters bevatten",
         "errormessage_birthday": "Dit veld is verplicht en je geboortedatum kan niet in de toekomst liggen!",
         "errormessage_datefield": "Dit veld is verplicht",
         "errormessage_generic": "Dit veld is verplicht",
-        "shortdescription": "Korte omschrijving van jezelf",
+        "shortdescription": "Korte omschrijving van jezelf*",
         "descriptionplaceholder": "Korte omschrijving over wie jij bent. We gebruiken deze tekst om je voor te stellen aan de hospita. Je zou bijvoorbeeld iets kunnen vertellen over je hobby's, landen die je hebt bezocht of je eerder bij een hospita hebt gewoond en wat je van plan bent te gaan doen in Nederland.",
         "submit": "Verzenden",
         "thankyou_1": "Bedankt ",

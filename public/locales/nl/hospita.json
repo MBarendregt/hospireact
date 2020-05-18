@@ -1,5 +1,5 @@
 {
-    "bannertext": "Hospita worden? U bepaalt wie bij u komt wonen en voor hoe lang<1>.</1>",
+    "bannertext": "Hospita worden? U bepaalt wie bij u komt wonen en voor hoelang<1>.</1>",
     "exptext": "Het is voor een student in een nieuwe stad steeds lastiger om een betaalbare woonruimte te vinden. Wij hebben een sociale oplossing gevonden voor dit probleem. Wij koppelen internationale studenten aan lokale hospita's of gastgezinnen. Het maakt niet uit of u alleen woont, met uw kat, uw gezin of uw hele vriendengroep. Als u een ruimte over hebt, graag wat bij verdient en open staat voor contact, dan bent u bij Hospi Housing aan het juiste adres.<1 /><2 />We zijn op zoek naar hospita's en gastgezinnen die open staan voor het avontuur. Doet u mee?",
     "concept": {
         "title": "Dit is hoe het werkt:",
@@ -15,7 +15,7 @@
     "becomehost_title": "Kan ik hospita worden?",
     "becomehost_text": "Bijna iedereen kan hospita worden. Wel stellen we als Hospi Housing enkele voorwaarden waar u als hospita aan moet voldoen. Hiermee garanderen we een hoge kwaliteit voor de student en de Universiteit en willen we voorkomen dat er misverstanden ontstaan tussen de hospita, de student en Hospi Housing.",
     "faq": {
-        "title": "Veel gestelde vragen",
+        "title": "Veelgestelde vragen",
         "h3becomehost": "Hospita worden",
         "questionblok1": [
             {
@@ -90,7 +90,7 @@
             },
             {
                 "question": "Hoe zit het met gemeentelijke belasting?",
-                "answer": "Als u alleen woont wordt u door de gemeente gezien als eenpersoonshuishouden. Zodra er een student komt te wonen wordt u aangemerkt als meerpersoonshuishouden. Dit kan leiden tot een stijging in gemeentelijke belastingen.. Mocht u al met meer dan een persoon in het huis wonen, dan verandert er niks. Hospi Housing adviseert om €55,- bovenop de kale huurprijs te rekenen, en dat is dan inclusief gas, water en licht. Wilt u precies weten met hoeveel u gemeentelijke belastingen jaarlijks stijgen, neem dan contact op met uw gemeente."
+                "answer": "Als u alleen woont wordt u door de gemeente gezien als eenpersoonshuishouden. Zodra er een student komt te wonen wordt u aangemerkt als meerpersoonshuishouden. Dit kan leiden tot een stijging in gemeentelijke belastingen. Mocht u al met meer dan een persoon in het huis wonen, dan verandert er niks. Hospi Housing adviseert om €55,- bovenop de kale huurprijs te rekenen, en dat is dan inclusief gas, water en licht. Wilt u precies weten met hoeveel u gemeentelijke belastingen jaarlijks stijgen, neem dan contact op met uw gemeente."
             },
             {
                 "question": "Wat moet ik van te voren aanleveren aan Hospi Housing?",
@@ -171,7 +171,7 @@
         "submit": "Verzenden",
         "errormsg_phone": "Dit veld is verplicht en mag geen letters bevatten",
         "errormsg_text": "Dit veld is verplicht en mag geen cijfers of vreemde tekens bevatten",
-        "errormsg_email": "Dit veld is verplicht: e-mailadres@domein.com",
+        "errormsg_email": "Let op! Dit veld is verplicht: e-mailadres@domein.com",
         "errormsg_submit": "Het formulier bevat nog fouten",
         "thankyou_1": "Bedankt ",
         "thankyou_2": " voor uw aanmelding!"

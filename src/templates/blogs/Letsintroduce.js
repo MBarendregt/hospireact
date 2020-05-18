@@ -12,7 +12,7 @@ function Letsintroduce({ t, tReady }) {
     if (!tReady) return <p></p>
     const blog = blogLoader.get("letsintroduce")
 
-    const renderedimage_1 = RenderImages(blog.secondsource, { "backgroundPosition": "80% 40%" })
+    const renderedimage_1 = RenderImages(blog.secondsource)
     return (
         <>
             <section>

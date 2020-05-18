@@ -21,9 +21,9 @@ function Footer({ t, tReady }) {
                         <li className="main-footer__link4">
                             <Link to="/cookies">{t("common:cookies")}</Link>
                         </li>
-                        <li className="main-footer__link5">
+                        {/* <li className="main-footer__link5">
                             <span>{t("common:kvknumber")}</span>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
                 <div className="social-container">
@@ -43,6 +43,10 @@ function Footer({ t, tReady }) {
                         </a>
                     </div>
                 </div>
+
+            </div>
+            <div className="main-footer__kvk">
+                <span>{t("common:kvknumber")}</span>
             </div>
         </footer>
     )

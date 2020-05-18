@@ -101,7 +101,7 @@ class Blog extends React.Component {
                 (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
                 'en';
         };
-        
+
         return (
             <section >
                 <div className="text-concept">
@@ -122,11 +122,11 @@ class Blog extends React.Component {
                     <h2>{t("sub_title")}
                     </h2>
                 </div>
-
+                {/* // .sort(function (a, b) { return b-a }) */}
                 <div id="wholepagesection" ref="myscroll" className="tiles" aria-live="polite">
                     {this.state.items
                         .filter(item => this.returnOnlyForSpecificLanguage(item, getLanguage()) === true)
-                        .sort(function (a, b) { return a - b })
+                        .reverse()
                         .slice(0, this.state.visible)
                         .map((item) => {
                             return (

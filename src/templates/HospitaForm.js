@@ -46,7 +46,7 @@ async function postData(url = '', data = {}) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'http://hospihousing.nl'
+                'Origin': 'https://hospihousing.nl'
                 // change later to hospihousing.nl
             },
             body: JSON.stringify(data)
@@ -257,7 +257,7 @@ class HospitaForm extends React.Component {
 
                     </div>
                     <div>
-                        <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                        <span className={shouldMarkError('foundus') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                     </div>
                 </div>
 
@@ -276,7 +276,10 @@ class HospitaForm extends React.Component {
                     </div>
                 </div>
                 <div className="hospita_form__submit">
-                    <input type="submit" value={t("hospitaform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
+                    <input type="submit" value={t("hospitaform.submit")} className="send-form" />
+                </div>
+                <div className="form__submitmessage-container">
+                    <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
                 </div>
             </form>
 

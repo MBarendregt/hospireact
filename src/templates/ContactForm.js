@@ -41,7 +41,7 @@ async function postData(url = '', data = {}) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'http://hospihousing.nl'
+                'Origin': 'https://hospihousing.nl'
             },
             body: JSON.stringify(data)
         });
@@ -115,7 +115,7 @@ class ContactForm extends React.Component {
                 "email": this.state.email,
                 "description": this.state.description
             }
-                
+
 
 
             postData('https://8guqkxdl2f.execute-api.eu-west-1.amazonaws.com/prod/contactform', data)
@@ -198,8 +198,12 @@ class ContactForm extends React.Component {
                     </label>
                 </div>
                 <div className="contact_form__submit">
-                    <input type="submit" value={t("contactform.submit")} className="send-form" /> <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
+                    <input type="submit" value={t("contactform.submit")} className="send-form" />
                 </div>
+                <div className="form__submitmessage-container">
+                    <span className={this.state.errorclass ? "form__submitmessage" : "form__submitmessageinc"}>{this.state.submitmessage}</span>
+                </div>
+
             </form >
         );
     }
