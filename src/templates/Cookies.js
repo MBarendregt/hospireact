@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom'
 import '../static/shared.css'
 import '../static/privacy_cookies.css'
 
-
 function Cookies({ t, tReady }) {
     if (!tReady) return <p></p>
     return (
-        <main>
+        <>
             <section>
                 <div className="general_title">
                     <h1>{t("title")}</h1>
@@ -191,7 +190,8 @@ function Cookies({ t, tReady }) {
                     </div>
                 </div>
             </section>
-        </main>
+            {/* </main> */}
+        </>
     )
 }
 // export default Contact

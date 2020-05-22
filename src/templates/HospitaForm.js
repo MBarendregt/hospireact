@@ -177,7 +177,7 @@ class HospitaForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                     </div>
                 </div>
@@ -195,13 +195,19 @@ class HospitaForm extends React.Component {
                             className={shouldMarkError('lastname') ? "error" : ""}
                             value={this.state.lastname}
                         />
-
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                     </div>
                 </div>
-
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
+                    </div>
+                </div>
                 <div className="hospitaform_inputcontainer">
                     <div className="hospitaform__labeltitle">
                         <label  >{t("hospitaform.email")}*</label>
@@ -218,7 +224,7 @@ class HospitaForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
                     </div>
                 </div>
@@ -239,11 +245,18 @@ class HospitaForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
                     </div>
                 </div>
-
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('email') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_email")}</span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('tel') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_phone")}</span>
+                    </div>
+                </div>
                 <div className="hospitaform_inputcontainer">
                     <div className="hospitaform__labeltitle">
                         <label> {t("hospitaform.foundus")} </label>
@@ -256,7 +269,7 @@ class HospitaForm extends React.Component {
                             value={this.state.foundus} />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('foundus') ? "errorshow" : "errorhide"}>{t("hospitaform.errormsg_text")}</span>
                     </div>
                 </div>

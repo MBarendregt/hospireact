@@ -304,7 +304,7 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}> {t("form.errormessage_textfield")} </span>
                     </div>
                 </div>
@@ -322,10 +322,20 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}> {t("form.errormessage_textfield")} </span>
                     </div>
                 </div>
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('firstname') ? "errorshow" : "errorhide"}> {t("form.errormessage_textfield")} </span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('lastname') ? "errorshow" : "errorhide"}> {t("form.errormessage_textfield")} </span>
+                    </div>
+                </div>
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle">
                         <label > {t("form.email")} </label>
@@ -341,7 +351,7 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('email') ? "errorshow" : "errorhide"} > {t("form.errormessage_emailfield")} </span>
                     </div>
                 </div>
@@ -362,11 +372,21 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('dateofbirth') ? "errorshow" : "errorhide"} > {t("form.errormessage_birthday")} </span>
                     </div>
-
                 </div>
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('email') ? "errorshow" : "errorhide"} > {t("form.errormessage_emailfield")} </span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('dateofbirth') ? "errorshow" : "errorhide"} > {t("form.errormessage_birthday")} </span>
+                    </div>
+                </div>
+
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle">
                         <label> {t("form.dateofarrival")} { /* htmlFor="dateofarrival" */} </label>
@@ -383,7 +403,7 @@ class StudentForm extends React.Component {
                             value={this.state.dateofarrival}
                         />
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('dateofarrival') ? "errorshow" : "errorhide"} > {t("form.errormessage_datefield")} </span>
                     </div>
                 </div>
@@ -404,10 +424,21 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('dateofdeparture') ? "errorshow" : "errorhide"} > {t("form.errormessage_datefield")} </span>
                     </div>
                 </div>
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('dateofarrival') ? "errorshow" : "errorhide"} > {t("form.errormessage_datefield")} </span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('dateofdeparture') ? "errorshow" : "errorhide"} > {t("form.errormessage_datefield")} </span>
+                    </div>
+                </div>
+
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle" >
                         <label > {t("form.study")} </label>
@@ -422,7 +453,7 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('study') ? "errorshow" : "errorhide"} > {t("form.errormessage_generic")} </span>
                     </div>
                 </div>
@@ -440,10 +471,21 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('languages') ? "errorshow" : "errorhide"} > {t("form.errormessage_generic")} </span>
                     </div>
                 </div>
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('study') ? "errorshow" : "errorhide"} > {t("form.errormessage_generic")} </span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className={shouldMarkError('languages') ? "errorshow" : "errorhide"} > {t("form.errormessage_generic")} </span>
+                    </div>
+                </div>
+
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle" >
                         <label > {t("form.maxbudget")} </label>
@@ -459,7 +501,7 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('maxbudget') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                     </div>
                 </div>
@@ -479,7 +521,17 @@ class StudentForm extends React.Component {
                         />
 
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
+                        <span className={shouldMarkError('whichcity') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
+                    </div>
+                </div>
+
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('maxbudget') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
+                    </div>
+                    <div className="form_errordevider-right">
                         <span className={shouldMarkError('whichcity') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                     </div>
                 </div>
@@ -498,7 +550,7 @@ class StudentForm extends React.Component {
                             value={this.state.countryofbirth}
                         />
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className={shouldMarkError('countryofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
                     </div>
                 </div>
@@ -519,10 +571,20 @@ class StudentForm extends React.Component {
                             id="profilepicture"
                         />
                     </div>
-                    <div>
+                    <div className="form_error-mobile">
                         <span className="errorhide" > {t("form.errormessage_generic")} </span>
                     </div>
                 </div >
+
+                <div className="form_errordevider">
+                    <div className="form_errordevider-left">
+                        <span className={shouldMarkError('countryofbirth') ? "errorshow" : "errorhide"}>{t("form.errormessage_generic")}</span>
+                    </div>
+                    <div className="form_errordevider-right">
+                        <span className="errorhide" > {t("form.errormessage_generic")} </span>
+                    </div>
+                </div>
+
                 <div className="studentsform_inputcontainer">
                     <div className="studentsform__labeltitle">
                         <label > {t("form.phonenumber")}</label>

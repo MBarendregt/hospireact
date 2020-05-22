@@ -6,7 +6,7 @@ import '../static/hospita.css'
 import { withTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import Accordion from "./Accordion";
-
+import { Helmet } from "react-helmet";
 
 function Hospita({ t, tReady }) {
 
@@ -28,6 +28,11 @@ function Hospita({ t, tReady }) {
     if (!tReady) return <p></p>
     return (
         <>
+            <Helmet>
+                <title>Hospita worden | Hospi housing | Utrecht</title>
+                <meta name="description" content="Altijd al hospita willen worden? Hospi housing koppelt Internationale studenten aan lokale hospita's en zorgt voor beiden voor een unieke ervaring." />
+                <meta name="keywords" content="Hospita worden, Student in huis, Hospita"></meta>
+            </Helmet>
             <section>
                 <div className="banner-hospita banner-otherpages">
                     <h1>

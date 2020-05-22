@@ -1,135 +1,163 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 .text-concept {
-  margin: auto;
-  width: 90%;
-}
-
-/* Generic blog page  */
-.blog_title {
-  width: 90%;
-  margin: auto;
-}
-
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
-  /* overflow: auto; */
-}
-
-.tile {
-  text-align: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid gray;
-  width: 90%;
-
-}
-
-
-.tile_link:visited,
-.tile_link:link,
-.tile_link:active {
-  text-decoration: none;
-  color: black;
-  transition: color 0.4s ease 0s;
-}
-
-.tile_text:visited,
-.tile_text:link,
-.tile_text:active {
-  transition: color 0.4s ease 0s;
-  color: black;
-}
-
-.tile_link:hover {
-  color: var(--main-bg-color);
-  transition: color 0.4s ease 0s;
-}
-
-.blogs_container:visited,
-.blogs_container:link,
-.blogs_container:active {
-  transition: filter 0.4s ease 0s;
-  filter: opacity(1);
-}
-
-.tile_text:hover {
-  color: var(--main-bg-color);
-  transition: color 0.4s ease 0s ;
-}
-
-.blogs_container:hover  {
-  filter: opacity(.7);
-  transition: filter 0.4s ease 0s; ;
-}
-
-
-.tile_text {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-}
-
-.blogs_container {
-  width:  100%;
-  height: auto;
-  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
-  border-radius: 5px;
-  background-size: cover;
-}
-
-/* Specific blog pages */
-
-.backtoallblogs {
-  padding: 0.5rem 1rem;
-}
-
-.blog_container {
-  margin: auto;
-  text-align: center;
-  width: 70%;
-}
-
-.blog_image {
-  width:  90%;
-  height: auto;
-  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
-  border-radius: 5px;
-}
-
-.blog_textlist {
-  width: 90%;
-  margin: 0.2rem auto;
-}
-
-.blog_textitem {
-  width: 90%;
-  margin: 1rem auto;
-}
-
-.second_image {
-  height: 35rem;
-  width: auto;
-  background-image: url("../static/images/blogs/glurenbijdeburen.jpg");
-  background-position: 50%;
-}
-
-/* Generic blog page 600px  */
-
-@media (min-width: 600px) {
-   .tiles {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    height:auto;
-    /* overflow: hidden;
-    height: auto; */
-
+    margin: auto;
+    width: 90%;
   }
- .blog_container {
-   width: 50%;
- }
-.blog_image {
-  height: 25rem;
-  width: 25rem;
-}
-}
+  
+  /* Generic blog page  */
+  .blog_title {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .tiles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    /* overflow: auto; */
+  }
+  
+  .tile {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+    width: 90%;
+  
+  }
+  
+  
+  .tile_link:visited,
+  .tile_link:link,
+  .tile_link:active {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 0.4s ease 0s;
+    -o-transition: color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+  }
+  
+  .tile_text:visited,
+  .tile_text:link,
+  .tile_text:active {
+    -webkit-transition: color 0.4s ease 0s;
+    -o-transition: color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+    color: black;
+  }
+  
+  .tile_link:hover {
+    color: var(--main-bg-color);
+    -webkit-transition: color 0.4s ease 0s;
+    -o-transition: color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+  }
+  
+  .blogs_container:visited,
+  .blogs_container:link,
+  .blogs_container:active {
+    -webkit-transition: -webkit-filter 0.4s ease 0s;
+    transition: -webkit-filter 0.4s ease 0s;
+    -o-transition: filter 0.4s ease 0s;
+    transition: filter 0.4s ease 0s;
+    transition: filter 0.4s ease 0s, -webkit-filter 0.4s ease 0s;
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  
+  .tile_text:hover {
+    color: var(--main-bg-color);
+    -webkit-transition: color 0.4s ease 0s ;
+    -o-transition: color 0.4s ease 0s ;
+    transition: color 0.4s ease 0s ;
+  }
+  
+  .blogs_container:hover  {
+    -webkit-filter: opacity(.7);
+            filter: opacity(.7);
+    -webkit-transition: -webkit-filter 0.4s ease 0s;
+    transition: -webkit-filter 0.4s ease 0s;
+    -o-transition: filter 0.4s ease 0s;
+    transition: filter 0.4s ease 0s;
+    transition: filter 0.4s ease 0s, -webkit-filter 0.4s ease 0s; ;
+  }
+  
+  
+  .tile_text {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .blogs_container {
+    width:  100%;
+    height: auto;
+    -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+            box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  
+  /* Specific blog pages */
+  
+  .backtoallblogs {
+    padding: 0.5rem 1rem;
+  }
+  
+  .blog_container {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+  
+  .blog_image {
+    width:  90%;
+    height: auto;
+    -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+            box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+  }
+  
+  .blog_textlist {
+    width: 90%;
+    margin: 0.2rem auto;
+  }
+  
+  .blog_textitem {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .second_image {
+    height: 35rem;
+    width: auto;
+    background-image: url("../static/images/blogs/glurenbijdeburen.jpg");
+    background-position: 50%;
+  }
+  
+  /* Generic blog page 600px  */
+  
+  @media (min-width: 600px) {
+     .tiles {
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      height:auto;
+    }
+    
+   .blog_container {
+     width: 50%;
+   }
+  .blog_image {
+    height: 25rem;
+    width: 25rem;
+  }
+  }

@@ -18,7 +18,7 @@ function MainPage({ t, tReady }) {
                 </div>
                 <div className="main-banner__buttons">
 
-                    <Link className="main-banner__buttons--link" to="/students"><button><span>
+                    <Link className="main-banner__buttons--link" to="/:locale/students"><button><span>
                         {t('header:lookingforroom')}</span></button></Link>
                     <Link className="main-banner__buttons--link" to="/hospita"><button><span>{t('header:becomehost')}</span></button></Link>
                 </div>

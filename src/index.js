@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
+import './static/reset.css'
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import './i18n';
 
-  
+
 // Initialize google analytics page view tracking
 // history.listen(location => {
 //   ReactGA.set({ page: location.pathname }); // Update the user's current page

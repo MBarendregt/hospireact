@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom'
-
 import MainPage from './MainPage'
 import Hospita from './templates/Hospita'
 import Students from './templates/Students'
@@ -10,9 +9,16 @@ import Cookies from './templates/Cookies'
 import BlogSwitch from './templates/BlogSwitch'
 import withTracker from './templates/tracking';
 
+
+
+
+
+
 function Main() {
     return (
         <main>
+
+
             <Switch>
                 <Route exact path='/' component={withTracker(MainPage)} />
                 <Route path='/hospita' component={withTracker(Hospita)} />

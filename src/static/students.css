@@ -1,4 +1,11 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
 
 .iti__flag {background-image: url("./images/img/flags.png");}
 
@@ -12,6 +19,7 @@
 
 
 .studentsform {
+    display: -ms-grid;
     display: grid;
     padding: 2rem;
     grid-row-gap:0.5rem;
@@ -19,8 +27,13 @@
 }    
 
 .studentsform_inputcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 } 
 
 
@@ -30,101 +43,12 @@
 }
 
 .formcontainer__gender {
-    align-self: center;        
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;        
     width: 100%;
 }
 
-@media (min-width: 600px) { 
-
-    .banner-student {
-        background: url("./images/studentbanner.jpg") no-repeat center/cover border-box;
-        }
-    
-
-    .studentsform {
-        margin: 0 auto;
-        max-width: 40rem;
-        grid-column-gap: 1rem;        
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .studentsform__labeltitle {
-        font-size: 1.3rem;
-        margin: auto 0;
-    }
-    .student__moreinfo {
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 2;
-        grid-column: 1 /3;
-    }
-
-}
-
-
-
-
-
-
-/* 
-.main-contactus {
-    height: 10rem;
-}
-
-
-
-.form-container {
-    display: grid
-}
-.col-container {
-    display: flex;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
-
-.col {
-    flex: 50%;
-    display: flex;
-    flex-direction: column; 
-    margin: 0.5rem 0;
-}
-.single__col {
-    flex: 50%;
-    display: flex;
-    flex-direction: column; 
-    margin: 0.5rem 0;    
-    width:50%;
-}
-.moreinfo__col {
-    width: 65%;
-    margin: auto;
-}
-
-.form__input {
-    width:60%;
-    align-self: center;
-}
-
-.formcontainer__labeltitle--moreinfo {
-    margin: 0;
-}
-
-.col-container--gender {
-    width: 80%;
-    margin: auto;
-    display: block;
-}
-
-.formcontainer {}
-
-input[type=date] {
-    cursor: pointer;
-}
-.formcontainer__labeltitle {
-    width: 60%;
-    margin: auto;
-    text-align: left;
-    font-size: 1.3rem;
-} */
 
 .upload-btn-wrapper {
     position: relative;
@@ -132,15 +56,16 @@ input[type=date] {
     display: inline-block;
     cursor: pointer;
     width: 100%;
-    align-self: center;
-    /* line-height: 3rem; */
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   
   .btn {
     border:2px solid rgba(0, 0, 0, 1);
     background-color: white;
     border-radius: 4px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
     line-height: 3.175rem;  /* Needed to get same height as other input field */
     text-align: left;
@@ -246,138 +171,38 @@ input[type=date] {
       background: white;
   }
 
+@media (min-width: 600px) { 
 
-
-/* 
-.signup-form__students {
-    padding: 0 2rem;
-    display: -ms-grid;
-    display: grid;
-}
-
-.signup-form__students label,
-.signup-form__students input,
-.signup-form__students select {
-    display: block;
-    width: 100%;
-    max-width: 80vw;
-}
-
-[type="date"] {
-    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  95% 50% no-repeat ;
-    line-height: 2rem;
-    width:60%;
-  }
-  [type="date"]::-webkit-inner-spin-button {
-    display: none;
-  }
-  [type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
-
-
-.signup-form__students .signup-form__students--input {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	z-index: -1;
-}
-.signup-form__picturecontainer {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-
-.signup-form__students--profilepicture {
-  color: grey;
-  background-color: white;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important; 
-  border: solid 2px black;
-  border-radius: 4px;
-  height: 3.375rem;
-  text-align: center;
-  margin:0;
-  cursor:pointer;
-}
-
-.singup-form__students--placeholder-profilepicture {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width:100%;
-  text-align: left;
-  padding-left: 2px;
-  overflow: hidden;
-}
-
-.formcontainer__gender label,
-.formcontainer__gender div
- {
-  font-size:1.2rem;
-} */
-
-
-@media (min-width: 600px) {
-
-    .formcontainer__gender {
-        grid-column: 1 /3;
+    .banner-student {
+        background: url("./images/studentbanner.jpg") no-repeat center/cover border-box;
+        }
     
+    .btn {
+        font-size: 1.3rem
     }
-/* 
-    .signup-form__students {
-        margin: 2rem auto;
+    .studentsform {
+        margin: 0 auto;
         max-width: 40rem;
-        grid-column-gap: 1rem;
-        -ms-grid-columns: 1fr 1rem 1fr;
+        grid-column-gap: 1rem;        
+        -ms-grid-columns: 1fr 1rem 1fr;        
         grid-template-columns: repeat(2, 1fr);
     }
-    .formcontainer {
-        flex: 50%;
+    .studentsform__labeltitle {
+        font-size: 1.3rem;
+        margin: auto 0;
     }
-    .formcontainer_1 {
-        flex: 50%;
-    }
-
-
-    .formcontainer__gender {
-        align-self: center;        
-        width: 60%;
-    }
-    
-    .form__moreinfo {
+    .student__moreinfo {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
         grid-column: 1 /3;
-        -ms-grid-row: 8;
-        grid-row: 8;
     }
 
-    input[type=submit] {
+    .formcontainer__gender {
         -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        grid-column: 1 / 2;
-        -ms-grid-row: 8 ;
-        grid-row: 8 ;
-    }    
-
-    .singup-form__students--placeholder-profilepicture {
-      font-size: 1.3rem;
+        -ms-grid-column-span: 2;
+        grid-column: 1 /3;
+    
     }
 
-    .signup-form__students label,
-    .signup-form__students input,
-    .signup-form__students select {
-        display: block;
-        width: 100%;
-        max-width: 17.5rem;
-    }
-
-    .form__moreinfo label {
-      max-width: 40rem;
-    } */
 
 }

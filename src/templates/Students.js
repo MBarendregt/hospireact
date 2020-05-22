@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import { withTranslation, Trans } from 'react-i18next';
 import StudentForm from './StudentForm'
 import S3uploads from './s3uploadinput'
-
+import { Helmet } from "react-helmet";
 
 function Students({ t, tReady }) {
 
@@ -34,7 +34,11 @@ function Students({ t, tReady }) {
     return (
 
         <>
-
+            <Helmet>
+                <title>Ik zoek een kamer | Hospi Housing | Kamer Utrecht</title>
+                <meta name="description" content="Op zoek naar een betaalbare kamer? Hospi housing koppelt internationale studenten aan een lokale hospita. Je eigen kamer bij iemand anders in huis." />
+                <meta name="keywords" content="Room Utrecht, Rent a Room, Host family"></meta>
+            </Helmet>
             <section>
                 <div className="banner-student banner-otherpages">
                     <h1><Trans>{t("bannertext")}<span className="colored-text"></span></Trans></h1>
