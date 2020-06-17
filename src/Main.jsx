@@ -17,8 +17,6 @@ import withTracker from './templates/tracking';
 function Main() {
     return (
         <main>
-
-
             <Switch>
                 <Route exact path='/' component={withTracker(MainPage)} />
                 <Route path='/hospita' component={withTracker(Hospita)} />

@@ -9,8 +9,7 @@ function MainPage({ t, tReady }) {
     if (!tReady) return <p></p>
 
     return (
-        // <main>
-        // id="main-banner"
+
         <>
             <section className="frontpage_banner">
                 <div className="main-banner__title">

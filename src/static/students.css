@@ -7,11 +7,11 @@
 
 
 
-.iti__flag {background-image: url("./images/img/flags.png");}
+/* .iti__flag {background-image: url("./images/img/flags.png");}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .iti__flag {background-image: url("./images/img/flags@2x.png");}
-}
+} */
 
 .banner-student {
     background: url("./images/studentbanner.jpg") no-repeat left/cover border-box;
