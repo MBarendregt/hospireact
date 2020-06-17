@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import './static/main.css'
 import './static/shared.css'
 import Header from './Header'
-import Main from './Main.jsx'
+import Main from './Main'
 import Footer from './Footer'
 import { withTranslation, Trans } from 'react-i18next';
 import CookieConsent from "react-cookie-consent";
